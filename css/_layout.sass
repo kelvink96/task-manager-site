@@ -1,0 +1,106 @@
+@import "mixins"
+
+.sidebar
+  width: 250px
+  @include transition(width, 300ms)
+  display: inline-block
+  z-index: 10
+  min-height: 100vh
+  border-right: 1px solid #dee2e6
+
+  .list-group
+    .list-group-item
+      display: flex
+      align-items: center
+      border: none
+      width: 100%
+
+      .badge
+        margin-left: 2rem
+
+.nav-sidebar
+  background: none
+  margin-top: 5px
+
+.sidebar
+  ul li a span
+    &.fas
+      font-size: 20px
+
+.menu-text
+  left: 50px
+  opacity: 1
+  @include transition-opacity
+  position: absolute
+
+.brand-wrapper
+  .menu-text
+    left: auto
+    position: relative
+
+.collapse-toggle
+  padding-left: 4px
+  display: block
+  cursor: pointer
+  padding-right: 5px
+//So it's easier to click
+
+#toggleIcon
+  @include transition(transform, 200ms)
+
+.rotate
+  @include rotate
+
+.sidebar--Collapse
+  width: 5rem
+  @include transition(width, 300ms)
+  text-align: center
+  margin: 0 auto
+
+  .menu-text
+    display: none
+    @include transition(opacity, 200ms)
+    position: absolute
+
+  .list-group
+    .list-group-item
+      text-align: center
+      width: 100%
+
+      i
+        font-size: 1.5rem
+        margin: auto
+
+  .collapse-toggle
+    margin-left: 0 !important
+
+.main
+  margin-left: 0
+  @include transition(margin-left, 200ms)
+  width: 100%
+
+.main--slide
+  @include transition(margin-left, 200ms)
+
+nav.navbar
+  .dropdown-menu:not([aria-labelledby="search-dropdown"])
+    margin-left: -8rem
+
+  .dropdown-menu[aria-labelledby="user-dropdown"],
+  .dropdown-menu[aria-labelledby="apps-dropdown"],
+  .dropdown-menu[aria-labelledby="notifications-dropdown"]
+    margin-left: -14rem
+
+.accordion
+  // switch accordion icon order
+  .accordion-button:after
+    //swap order
+    order: -1
+    // to activate uncomment below
+    margin-left: 0
+    // just extra space between text and icon
+    margin-right: 0.5em
+
+
+.task-progress
+  height: .5rem

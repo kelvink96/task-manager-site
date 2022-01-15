@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900');
+
+body {
+  font-family: 'Barlow';
+  font-size:16px;
+}
+
+td {
+  border-radius: 0 !important;
+}
+
+tr th {
+      font-weight: 500;
+}
+
+.timepicker {
+  max-width: 100px;
+  border-radius: 0;
+}

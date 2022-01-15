@@ -1,0 +1,22 @@
+@mixin transition-opacity
+  transition: opacity 300ms 150ms ease-out
+  -moz-transition: opacity 300ms 150ms ease-out
+  -o-transition: opacity 300ms 150ms ease-out
+  -webkit-transition: opacity 300ms 150ms ease-out
+
+@mixin transition($style, $timer)
+  transition: $style $timer ease-out
+  -moz-transition: $style $timer ease-out
+  -o-transition: $style $timer ease-out
+  -webkit-transition: $style $timer ease-out
+
+@mixin rotate
+  -moz-transform: rotate(180deg)
+  -ms-transform: rotate(180deg)
+  -o-transform: rotate(180deg)
+  -webkit-transform: rotate(180deg)
+  transform: rotate(180deg)
+  -moz-transition: transform 0.4s ease-out
+  -o-transition: transform 0.4s ease-out
+  -webkit-transition: transform 0.4s ease-out
+  transition: transform 0.4s ease-out
