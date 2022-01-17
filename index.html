@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="vendors/fontawesome-free-5.15.1-web/css/all.min.css">
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
-  <link rel="stylesheet" href="vendors/bootstrap-calendar-for-stef/dist/style.css">
+  <link rel="stylesheet" href="vendors/bootstrap-calendar/dist/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -408,220 +408,259 @@
                           <!--                          task-->
                           <div class="task mb-3 card shadow-sm border-0">
                             <div class="card-body">
-                              <div class="d-flex align-items-center justify-content-between">
-                                <div class="form-check form-control-lg">
-                                  <input class="form-check-input rounded-circle" type="checkbox">
-                                  <label class="form-check-label card-title">read 20 books this year</label>
-                                </div>
-                                <div class="d-flex gap-2">
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-calendar-day me-2"></i>due date
-                                    </button>
-                                    <div class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <form class="p-3">
-                                        <div class="mb-3">
-                                          <label class="form-label">select date</label>
-                                          <input type="date" class="form-control">
-                                        </div>
-                                        <button type="button" class="btn btn-primary w-100"><i
-                                          class="fas fa-check me-2"></i>apply
-                                        </button>
-                                      </form>
-                                    </div>
-                                  </div>
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-sort-amount-up-alt me-2"></i>priority
-                                    </button>
-                                    <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-flag me-2 text-dark"></i>low</a>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-flag me-2 text-warning"></i>important</a>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                    <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                      </li>
-                                      <li>
-                                        <div class="dropdown-divider"></div>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row align-items-center justify-content-between">
-                                <div class="col-6 d-flex align-items-center">
-                                  <p class="mb-0 ms-2"><i class="fas fa-stopwatch me-2"></i>18/07/2022 - 10.15AM</p>
-                                </div>
-                                <div class="col-6 d-flex align-items-center gap-3 justify-content-end">
-                                  <div class="progress task-progress col-3">
-                                    <div class="progress-bar" role="progressbar" style="width: 10%;"
-                                         aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                  </div>
-                                  <label class="form-label small mb-0 text-muted">10% complete</label>
-                                  <button class="btn btn-outline-secondary">6<i
-                                    class="fas fa-comment ms-2"></i>
-                                  </button>
-                                </div>
-                              </div>
+                              <label class="d-flex align-items-start justify-content-start gap-3">
+                                <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
+                                       value="">
+                                <span class="pt-1 form-checked-content flex-grow-1">
+                                  <span class="d-flex justify-content-between align-items-start mb-3">
+                                    <span class="fs-6 task-title">read 20 books this year</span>
+                                    <span class="d-flex gap-2">
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-calendar-day me-2"></i>due date
+                                      </button>
+                                      <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <form class="p-3">
+                                          <div class="mb-3">
+                                            <label class="form-label">select date</label>
+                                            <input type="date" class="form-control">
+                                          </div>
+                                          <button type="button" class="btn btn-primary w-100"><i
+                                            class="fas fa-check me-2"></i>apply
+                                          </button>
+                                        </form>
+                                      </span>
+                                    </span>
+                                    <span class="dropdown">
+                                      <button class="btn btn-warning btn-sm" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-flag me-2"></i>important
+                                      </button>
+                                      <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                        </li>
+                                      </ul>
+                                    </span>
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                      </button>
+                                      <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                        </li>
+                                        <li>
+                                          <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                        </li>
+                                      </ul>
+                                    </span>
+                                  </span>
+                                  </span>
+                                  <span class="row align-items-center justify-content-between">
+                                    <span class="col-6 d-flex align-items-center">
+                                      <span class="small"><i
+                                        class="fas fa-stopwatch me-2"></i>18/07/2022 - 10.15AM</span>
+                                    </span>
+                                    <span class="col-6 d-flex align-items-center gap-3 justify-content-end">
+                                      <span class="progress task-progress col-3">
+                                        <span class="progress-bar" role="progressbar" style="width: 10%;"
+                                              aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></span>
+                                      </span>
+                                      <label class="form-label small mb-0 text-muted">10% complete</label>
+                                      <button class="btn btn-outline-secondary btn-sm">6<i
+                                        class="fas fa-comment ms-2"></i>
+                                      </button>
+                                    </span>
+                                  </span>
+                                </span>
+                              </label>
                             </div>
                           </div>
                           <!--                          task-->
                           <div class="task mb-3 card shadow-sm border-0">
                             <div class="card-body">
-                              <div class="d-flex align-items-center justify-content-between">
-                                <div class="form-check form-control-lg">
-                                  <input class="form-check-input rounded-circle" type="checkbox">
-                                  <label class="form-check-label card-title">do a weekly review of my tasks and
-                                    goals</label>
-                                </div>
-                                <div class="d-flex gap-2">
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-calendar-day me-2"></i>due date
-                                    </button>
-                                    <div class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <form class="p-3">
-                                        <div class="mb-3">
-                                          <label class="form-label">select date</label>
-                                          <input type="date" class="form-control">
-                                        </div>
-                                        <button type="button" class="btn btn-primary w-100"><i
-                                          class="fas fa-check me-2"></i>apply
-                                        </button>
-                                      </form>
-                                    </div>
-                                  </div>
-                                  <button class="btn btn-warning" type="button">
-                                    <i class="fas fa-flag me-2"></i>priority
-                                  </button>
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                    <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                      </li>
-                                      <li>
-                                        <div class="dropdown-divider"></div>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row align-items-center justify-content-between">
-                                <div class="col-6 d-flex align-items-center">
-                                  <p class="mb-0 ms-2"><i class="fas fa-stopwatch me-2"></i>09/04/2022 - 11.00AM</p>
-                                </div>
-                                <div class="col-6 d-flex align-items-center gap-3 justify-content-end">
-                                  <div class="progress task-progress col-3">
-                                    <div class="progress-bar" role="progressbar" style="width: 33%;"
-                                         aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
-                                  </div>
-                                  <label class="form-label small mb-0 text-muted">33% complete</label>
-                                  <button class="btn btn-outline-secondary">2<i
-                                    class="fas fa-comment ms-2"></i>
-                                  </button>
-                                </div>
-                              </div>
+                              <label class="d-flex align-items-start justify-content-start gap-3">
+                                <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
+                                       value="">
+                                <span class="pt-1 form-checked-content flex-grow-1">
+                                  <span class="d-flex justify-content-between align-items-start mb-3">
+                                    <span class="fs-6 task-title">do a weekly review of my tasks</span>
+                                    <span class="d-flex gap-2">
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-calendar-day me-2"></i>due date
+                                      </button>
+                                      <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <form class="p-3">
+                                          <div class="mb-3">
+                                            <label class="form-label">select date</label>
+                                            <input type="date" class="form-control">
+                                          </div>
+                                          <button type="button" class="btn btn-primary w-100"><i
+                                            class="fas fa-check me-2"></i>apply
+                                          </button>
+                                        </form>
+                                      </span>
+                                    </span>
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-sort-amount-up-alt me-2"></i>priority
+                                      </button>
+                                      <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                        </li>
+                                      </ul>
+                                    </span>
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                      </button>
+                                      <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                        </li>
+                                        <li>
+                                          <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                        </li>
+                                      </ul>
+                                    </span>
+                                  </span>
+                                  </span>
+                                  <span class="row align-items-center justify-content-between">
+                                    <span class="col-6 d-flex align-items-center">
+                                      <span class="small"><i
+                                        class="fas fa-stopwatch me-2"></i>18/04/2022 - 09.15PM</span>
+                                    </span>
+                                    <span class="col-6 d-flex align-items-center gap-3 justify-content-end">
+                                      <span class="progress task-progress col-3">
+                                        <span class="progress-bar" role="progressbar" style="width: 10%;"
+                                              aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></span>
+                                      </span>
+                                      <label class="form-label small mb-0 text-muted">10% complete</label>
+                                      <button class="btn btn-outline-secondary btn-sm">2<i
+                                        class="fas fa-comment ms-2"></i>
+                                      </button>
+                                    </span>
+                                  </span>
+                                </span>
+                              </label>
                             </div>
                           </div>
                           <!--                          task-->
                           <div class="task mb-3 card shadow-sm border-0">
                             <div class="card-body">
-                              <div class="d-flex align-items-center justify-content-between">
-                                <div class="form-check form-control-lg">
-                                  <input class="form-check-input rounded-circle" type="checkbox">
-                                  <label class="form-check-label card-title">start a side business</label>
-                                </div>
-                                <div class="d-flex gap-2">
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-calendar-day me-2"></i>due date
-                                    </button>
-                                    <div class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <form class="p-3">
-                                        <div class="mb-3">
-                                          <label class="form-label">select date</label>
-                                          <input type="date" class="form-control">
-                                        </div>
-                                        <button type="button" class="btn btn-primary w-100"><i
-                                          class="fas fa-check me-2"></i>apply
-                                        </button>
-                                      </form>
-                                    </div>
-                                  </div>
-                                  <button class="btn btn-danger" type="button">
-                                    <i class="fas fa-flag me-2"></i>urgent
-                                  </button>
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                    <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                      </li>
-                                      <li>
-                                        <div class="dropdown-divider"></div>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row align-items-center justify-content-between">
-                                <div class="col-6 d-flex align-items-center">
-                                  <p class="mb-0 ms-2"><i class="fas fa-stopwatch me-2"></i>05/11/2022 - 03.45PM</p>
-                                </div>
-                                <div class="col-6 d-flex align-items-center gap-3 justify-content-end">
-                                  <div class="progress task-progress col-3">
-                                    <div class="progress-bar" role="progressbar" style="width: 15%;"
-                                         aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                                  </div>
-                                  <label class="form-label small mb-0 text-muted">15% complete</label>
-                                  <button class="btn btn-outline-secondary">3<i
-                                    class="fas fa-comment ms-2"></i>
-                                  </button>
-                                </div>
-                              </div>
+                              <label class="d-flex align-items-start justify-content-start gap-3">
+                                <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
+                                       value="">
+                                <span class="pt-1 form-checked-content flex-grow-1">
+                                  <span class="d-flex justify-content-between align-items-start mb-3">
+                                    <span class="fs-6 task-title">start a side business</span>
+                                    <span class="d-flex gap-2">
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-calendar-day me-2"></i>due date
+                                      </button>
+                                      <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <form class="p-3">
+                                          <div class="mb-3">
+                                            <label class="form-label">select date</label>
+                                            <input type="date" class="form-control">
+                                          </div>
+                                          <button type="button" class="btn btn-primary w-100"><i
+                                            class="fas fa-check me-2"></i>apply
+                                          </button>
+                                        </form>
+                                      </span>
+                                    </span>
+                                    <span class="dropdown">
+                                      <button class="btn btn-danger btn-sm" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-flag me-2"></i>priority
+                                      </button>
+                                      <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                        </li>
+                                      </ul>
+                                    </span>
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                      </button>
+                                      <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                        </li>
+                                        <li>
+                                          <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                        </li>
+                                      </ul>
+                                    </span>
+                                  </span>
+                                  </span>
+                                  <span class="row align-items-center justify-content-between">
+                                    <span class="col-6 d-flex align-items-center">
+                                      <span class="small"><i
+                                        class="fas fa-stopwatch me-2"></i>18/12/2022 - 12.15PM</span>
+                                    </span>
+                                    <span class="col-6 d-flex align-items-center gap-3 justify-content-end">
+                                      <span class="progress task-progress col-3">
+                                        <span class="progress-bar" role="progressbar" style="width: 33%;"
+                                              aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></span>
+                                      </span>
+                                      <label class="form-label small mb-0 text-muted">33% complete</label>
+                                      <button class="btn btn-outline-secondary btn-sm">4<i
+                                        class="fas fa-comment ms-2"></i>
+                                      </button>
+                                    </span>
+                                  </span>
+                                </span>
+                              </label>
                             </div>
                           </div>
                         </div>
@@ -711,172 +750,55 @@
                           <!--                          task-->
                           <div class="task mb-3 card shadow-sm border-0">
                             <div class="card-body">
-                              <div class="d-flex align-items-center justify-content-between">
-                                <div class="form-check form-control-lg">
-                                  <input class="form-check-input rounded-circle" type="checkbox">
-                                  <label class="form-check-label card-title">spec</label>
-                                </div>
-                                <div class="d-flex gap-2">
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-calendar-day me-2"></i>due date
-                                    </button>
-                                    <div class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <form class="p-3">
-                                        <div class="mb-3">
-                                          <label class="form-label">select date</label>
-                                          <input type="date" class="form-control">
-                                        </div>
-                                        <button type="button" class="btn btn-primary w-100"><i
-                                          class="fas fa-check me-2"></i>apply
+                              <label class="d-flex align-items-start justify-content-start gap-3">
+                                <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
+                                       value="">
+                                <span class="pt-1 form-checked-content flex-grow-1">
+                                  <span class="d-flex justify-content-between align-items-start mb-3">
+                                    <span class="fs-6 task-title">requirements specifications</span>
+                                    <span class="d-flex gap-2">
+                                      <span class="dropdown">
+                                        <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                          <i class="fas fa-calendar-day me-2"></i>due date
                                         </button>
-                                      </form>
-                                    </div>
-                                  </div>
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-sort-amount-up-alt me-2"></i>priority
-                                    </button>
-                                    <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-flag me-2 text-dark"></i>low</a>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-flag me-2 text-warning"></i>important</a>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                    <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                      </li>
-                                      <li>
-                                        <div class="dropdown-divider"></div>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <ul>
-                                <li class="card-text mb-0">write up tech spec</li>
-                                <li class="card-text">link to resource (copy, design, etc.) in spec</li>
-                              </ul>
-                              <div class="row align-items-center justify-content-between">
-                                <div class="col-6 d-flex align-items-center">
-                                  <div class="avatar-group avatar-group-sm">
-                                    <div class="avatar avatar-xs">
-                                      <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
-                                           class="avatar-img rounded-circle">
-                                    </div>
-                                  </div>
-                                  <p class="mb-0 ms-2"><i class="fas fa-stopwatch me-2"></i>12/01/2022 - 04.30PM</p>
-                                </div>
-                                <div class="col-6 d-flex align-items-center gap-3 justify-content-end">
-                                  <div class="progress task-progress col-3">
-                                    <div class="progress-bar" role="progressbar" style="width: 25%;"
-                                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                  </div>
-                                  <label class="form-label small mb-0 text-muted">25% complete</label>
-                                  <button class="btn btn-outline-secondary">3<i
-                                    class="fas fa-comment ms-2"></i>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!--                          task-->
-                          <div class="task mb-3 card shadow-sm border-0">
-                            <div class="card-body">
-                              <div class="d-flex align-items-center justify-content-between">
-                                <div class="form-check form-control-lg">
-                                  <input class="form-check-input rounded-circle" type="checkbox" value="">
-                                  <label class="form-check-label card-title">design</label>
-                                </div>
-                                <div class="d-flex gap-2">
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-calendar-day me-2"></i>due date
-                                    </button>
-                                    <div class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <form class="p-3">
-                                        <div class="mb-3">
-                                          <label class="form-label">select date</label>
-                                          <input type="date" class="form-control">
-                                        </div>
-                                        <button type="button" class="btn btn-primary w-100"><i
-                                          class="fas fa-check me-2"></i>apply
+                                        <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                          <form class="p-3">
+                                            <div class="mb-3">
+                                              <label class="form-label">select date</label>
+                                              <input type="date" class="form-control">
+                                            </div>
+                                            <button type="button" class="btn btn-primary w-100"><i
+                                              class="fas fa-check me-2"></i>apply
+                                            </button>
+                                          </form>
+                                        </span>
+                                      </span>
+                                      <span class="dropdown">
+                                        <button class="btn btn-danger btn-sm" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                          <i class="fas fa-flag me-2"></i>urgent
                                         </button>
-                                      </form>
-                                    </div>
-                                  </div>
-                                  <div class="dropdown">
-                                    <button class="btn btn-warning" type="button">
-                                      <i class="fas fa-flag me-2"></i>important
-                                    </button>
-                                  </div>
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                    <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                      </li>
-                                      <li>
-                                        <div class="dropdown-divider"></div>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <!--                              task body-->
-                              <ul>
-                                <li class="card-text mb-0">design low-fidelity mockups</li>
-                              </ul>
-                              <div class="p-3">
-                                <h6 class="text-capitalize">sub tasks</h6>
-                                <!--                                sub-task-->
-                                <div class="sub-task mb-3 border-bottom">
-                                  <div class="d-flex align-items-center justify-content-between">
-                                    <div class="form-check form-control-lg">
-                                      <input class="form-check-input rounded-circle" type="checkbox">
-                                      <label class="form-check-label card-title small">do a feedback round</label>
-                                      <button class="btn text-primary ms-2" type="button" data-bs-toggle="collapse"
-                                              data-bs-target="#collapse-1"><i class="fas fa-compress-alt"></i></button>
-                                    </div>
-                                    <div class="d-flex gap-2">
-                                      <div class="dropdown">
-                                        <button class="btn btn-outline-secondary" type="button"
+                                        <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                          <li><a href="" class="dropdown-item">
+                                            <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                          </li>
+                                          <li><a href="" class="dropdown-item">
+                                            <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                          </li>
+                                          <li><a href="" class="dropdown-item">
+                                            <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                          </li>
+                                        </ul>
+                                      </span>
+                                      <span class="dropdown">
+                                        <button class="btn btn-outline-secondary btn-sm" type="button"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
                                           <i class="fas fa-ellipsis-h"></i>
                                         </button>
                                         <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                           <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-pencil-alt fa-fw me-2"></i>edit sub-task</a>
+                                            <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
                                           </li>
                                           <li><a href="" class="dropdown-item">
                                             <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
@@ -885,16 +807,289 @@
                                             <div class="dropdown-divider"></div>
                                           </li>
                                           <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-trash-alt fa-fw me-2"></i>delete sub-task</a>
+                                            <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
                                           </li>
                                         </ul>
-                                      </div>
+                                      </span>
+                                    </span>
+                                  </span>
+                                  <ul>
+                                    <li class="card-text small text-muted mb-0">write up tech spec</li>
+                                    <li
+                                      class="card-text small text-muted">link to resource (copy, design, etc.) in spec</li>
+                                  </ul>
+                                  <span class="row align-items-center justify-content-between">
+                                    <span class="col-6 d-flex align-items-center">
+                                      <span class="small"><i
+                                        class="fas fa-stopwatch me-2"></i>18/12/2022 - 12.15PM</span>
+                                    </span>
+                                    <span class="col-6 d-flex align-items-center gap-3 justify-content-end">
+                                      <span class="progress task-progress col-3">
+                                        <span class="progress-bar" role="progressbar" style="width: 33%;"
+                                              aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></span>
+                                      </span>
+                                      <label class="form-label small mb-0 text-muted">33% complete</label>
+                                      <button class="btn btn-outline-secondary btn-sm">4<i
+                                        class="fas fa-comment ms-2"></i>
+                                      </button>
+                                    </span>
+                                  </span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <!--                          task-->
+                          <div class="task mb-3 card shadow-sm border-0">
+                            <div class="card-body">
+                              <label class="d-flex align-items-start justify-content-start gap-3">
+                                <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
+                                       value="">
+                                <span class="pt-1 form-checked-content flex-grow-1">
+                                  <span class="d-flex justify-content-between align-items-start mb-3">
+                                    <span class="fs-6 task-title">design</span>
+                                    <span class="d-flex gap-2">
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-calendar-day me-2"></i>due date
+                                      </button>
+                                      <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <form class="p-3">
+                                          <div class="mb-3">
+                                            <label class="form-label">select date</label>
+                                            <input type="date" class="form-control">
+                                          </div>
+                                          <button type="button" class="btn btn-primary w-100"><i
+                                            class="fas fa-check me-2"></i>apply
+                                          </button>
+                                        </form>
+                                      </span>
+                                    </span>
+                                    <span class="dropdown">
+                                      <button class="btn btn-warning btn-sm" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-flag me-2"></i>important
+                                      </button>
+                                      <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                        </li>
+                                      </ul>
+                                    </span>
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                      </button>
+                                      <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                        </li>
+                                        <li>
+                                          <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                        </li>
+                                      </ul>
+                                    </span>
+                                  </span>
+                                  </span>
+                                  <ul>
+                                    <li class="card-text small text-muted mb-0">design low-fidelity mockups</li>
+                                  </ul>
+                                  <span class="ps-3 py-2">
+                                    <div class="d-flex align-items-center gap-3 pb-3">
+                                      <h6 class="text-capitalize mb-0">sub tasks</h6>
+                                      <button class="btn btn-sm text-primary btn-sub-task-collapse" data-bs-toggle="collapse"
+                                              data-bs-target="#sub-task-collapse-1"><i
+                                        class="fas fa-compress-arrows-alt me-2"></i><span>show less</span></button>
                                     </div>
-                                  </div>
-                                  <div class="collapse show pb-3" id="collapse-1">
-                                    <div class="row align-items-center justify-content-between">
-                                      <div class="col-6 d-flex align-items-center">
-                                        <div class="avatar-group avatar-group-sm">
+                                    <div class="collapse show" id="sub-task-collapse-1">
+                                      <!--                                sub-task-->
+                                      <div class="sub-task mb-3 border-bottom">
+                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                          <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
+                                                 type="checkbox"
+                                                 value="">
+                                          <span class="pt-1 form-checked-content flex-grow-1">
+                                            <span class="d-flex justify-content-between align-items-start mb-3">
+                                              <span class="fs-6 task-title">do a feedback round</span>
+                                              <span class="d-flex gap-2">
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                          type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                  </button>
+                                                  <span class="dropdown-menu shadow-sm"
+                                                        aria-labelledby="view-dropdown">
+                                                    <form class="p-3">
+                                                      <div class="mb-3">
+                                                        <label class="form-label">select date</label>
+                                                        <input type="date" class="form-control">
+                                                      </div>
+                                                      <button type="button" class="btn btn-primary w-100"><i
+                                                        class="fas fa-check me-2"></i>apply
+                                                      </button>
+                                                    </form>
+                                                  </span>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                          type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-sort-amount-up-alt me-2"></i>priority
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm" type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                                    </li>
+                                                    <li>
+                                                      <div class="dropdown-divider"></div>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                              </span>
+                                            </span>
+                                            <ul>
+                                              <li class="card-text small text-muted mb-0">write up tech spec</li>
+                                              <li
+                                                class="card-text small text-muted">link to resource (copy, design, etc.) in spec</li>
+                                            </ul>
+                                            <span class="row align-items-center justify-content-between">
+                                              <span class="col-6 d-flex align-items-center">
+                                                <span class="avatar-group avatar-group-sm me-2">
+                                                  <span class="avatar avatar-xs">
+                                                    <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user"
+                                                         class="avatar-img rounded-circle">
+                                                  </span>
+                                                </span>
+                                                <span class="small"><i class="fas fa-stopwatch me-2"></i>18/12/2022 - 12.15PM</span>
+                                              </span>
+                                              <span
+                                                class="col-6 d-flex align-items-center gap-3 justify-content-end">
+                                                <span class="progress task-progress col-3">
+                                                  <span class="progress-bar" role="progressbar" style="width: 67%;"
+                                                        aria-valuenow="67" aria-valuemin="0"
+                                                        aria-valuemax="100"></span>
+                                                </span>
+                                                <label class="form-label small mb-0 text-muted">67% complete</label>
+                                                <button class="btn btn-outline-secondary btn-sm">2<i
+                                                  class="fas fa-comment ms-2"></i>
+                                                </button>
+                                              </span>
+                                            </span>
+                                          </span>
+                                        </label>
+                                    </div>
+                                      <!--                                sub-task-->
+                                      <div class="sub-task mb-3 border-bottom">
+                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                          <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
+                                                 type="checkbox"
+                                                 value="">
+                                          <span class="pt-1 form-checked-content flex-grow-1">
+                                            <span class="d-flex justify-content-between align-items-start mb-3">
+                                              <span class="fs-6 task-title">design final components</span>
+                                              <span class="d-flex gap-2">
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                          type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                  </button>
+                                                  <span class="dropdown-menu shadow-sm"
+                                                        aria-labelledby="view-dropdown">
+                                                    <form class="p-3">
+                                                      <div class="mb-3">
+                                                        <label class="form-label">select date</label>
+                                                        <input type="date" class="form-control">
+                                                      </div>
+                                                      <button type="button" class="btn btn-primary w-100"><i
+                                                        class="fas fa-check me-2"></i>apply
+                                                      </button>
+                                                    </form>
+                                                  </span>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-dark btn-sm" type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-flag me-2"></i>low
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm" type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                                    </li>
+                                                    <li>
+                                                      <div class="dropdown-divider"></div>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                              </span>
+                                            </span>
+                                            <span class="row align-items-center justify-content-between">
+                                              <span class="col-6 d-flex align-items-center">
+                                                <span class="avatar-group avatar-group-sm me-2">
                                           <div class="avatar avatar-xs">
                                             <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
                                                  class="avatar-img rounded-circle">
@@ -903,534 +1098,702 @@
                                             <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
                                                  class="avatar-img rounded-circle">
                                           </div>
-                                        </div>
-                                        <p class="mb-0 ms-2"><i class="fas fa-stopwatch me-2"></i>12/02/2022 - 09.30AM
-                                        </p>
-                                      </div>
-                                      <div class="col-6 d-flex align-items-center gap-3 justify-content-end">
-                                        <div class="progress task-progress col-3">
-                                          <div class="progress-bar" role="progressbar" style="width: 50%;"
-                                               aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <label class="form-label small mb-0 text-muted">50% complete</label>
-                                        <button class="btn btn-outline-secondary">2<i
-                                          class="fas fa-comment ms-2"></i>
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <!--                                sub-task-->
-                                <div class="sub-task mb-3 border-bottom">
-                                  <div class="d-flex align-items-center justify-content-between">
-                                    <div class="form-check form-control-lg">
-                                      <input class="form-check-input rounded-circle" type="checkbox">
-                                      <label class="form-check-label card-title small">design final components</label>
-                                      <button class="btn text-primary ms-2" type="button" data-bs-toggle="collapse"
-                                              data-bs-target="#collapse-2"><i class="fas fa-compress-alt"></i></button>
-                                    </div>
-                                    <div class="d-flex gap-2">
-                                      <div class="dropdown">
-                                        <button class="btn btn-outline-secondary" type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                          <i class="fas fa-ellipsis-h"></i>
-                                        </button>
-                                        <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-pencil-alt fa-fw me-2"></i>edit sub-task</a>
-                                          </li>
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                          </li>
-                                          <li>
-                                            <div class="dropdown-divider"></div>
-                                          </li>
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-trash-alt fa-fw me-2"></i>delete sub-task</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="collapse show pb-3" id="collapse-2">
-                                    <!--                                    task body-->
-                                    <ul>
-                                      <li class="card-text mb-0">finishing touches on design</li>
-                                    </ul>
-                                    <div class="row align-items-center justify-content-between">
-                                      <div class="col-6 d-flex align-items-center">
-                                        <div class="avatar-group avatar-group-sm">
-                                          <div class="avatar avatar-xs">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user"
-                                                 class="avatar-img rounded-circle">
-                                          </div>
-                                          <div class="avatar avatar-xs">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
-                                                 class="avatar-img rounded-circle">
-                                          </div>
-                                        </div>
-                                        <p class="mb-0 ms-2"><i class="fas fa-stopwatch me-2"></i>12/02/2022 - 11.30AM
-                                        </p>
-                                      </div>
-                                      <div class="col-6 d-flex align-items-center gap-3 justify-content-end">
-                                        <div class="progress task-progress col-3">
-                                          <div class="progress-bar" role="progressbar" style="width: 0%;"
-                                               aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <label class="form-label small mb-0 text-muted">0% complete</label>
-                                        <button class="btn btn-outline-secondary">0<i
-                                          class="fas fa-comment ms-2"></i>
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <!--                                sub-task-->
-                                <div class="sub-task mb-3 border-bottom">
-                                  <div class="d-flex align-items-center justify-content-between">
-                                    <div class="form-check form-control-lg">
-                                      <input class="form-check-input rounded-circle" type="checkbox">
-                                      <label class="form-check-label card-title small">add components to design library
-                                        if needed</label>
-                                      <button class="btn text-primary ms-2" type="button" data-bs-toggle="collapse"
-                                              data-bs-target="#collapse-3"><i class="fas fa-compress-alt"></i></button>
-                                    </div>
-                                    <div class="d-flex gap-2">
-                                      <div class="dropdown">
-                                        <button class="btn btn-outline-secondary" type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                          <i class="fas fa-ellipsis-h"></i>
-                                        </button>
-                                        <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-pencil-alt fa-fw me-2"></i>edit sub-task</a>
-                                          </li>
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                          </li>
-                                          <li>
-                                            <div class="dropdown-divider"></div>
-                                          </li>
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-trash-alt fa-fw me-2"></i>delete sub-task</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="collapse show pb-3" id="collapse-3">
-                                    <ul>
-                                      <li class="card-text mb-0">vendor components to be added to design</li>
-                                    </ul>
-                                    <div class="row align-items-center justify-content-between">
-                                      <div class="col-6 d-flex align-items-center">
-                                        <div class="avatar-group avatar-group-sm">
-                                          <div class="avatar avatar-xs">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="user"
-                                                 class="avatar-img rounded-circle">
-                                          </div>
-                                          <div class="avatar avatar-xs">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
-                                                 class="avatar-img rounded-circle">
-                                          </div>
-                                          <div class="avatar avatar-xs">
-                                            <span class="avatar-text avatar-text-grey rounded-circle"><span
-                                              class="initial-wrap"><span><i
-                                              class="fas fa-ellipsis-h"></i></span></span>
+                                        </span>
+                                                <span class="small"><i class="fas fa-stopwatch me-2"></i>18/12/2022 - 12.15PM</span>
+                                              </span>
+                                              <span
+                                                class="col-6 d-flex align-items-center gap-3 justify-content-end">
+                                                <span class="progress task-progress col-3">
+                                                  <span class="progress-bar" role="progressbar" style="width: 90%;"
+                                                        aria-valuenow="90" aria-valuemin="0"
+                                                        aria-valuemax="100"></span>
+                                                </span>
+                                                <label class="form-label small mb-0 text-muted">90% complete</label>
+                                                <button class="btn btn-outline-secondary btn-sm">4<i
+                                                  class="fas fa-comment ms-2"></i>
+                                                </button>
+                                              </span>
                                             </span>
-                                          </div>
-                                        </div>
-                                        <p class="mb-0 ms-2"><i class="fas fa-stopwatch me-2"></i>12/02/2022 - 03.30PM
-                                        </p>
-                                      </div>
-                                      <div class="col-6 d-flex align-items-center gap-3 justify-content-end">
-                                        <div class="progress task-progress col-3">
-                                          <div class="progress-bar" role="progressbar" style="width: 0%;"
-                                               aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <label class="form-label small mb-0 text-muted">0% complete</label>
-                                        <button class="btn btn-outline-secondary">7<i
-                                          class="fas fa-comment ms-2"></i>
-                                        </button>
-                                      </div>
+                                          </span>
+                                        </label>
                                     </div>
-                                  </div>
-                                </div>
-                              </div>
+                                      <!--                                sub-task-->
+                                      <div class="sub-task mb-3 border-bottom">
+                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                          <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
+                                                 type="checkbox"
+                                                 value="">
+                                          <span class="pt-1 form-checked-content flex-grow-1">
+                                            <span class="d-flex justify-content-between align-items-start mb-3">
+                                              <span
+                                                class="fs-6 task-title">add components to design library if needed</span>
+                                              <span class="d-flex gap-2">
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                          type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                  </button>
+                                                  <span class="dropdown-menu shadow-sm"
+                                                        aria-labelledby="view-dropdown">
+                                                    <form class="p-3">
+                                                      <div class="mb-3">
+                                                        <label class="form-label">select date</label>
+                                                        <input type="date" class="form-control">
+                                                      </div>
+                                                      <button type="button" class="btn btn-primary w-100"><i
+                                                        class="fas fa-check me-2"></i>apply
+                                                      </button>
+                                                    </form>
+                                                  </span>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                          type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-sort-amount-up-alt me-2"></i>priority
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm" type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                                    </li>
+                                                    <li>
+                                                      <div class="dropdown-divider"></div>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                              </span>
+                                            </span>
+                                            <span class="row align-items-center justify-content-between">
+                                              <span class="col-6 d-flex align-items-center">
+                                                <span class="avatar-group avatar-group-sm me-2">
+                                          <div class="avatar avatar-xs">
+                                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
+                                                 class="avatar-img rounded-circle">
+                                          </div>
+                                          <div class="avatar avatar-xs">
+                                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
+                                                 class="avatar-img rounded-circle">
+                                          </div>
+                                        </span>
+                                                <span class="small"><i class="fas fa-stopwatch me-2"></i>18/12/2022 - 12.15PM</span>
+                                              </span>
+                                              <span
+                                                class="col-6 d-flex align-items-center gap-3 justify-content-end">
+                                                <span class="progress task-progress col-3">
+                                                  <span class="progress-bar" role="progressbar" style="width: 0%;"
+                                                        aria-valuenow="0" aria-valuemin="0"
+                                                        aria-valuemax="100"></span>
+                                                </span>
+                                                <label class="form-label small mb-0 text-muted">0% complete</label>
+                                                <button class="btn btn-outline-secondary btn-sm">4<i
+                                                  class="fas fa-comment ms-2"></i>
+                                                </button>
+                                              </span>
+                                            </span>
+                                          </span>
+                                        </label>
+                                    </div>
+                                    </div>
+                                  </span>
+                                </span>
+                              </label>
                             </div>
                           </div>
                           <!--                          task-->
                           <div class="task mb-3 card shadow-sm border-0">
                             <div class="card-body">
-                              <div class="d-flex align-items-center justify-content-between">
-                                <div class="form-check form-control-lg">
-                                  <input class="form-check-input rounded-circle" type="checkbox" value="">
-                                  <label class="form-check-label card-title">UX copy</label>
-                                </div>
-                                <div class="d-flex gap-2">
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-calendar-day me-2"></i>due date
-                                    </button>
-                                    <div class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <form class="p-3">
-                                        <div class="mb-3">
-                                          <label class="form-label">select date</label>
-                                          <input type="date" class="form-control">
-                                        </div>
-                                        <button type="button" class="btn btn-primary w-100"><i
-                                          class="fas fa-check me-2"></i>apply
-                                        </button>
-                                      </form>
+                              <label class="d-flex align-items-start justify-content-start gap-3">
+                                <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
+                                       value="">
+                                <span class="pt-1 form-checked-content flex-grow-1">
+                                  <span class="d-flex justify-content-between align-items-start mb-3">
+                                    <span class="fs-6 task-title">UX copy</span>
+                                    <span class="d-flex gap-2">
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-calendar-day me-2"></i>due date
+                                      </button>
+                                      <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <form class="p-3">
+                                          <div class="mb-3">
+                                            <label class="form-label">select date</label>
+                                            <input type="date" class="form-control">
+                                          </div>
+                                          <button type="button" class="btn btn-primary w-100"><i
+                                            class="fas fa-check me-2"></i>apply
+                                          </button>
+                                        </form>
+                                      </span>
+                                    </span>
+                                    <span class="dropdown">
+                                      <button class="btn btn-warning btn-sm" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-flag me-2"></i>important
+                                      </button>
+                                      <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                        </li>
+                                      </ul>
+                                    </span>
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                      </button>
+                                      <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                        </li>
+                                        <li>
+                                          <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                        </li>
+                                      </ul>
+                                    </span>
+                                  </span>
+                                  </span>
+                                  <span class="ps-3 py-2">
+                                    <div class="d-flex align-items-center gap-3 pb-3">
+                                      <h6 class="text-capitalize mb-0">sub tasks</h6>
+                                      <button class="btn btn-sm text-primary btn-sub-task-collapse" data-bs-toggle="collapse"
+                                              data-bs-target="#sub-task-collapse-2"><i
+                                        class="fas fa-compress-arrows-alt me-2"></i><span>show less</span></button>
                                     </div>
-                                  </div>
-                                  <div class="dropdown">
-                                    <button class="btn btn-danger" type="button"><i class="fas fa-flag me-2"></i>urgent
-                                    </button>
-                                  </div>
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                    <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                      </li>
-                                      <li>
-                                        <div class="dropdown-divider"></div>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <!--                              task body-->
-                              <ul>
-                                <li class="card-text mb-0">clone design</li>
-                              </ul>
-                              <div class="p-3">
-                                <h6 class="text-capitalize">sub tasks</h6>
-                                <!--                                sub-task-->
-                                <div class="sub-task mb-3 border-bottom">
-                                  <div class="d-flex align-items-center justify-content-between">
-                                    <div class="form-check form-control-lg">
-                                      <input class="form-check-input rounded-circle" type="checkbox">
-                                      <label class="form-check-label card-title small">make first round of edits</label>
-                                      <button class="btn text-primary ms-2" type="button" data-bs-toggle="collapse"
-                                              data-bs-target="#collapse-4"><i class="fas fa-compress-alt"></i></button>
+                                    <div class="collapse show" id="sub-task-collapse-2">
+                                      <!--                                sub-task-->
+                                      <div class="sub-task mb-3 border-bottom">
+                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                          <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
+                                                 type="checkbox"
+                                                 value="">
+                                          <span class="pt-1 form-checked-content flex-grow-1">
+                                            <span class="d-flex justify-content-between align-items-start mb-3">
+                                              <span class="fs-6 task-title">make first round of edits</span>
+                                              <span class="d-flex gap-2">
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                          type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                  </button>
+                                                  <span class="dropdown-menu shadow-sm"
+                                                        aria-labelledby="view-dropdown">
+                                                    <form class="p-3">
+                                                      <div class="mb-3">
+                                                        <label class="form-label">select date</label>
+                                                        <input type="date" class="form-control">
+                                                      </div>
+                                                      <button type="button" class="btn btn-primary w-100"><i
+                                                        class="fas fa-check me-2"></i>apply
+                                                      </button>
+                                                    </form>
+                                                  </span>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-dark btn-sm"
+                                                          type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-flag me-2"></i>low
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm" type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                                    </li>
+                                                    <li>
+                                                      <div class="dropdown-divider"></div>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                              </span>
+                                            </span>
+                                            <span class="row align-items-center justify-content-between">
+                                              <span class="col-6 d-flex align-items-center">
+                                                <span class="avatar-group avatar-group-sm me-2">
+                                                  <span class="avatar avatar-xs">
+                                                    <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="user"
+                                                         class="avatar-img rounded-circle">
+                                                  </span>
+                                                  <span class="avatar avatar-xs">
+                                                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user"
+                                                         class="avatar-img rounded-circle">
+                                                  </span>
+                                                          <span class="avatar avatar-xs">
+                                                    <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="user"
+                                                         class="avatar-img rounded-circle">
+                                                  </span>
+                                                </span>
+                                                <span class="small"><i class="fas fa-stopwatch me-2"></i>18/12/2022 - 12.15PM</span>
+                                              </span>
+                                              <span
+                                                class="col-6 d-flex align-items-center gap-3 justify-content-end">
+                                                <span class="progress task-progress col-3">
+                                                  <span class="progress-bar" role="progressbar" style="width: 33%;"
+                                                        aria-valuenow="33" aria-valuemin="0"
+                                                        aria-valuemax="100"></span>
+                                                </span>
+                                                <label class="form-label small mb-0 text-muted">33% complete</label>
+                                                <button class="btn btn-outline-secondary btn-sm">4<i
+                                                  class="fas fa-comment ms-2"></i>
+                                                </button>
+                                              </span>
+                                            </span>
+                                          </span>
+                                        </label>
                                     </div>
-                                    <div class="d-flex gap-2">
-                                      <div class="dropdown">
-                                        <button class="btn btn-outline-secondary" type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                          <i class="fas fa-ellipsis-h"></i>
-                                        </button>
-                                        <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-pencil-alt fa-fw me-2"></i>edit sub-task</a>
-                                          </li>
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                          </li>
-                                          <li>
-                                            <div class="dropdown-divider"></div>
-                                          </li>
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-trash-alt fa-fw me-2"></i>delete sub-task</a>
-                                          </li>
-                                        </ul>
-                                      </div>
+                                      <!--                                sub-task-->
+                                      <div class="sub-task mb-3 border-bottom">
+                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                          <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
+                                                 type="checkbox"
+                                                 value="">
+                                          <span class="pt-1 form-checked-content flex-grow-1">
+                                            <span class="d-flex justify-content-between align-items-start mb-3">
+                                              <span class="fs-6 task-title">finalize UX copy</span>
+                                              <span class="d-flex gap-2">
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                          type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                  </button>
+                                                  <span class="dropdown-menu shadow-sm"
+                                                        aria-labelledby="view-dropdown">
+                                                    <form class="p-3">
+                                                      <div class="mb-3">
+                                                        <label class="form-label">select date</label>
+                                                        <input type="date" class="form-control">
+                                                      </div>
+                                                      <button type="button" class="btn btn-primary w-100"><i
+                                                        class="fas fa-check me-2"></i>apply
+                                                      </button>
+                                                    </form>
+                                                  </span>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-danger btn-sm" type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-flag me-2"></i>urgent
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm" type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                                    </li>
+                                                    <li>
+                                                      <div class="dropdown-divider"></div>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                              </span>
+                                            </span>
+                                            <span class="row align-items-center justify-content-between">
+                                              <span class="col-6 d-flex align-items-center">
+                                                <span class="avatar-group avatar-group-sm me-2">
+                                                  <span class="avatar avatar-xs">
+                                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
+                                                         class="avatar-img rounded-circle">
+                                                  </span>
+                                                  <span class="avatar avatar-xs">
+                                                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
+                                                         class="avatar-img rounded-circle">
+                                                  </span>
+                                                </span>
+                                                <span class="small"><i class="fas fa-stopwatch me-2"></i>18/12/2022 - 12.15PM</span>
+                                              </span>
+                                              <span
+                                                class="col-6 d-flex align-items-center gap-3 justify-content-end">
+                                                <span class="progress task-progress col-3">
+                                                  <span class="progress-bar" role="progressbar" style="width: 33%;"
+                                                        aria-valuenow="33" aria-valuemin="0"
+                                                        aria-valuemax="100"></span>
+                                                </span>
+                                                <label class="form-label small mb-0 text-muted">33% complete</label>
+                                                <button class="btn btn-outline-secondary btn-sm">4<i
+                                                  class="fas fa-comment ms-2"></i>
+                                                </button>
+                                              </span>
+                                            </span>
+                                          </span>
+                                        </label>
                                     </div>
-                                  </div>
-                                  <div class="collapse show pb-3" id="collapse-4">
-                                    <div class="row align-items-center justify-content-between">
-                                      <div class="col-6 d-flex align-items-center">
-                                        <div class="avatar-group avatar-group-sm">
+                                    </div>
+                                  </span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <!--                          task-->
+                          <div class="task mb-3 card shadow-sm border-0">
+                            <div class="card-body">
+                              <label class="d-flex align-items-start justify-content-start gap-3">
+                                <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
+                                       value="">
+                                <span class="pt-1 form-checked-content flex-grow-1">
+                                  <span class="d-flex justify-content-between align-items-start mb-3">
+                                    <span class="fs-6 task-title">implementation</span>
+                                    <span class="d-flex gap-2">
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-calendar-day me-2"></i>due date
+                                      </button>
+                                      <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <form class="p-3">
+                                          <div class="mb-3">
+                                            <label class="form-label">select date</label>
+                                            <input type="date" class="form-control">
+                                          </div>
+                                          <button type="button" class="btn btn-primary w-100"><i
+                                            class="fas fa-check me-2"></i>apply
+                                          </button>
+                                        </form>
+                                      </span>
+                                    </span>
+                                    <span class="dropdown">
+                                      <button class="btn btn-warning btn-sm" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-flag me-2"></i>important
+                                      </button>
+                                      <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                        </li>
+                                      </ul>
+                                    </span>
+                                    <span class="dropdown">
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
+                                              data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                      </button>
+                                      <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                        </li>
+                                        <li>
+                                          <div class="dropdown-divider"></div>
+                                        </li>
+                                        <li><a href="" class="dropdown-item">
+                                          <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                        </li>
+                                      </ul>
+                                    </span>
+                                  </span>
+                                  </span>
+                                  <span class="ps-3 py-2">
+                                    <div class="d-flex align-items-center gap-3 pb-3">
+                                      <h6 class="text-capitalize mb-0">sub tasks</h6>
+                                      <button class="btn btn-sm text-primary btn-sub-task-collapse" data-bs-toggle="collapse"
+                                              data-bs-target="#sub-task-collapse-3"><i
+                                        class="fas fa-compress-arrows-alt me-2"></i><span>show less</span></button>
+                                    </div>
+                                    <div class="collapse show" id="sub-task-collapse-3">
+                                      <!--                                sub-task-->
+                                      <div class="sub-task mb-3 border-bottom">
+                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                          <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
+                                                 type="checkbox"
+                                                 value="">
+                                          <span class="pt-1 form-checked-content flex-grow-1">
+                                            <span class="d-flex justify-content-between align-items-start mb-3">
+                                              <span class="fs-6 task-title">set up environment</span>
+                                              <span class="d-flex gap-2">
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                          type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                  </button>
+                                                  <span class="dropdown-menu shadow-sm"
+                                                        aria-labelledby="view-dropdown">
+                                                    <form class="p-3">
+                                                      <div class="mb-3">
+                                                        <label class="form-label">select date</label>
+                                                        <input type="date" class="form-control">
+                                                      </div>
+                                                      <button type="button" class="btn btn-primary w-100"><i
+                                                        class="fas fa-check me-2"></i>apply
+                                                      </button>
+                                                    </form>
+                                                  </span>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-warning btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-flag me-2"></i>important
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm" type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                                    </li>
+                                                    <li>
+                                                      <div class="dropdown-divider"></div>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                              </span>
+                                            </span>
+                                            <ul>
+                                              <li class="card-text small text-muted mb-0">set up environment for deployment</li>
+                                            </ul>
+                                            <span class="row align-items-center justify-content-between">
+                                              <span class="col-6 d-flex align-items-center">
+                                                <span class="avatar-group avatar-group-sm me-2">
                                           <div class="avatar avatar-xs">
                                             <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="user"
-                                                 class="avatar-img rounded-circle">
-                                          </div>
-                                          <div class="avatar avatar-xs">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user"
-                                                 class="avatar-img rounded-circle">
-                                          </div>
-                                        </div>
-                                        <p class="mb-0 ms-2"><i class="fas fa-stopwatch me-2"></i>12/03/2022 - 09.30AM
-                                        </p>
-                                      </div>
-                                      <div class="col-6 d-flex align-items-center gap-3 justify-content-end">
-                                        <div class="progress task-progress col-3">
-                                          <div class="progress-bar" role="progressbar" style="width: 90%;"
-                                               aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <label class="form-label small mb-0 text-muted">90% complete</label>
-                                        <button class="btn btn-outline-secondary">4<i
-                                          class="fas fa-comment ms-2"></i>
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <!--                                sub-task-->
-                                <div class="sub-task mb-3 border-bottom">
-                                  <div class="d-flex align-items-center justify-content-between">
-                                    <div class="form-check form-control-lg">
-                                      <input class="form-check-input rounded-circle" type="checkbox">
-                                      <label class="form-check-label card-title small">finalize UX copy</label>
-                                      <button class="btn text-primary ms-2" type="button" data-bs-toggle="collapse"
-                                              data-bs-target="#collapse-5"><i class="fas fa-compress-alt"></i></button>
-                                    </div>
-                                    <div class="d-flex gap-2">
-                                      <div class="dropdown">
-                                        <button class="btn btn-outline-secondary" type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                          <i class="fas fa-ellipsis-h"></i>
-                                        </button>
-                                        <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-pencil-alt fa-fw me-2"></i>edit sub-task</a>
-                                          </li>
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                          </li>
-                                          <li>
-                                            <div class="dropdown-divider"></div>
-                                          </li>
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-trash-alt fa-fw me-2"></i>delete sub-task</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="collapse show pb-3" id="collapse-5">
-                                    <!--                                    task body-->
-                                    <ul>
-                                      <li class="card-text mb-0">finishing touches on design</li>
-                                    </ul>
-                                    <div class="row align-items-center justify-content-between">
-                                      <div class="col-6 d-flex align-items-center">
-                                        <div class="avatar-group avatar-group-sm">
-                                          <div class="avatar avatar-xs">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user"
                                                  class="avatar-img rounded-circle">
                                           </div>
                                           <div class="avatar avatar-xs">
                                             <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="user"
                                                  class="avatar-img rounded-circle">
                                           </div>
-                                        </div>
-                                        <p class="mb-0 ms-2"><i class="fas fa-stopwatch me-2"></i>12/02/2022 - 11.30AM
-                                        </p>
-                                      </div>
-                                      <div class="col-6 d-flex align-items-center gap-3 justify-content-end">
-                                        <div class="progress task-progress col-3">
-                                          <div class="progress-bar" role="progressbar" style="width: 10%;"
-                                               aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <label class="form-label small mb-0 text-muted">10% complete</label>
-                                        <button class="btn btn-outline-secondary">5<i
-                                          class="fas fa-comment ms-2"></i>
-                                        </button>
-                                      </div>
+                                        </span>
+                                                <span class="small"><i class="fas fa-stopwatch me-2"></i>18/12/2022 - 12.15PM</span>
+                                              </span>
+                                              <span
+                                                class="col-6 d-flex align-items-center gap-3 justify-content-end">
+                                                <span class="progress task-progress col-3">
+                                                  <span class="progress-bar" role="progressbar" style="width: 0%;"
+                                                        aria-valuenow="0" aria-valuemin="0"
+                                                        aria-valuemax="100"></span>
+                                                </span>
+                                                <label class="form-label small mb-0 text-muted">0% complete</label>
+                                                <button class="btn btn-outline-secondary btn-sm">5<i
+                                                  class="fas fa-comment ms-2"></i>
+                                                </button>
+                                              </span>
+                                            </span>
+                                          </span>
+                                        </label>
                                     </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!--                          task-->
-                          <div class="task mb-3 card shadow-sm border-0">
-                            <div class="card-body">
-                              <div class="d-flex align-items-center justify-content-between">
-                                <div class="form-check form-control-lg">
-                                  <input class="form-check-input rounded-circle" type="checkbox" value="">
-                                  <label class="form-check-label card-title">implementation</label>
-                                </div>
-                                <div class="d-flex gap-2">
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-calendar-day me-2"></i>due date
-                                    </button>
-                                    <div class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <form class="p-3">
-                                        <div class="mb-3">
-                                          <label class="form-label">select date</label>
-                                          <input type="date" class="form-control">
-                                        </div>
-                                        <button type="button" class="btn btn-primary w-100"><i
-                                          class="fas fa-check me-2"></i>apply
-                                        </button>
-                                      </form>
+                                      <!--                                sub-task-->
+                                      <div class="sub-task mb-3 border-bottom">
+                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                          <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
+                                                 type="checkbox"
+                                                 value="">
+                                          <span class="pt-1 form-checked-content flex-grow-1">
+                                            <span class="d-flex justify-content-between align-items-start mb-3">
+                                              <span class="fs-6 task-title">implement new feature</span>
+                                              <span class="d-flex gap-2">
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                          type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                  </button>
+                                                  <span class="dropdown-menu shadow-sm"
+                                                        aria-labelledby="view-dropdown">
+                                                    <form class="p-3">
+                                                      <div class="mb-3">
+                                                        <label class="form-label">select date</label>
+                                                        <input type="date" class="form-control">
+                                                      </div>
+                                                      <button type="button" class="btn btn-primary w-100"><i
+                                                        class="fas fa-check me-2"></i>apply
+                                                      </button>
+                                                    </form>
+                                                  </span>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-danger btn-sm" type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-flag me-2"></i>urgent
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-dark"></i>low</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-warning"></i>important</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-flag me-2 text-danger"></i>urgent</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                                <span class="dropdown">
+                                                  <button class="btn btn-outline-secondary btn-sm" type="button"
+                                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                  </button>
+                                                  <ul class="dropdown-menu shadow-sm"
+                                                      aria-labelledby="view-dropdown">
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
+                                                    </li>
+                                                    <li>
+                                                      <div class="dropdown-divider"></div>
+                                                    </li>
+                                                    <li><a href="" class="dropdown-item">
+                                                      <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
+                                                    </li>
+                                                  </ul>
+                                                </span>
+                                              </span>
+                                            </span>
+                                            <span class="row align-items-center justify-content-between">
+                                              <span class="col-6 d-flex align-items-center">
+                                                <span class="avatar-group avatar-group-sm me-2">
+                                                  <span class="avatar avatar-xs">
+                                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
+                                                         class="avatar-img rounded-circle">
+                                                  </span>
+                                                  <span class="avatar avatar-xs">
+                                                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
+                                                         class="avatar-img rounded-circle">
+                                                  </span>
+                                                  <span class="avatar avatar-xs">
+                                                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user"
+                                                         class="avatar-img rounded-circle">
+                                                  </span>
+                                                </span>
+                                                <span class="small"><i class="fas fa-stopwatch me-2"></i>18/12/2022 - 12.15PM</span>
+                                              </span>
+                                              <span
+                                                class="col-6 d-flex align-items-center gap-3 justify-content-end">
+                                                <span class="progress task-progress col-3">
+                                                  <span class="progress-bar" role="progressbar" style="width: 0%;"
+                                                        aria-valuenow="0" aria-valuemin="0"
+                                                        aria-valuemax="100"></span>
+                                                </span>
+                                                <label class="form-label small mb-0 text-muted">0% complete</label>
+                                                <button class="btn btn-outline-secondary btn-sm">7<i
+                                                  class="fas fa-comment ms-2"></i>
+                                                </button>
+                                              </span>
+                                            </span>
+                                          </span>
+                                        </label>
                                     </div>
-                                  </div>
-                                  <div class="dropdown">
-                                    <button class="btn btn-dark" type="button"><i class="fas fa-flag me-2"></i>low
-                                    </button>
-                                  </div>
-                                  <div class="dropdown">
-                                    <button class="btn btn-outline-secondary" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                      <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                    <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-pencil-alt fa-fw me-2"></i>edit task</a>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                      </li>
-                                      <li>
-                                        <div class="dropdown-divider"></div>
-                                      </li>
-                                      <li><a href="" class="dropdown-item">
-                                        <i class="fas fa-trash-alt fa-fw me-2"></i>delete task</a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <!--                              task body-->
-                              <ul>
-                                <li class="card-text mb-0">finalization</li>
-                              </ul>
-                              <div class="p-3">
-                                <h6 class="text-capitalize">sub tasks</h6>
-                                <!--                                sub-task-->
-                                <div class="sub-task mb-3 border-bottom">
-                                  <div class="d-flex align-items-center justify-content-between">
-                                    <div class="form-check form-control-lg">
-                                      <input class="form-check-input rounded-circle" type="checkbox">
-                                      <label class="form-check-label card-title small">set up environment</label>
-                                      <button class="btn text-primary ms-2" type="button" data-bs-toggle="collapse"
-                                              data-bs-target="#collapse-6"><i class="fas fa-compress-alt"></i></button>
                                     </div>
-                                    <div class="d-flex gap-2">
-                                      <div class="dropdown">
-                                        <button class="btn btn-outline-secondary" type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                          <i class="fas fa-ellipsis-h"></i>
-                                        </button>
-                                        <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-pencil-alt fa-fw me-2"></i>edit sub-task</a>
-                                          </li>
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                          </li>
-                                          <li>
-                                            <div class="dropdown-divider"></div>
-                                          </li>
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-trash-alt fa-fw me-2"></i>delete sub-task</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="collapse show pb-3" id="collapse-6">
-                                    <div class="row align-items-center justify-content-between">
-                                      <div class="col-6 d-flex align-items-center">
-                                        <div class="avatar-group avatar-group-sm">
-                                          <div class="avatar avatar-xs">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="user"
-                                                 class="avatar-img rounded-circle">
-                                          </div>
-                                          <div class="avatar avatar-xs">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user"
-                                                 class="avatar-img rounded-circle">
-                                          </div>
-                                        </div>
-                                        <p class="mb-0 ms-2"><i class="fas fa-stopwatch me-2"></i>12/04/2022 - 09.30AM
-                                        </p>
-                                      </div>
-                                      <div class="col-6 d-flex align-items-center gap-3 justify-content-end">
-                                        <div class="progress task-progress col-3">
-                                          <div class="progress-bar" role="progressbar" style="width: 90%;"
-                                               aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <label class="form-label small mb-0 text-muted">90% complete</label>
-                                        <button class="btn btn-outline-secondary">4<i
-                                          class="fas fa-comment ms-2"></i>
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <!--                                sub-task-->
-                                <div class="sub-task mb-3 border-bottom">
-                                  <div class="d-flex align-items-center justify-content-between">
-                                    <div class="form-check form-control-lg">
-                                      <input class="form-check-input rounded-circle" type="checkbox">
-                                      <label class="form-check-label card-title small">implement new feature</label>
-                                      <button class="btn text-primary ms-2" type="button" data-bs-toggle="collapse"
-                                              data-bs-target="#collapse-7"><i class="fas fa-compress-alt"></i></button>
-                                    </div>
-                                    <div class="d-flex gap-2">
-                                      <div class="dropdown">
-                                        <button class="btn btn-outline-secondary" type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                          <i class="fas fa-ellipsis-h"></i>
-                                        </button>
-                                        <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-pencil-alt fa-fw me-2"></i>edit sub-task</a>
-                                          </li>
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-check-circle fa-fw me-2"></i>mark as complete</a>
-                                          </li>
-                                          <li>
-                                            <div class="dropdown-divider"></div>
-                                          </li>
-                                          <li><a href="" class="dropdown-item">
-                                            <i class="fas fa-trash-alt fa-fw me-2"></i>delete sub-task</a>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="collapse show pb-3" id="collapse-7">
-                                    <!--                                    task body-->
-                                    <ul>
-                                      <li class="card-text mb-0">finishing touches on design</li>
-                                    </ul>
-                                    <div class="row align-items-center justify-content-between">
-                                      <div class="col-6 d-flex align-items-center">
-                                        <div class="avatar-group avatar-group-sm">
-                                          <div class="avatar avatar-xs">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user"
-                                                 class="avatar-img rounded-circle">
-                                          </div>
-                                          <div class="avatar avatar-xs">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="user"
-                                                 class="avatar-img rounded-circle">
-                                          </div>
-                                        </div>
-                                        <p class="mb-0 ms-2"><i class="fas fa-stopwatch me-2"></i>12/02/2022 - 11.30AM
-                                        </p>
-                                      </div>
-                                      <div class="col-6 d-flex align-items-center gap-3 justify-content-end">
-                                        <div class="progress task-progress col-3">
-                                          <div class="progress-bar" role="progressbar" style="width: 10%;"
-                                               aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <label class="form-label small mb-0 text-muted">10% complete</label>
-                                        <button class="btn btn-outline-secondary">5<i
-                                          class="fas fa-comment ms-2"></i>
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                                  </span>
+                                </span>
+                              </label>
                             </div>
                           </div>
                         </div>
@@ -1602,7 +1965,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
-<script src="vendors/bootstrap-calendar-for-stef/dist/script.js"></script>
+<script src="vendors/bootstrap-calendar/dist/script.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 </body>
