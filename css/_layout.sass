@@ -5,8 +5,13 @@
   @include transition(width, 300ms)
   display: inline-block
   z-index: 10
-  min-height: 100vh
   border-right: 1px solid #dee2e6
+
+  .position-fixed
+    width: 210px
+    height: 100vh
+    padding: 1rem .5rem
+    margin: auto
 
   .list-group
     .list-group-item
@@ -56,6 +61,11 @@
   @include transition(width, 300ms)
   text-align: center
   margin: 0 auto
+
+  .position-fixed
+    width: inherit
+    padding-left: 0
+    padding-right: .4rem
 
   .menu-text
     display: none

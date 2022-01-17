@@ -6,8 +6,13 @@
   -webkit-transition: width 300ms ease-out;
   display: inline-block;
   z-index: 10;
-  min-height: 100vh;
   border-right: 1px solid #dee2e6;
+}
+.sidebar .position-fixed {
+  width: 210px;
+  height: 100vh;
+  padding: 1rem 0.5rem;
+  margin: auto;
 }
 .sidebar .list-group .list-group-item {
   display: flex;
@@ -77,6 +82,11 @@
   -webkit-transition: width 300ms ease-out;
   text-align: center;
   margin: 0 auto;
+}
+.sidebar--Collapse .position-fixed {
+  width: inherit;
+  padding-left: 0;
+  padding-right: 0.4rem;
 }
 .sidebar--Collapse .menu-text {
   display: none;
