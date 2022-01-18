@@ -44,7 +44,7 @@ function chartsInit() {
       legend: {
         display: false
       },
-      cutoutPercentage: 30
+      cutoutPercentage: 80
     }
   });
 
