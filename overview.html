@@ -108,35 +108,53 @@
                  aria-expanded="false">
                 <div class="input-group">
                   <span class="input-group-text bg-transparent" id="basic-addon1"><i class="fas fa-search"></i></span>
-                  <input type="text" class="form-control" placeholder="search" aria-label="search"
+                  <input type="text" class="form-control" placeholder="search in task.io" aria-label="search"
                          aria-describedby="basic-addon1">
                 </div>
               </a>
-              <div class="dropdown-menu col-12" aria-labelledby="search-dropdown">
-                <form class="px-4 py-3">
-                  <div class="mb-3">
-                    <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleDropdownFormEmail1"
-                           placeholder="email@example.com">
+              <div class="dropdown-menu shadow-sm col-12" aria-labelledby="search-dropdown">
+                <div class="p-3">
+                  <p class="dropdown-header ps-0 mb-2">recent searches</p>
+                  <div class="d-flex gap-1 mb-3">
+                    <button class="btn btn-sm btn-secondary">read 20<i class="fas fa-search ms-2"></i></button>
+                    <button class="btn btn-sm btn-secondary">reports<i class="fas fa-search ms-2"></i></button>
+                    <button class="btn btn-sm btn-secondary">profile settings<i class="fas fa-search ms-2"></i></button>
                   </div>
-                  <div class="mb-3">
-                    <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleDropdownFormPassword1"
-                           placeholder="Password">
-                  </div>
-                  <div class="mb-3">
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                      <label class="form-check-label" for="dropdownCheck">
-                        Remember me
-                      </label>
+                  <p class="dropdown-header ps-0 mb-2">users</p>
+                  <div class="d-flex flex-column gap-2 mb-3">
+                    <div class="list-group-item-action py-1 px-2 d-flex align-items-center gap-2">
+                      <div class="avatar avatar-xs">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
+                             class="avatar-img rounded-circle">
+                      </div>
+                      <div>
+                        <p class="mb-0 text-capitalize">amanda richard</p>
+                        <p class="text-muted small mb-0">director</p>
+                      </div>
+                    </div>
+                    <div class="list-group-item-action py-1 px-2 d-flex align-items-center gap-2">
+                      <div class="avatar avatar-xs">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
+                             class="avatar-img rounded-circle">
+                      </div>
+                      <div>
+                        <p class="mb-0 text-capitalize">dominic keller</p>
+                        <p class="text-muted small mb-0">seller</p>
+                      </div>
+                    </div>
+                    <div class="list-group-item-action py-1 px-2 d-flex align-items-center gap-2">
+                      <div class="avatar avatar-xs">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="user"
+                             class="avatar-img rounded-circle">
+                      </div>
+                      <div>
+                        <p class="mb-0 text-capitalize">ella dunn</p>
+                        <p class="text-muted small mb-0">designer</p>
+                      </div>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary">Sign in</button>
-                </form>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">New around here? Sign up</a>
-                <a class="dropdown-item" href="#">Forgot password?</a>
+                  <a href="404.html" class="btn text-primary w-100">see all results<i class="fas fa-angle-right ms-2"></i></a>
+                </div>
               </div>
             </div>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
@@ -261,15 +279,14 @@
                       </div>
                     </a>
                   </li>
-                  <li><a href="404.html" class="dropdown-item nav-link text-center border-top">Show all
-                    notifications</a></li>
+                  <li><a href="404.html" class="dropdown-item nav-link text-center border-top">view all
+                    notifications<i class="fas fa-angle-right ms-2"></i></a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link" href="#" id="user-dropdown" role="button" data-bs-toggle="dropdown"
                    aria-expanded="false">
                   <img src="img/user.png" alt="" height="32" width="32" loading="lazy" class="rounded-circle">
-                  <i class="fas fa-angle-down ms-1"></i>
                 </a>
                 <ul class="dropdown-menu shadow-sm" aria-labelledby="user-dropdown">
                   <li>
@@ -481,7 +498,7 @@
                             <div class="d-flex align-items-center gap-3">
                               <div class="avatar avatar-xs">
                                 <span class="avatar-text avatar-text-warning rounded-circle"><span
-                                  class="initial-wrap"><span>ca</span></span>
+                                  class="initial-wrap"><span>dp</span></span>
                                 </span>
                               </div>
                               <span>designer portfolio</span>

@@ -143,7 +143,7 @@ nav.navbar .dropdown-menu[aria-labelledby=notifications-dropdown] {
 }
 
 .task-progress {
-  height: 0.5rem;
+  height: 0.35rem;
 }
 
 /* Color Theme Swatches in Hex */
@@ -541,6 +541,14 @@ nav.navbar .dropdown-menu[aria-labelledby=notifications-dropdown] {
 }
 .avatar-group.avatar-group-sm.avatar-group-overlapped .avatar {
   margin-right: -10px;
+}
+.avatar-group.avatar-group-xs .avatar {
+  font-size: 0.6rem;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.avatar-group.avatar-group-xs.avatar-group-overlapped .avatar {
+  margin-right: -7.5px;
 }
 
 html, body {
