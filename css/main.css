@@ -71,10 +71,10 @@
   -o-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
-  -moz-transition: transform 0.4s ease-out;
-  -o-transition: transform 0.4s ease-out;
-  -webkit-transition: transform 0.4s ease-out;
-  transition: transform 0.4s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 .sidebar--Collapse {
@@ -113,10 +113,10 @@
 
 .main {
   margin-left: 0;
-  transition: margin-left 200ms ease-out;
-  -moz-transition: margin-left 200ms ease-out;
-  -o-transition: margin-left 200ms ease-out;
-  -webkit-transition: margin-left 200ms ease-out;
+  transition: margin-left 300ms ease-out;
+  -moz-transition: margin-left 300ms ease-out;
+  -o-transition: margin-left 300ms ease-out;
+  -webkit-transition: margin-left 300ms ease-out;
   width: 100%;
 }
 
