@@ -34,75 +34,31 @@
 <!-- Add your site or application content here -->
 <main>
   <div class="d-flex">
-    <div class="sidebar">
-      <div class="position-fixed">
-        <a href="/" class="d-flex align-items-center justify-content-center py-3 brand-wrapper">
-          <img src="img/logo.png" alt="" width="50" height="50" class="brand-logo" loading="lazy">
-          <p class="mb-0 menu-text ms-2 text-capitalize">tasks.IO</p>
-        </a>
-        <div class="list-group list-group-flush">
-          <a href="activity.html" class="list-group-item list-group-item-action">
-            <i class="fas fa-bolt fa-fw"></i>
-            <span class="menu-text">activity</span>
-          </a>
-          <a href="under-maintenance.html" class="list-group-item list-group-item-action">
-            <i class="fas fa-tasks fa-fw"></i>
-            <span class="menu-text">my tasks <span class="badge bg-primary">20</span></span>
-          </a>
-          <hr>
-          <a href="overview.html" class="list-group-item list-group-item-action">
-            <i class="fas fa-home fa-fw"></i>
-            <span class="menu-text">overview</span>
-          </a>
-          <a href="projects-overview.html" class="list-group-item list-group-item-action">
-            <i class="fas fa-th-list fa-fw"></i>
-            <span class="menu-text">projects</span>
-          </a>
-          <a href="calendar.html" class="list-group-item list-group-item-action">
-            <i class="fas fa-calendar-alt fa-fw"></i>
-            <span class="menu-text">calendar</span>
-          </a>
-          <a href="teams.html" class="list-group-item list-group-item-action">
-            <i class="fas fa-user-friends fa-fw"></i>
-            <span class="menu-text">teams</span>
-          </a>
-          <a href="users.html" class="list-group-item list-group-item-action">
-            <i class="fas fa-users fa-fw"></i>
-            <span class="menu-text">users</span>
-          </a>
-          <a href="under-maintenance.html" class="list-group-item list-group-item-action">
-            <i class="fas fa-chart-pie"></i>
-            <span class="menu-text">analytics</span>
-          </a>
-          <a href="404.html" class="list-group-item list-group-item-action">
-            <i class="fas fa-mail-bulk"></i>
-            <span class="menu-text">inbox</span>
-          </a>
-          <hr>
-          <a href="under-maintenance.html" target="_blank" class="list-group-item list-group-item-action">
-            <i class="fas fa-question-circle"></i>
-            <span class="menu-text">help</span>
-          </a>
-          <a href="404.html" target="_blank" class="list-group-item list-group-item-action">
-            <i class="fas fa-cog"></i>
-            <span class="menu-text">settings</span>
-          </a>
-        </div>
-      </div>
-    </div>
     <div class="main bg-light">
       <!--      navbar-->
       <nav class="navbar sticky-top navbar-expand-md px-3 bg-white border-bottom">
         <div class="container-fluid align-items-center">
-          <div class="collapse-toggle">
-            <span id="toggleIcon" class="fas fa-bars"></span>
-          </div>
+          <a class="navbar-brand text-capitalize" href="activity.html">
+            <img src="img/logo.png" alt="" width="48" height="48" class="me-2">
+            tasks.io
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbar-offcanvas-content" aria-controls="navbar-offcanvas-content"
                   aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbar-offcanvas-content">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">activity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">projects</a>
+              </li>
+            </ul>
             <div class="nav-item dropdown col-4">
               <a class="nav-link" href="#" id="search-dropdown" role="button" data-bs-toggle="dropdown"
                  aria-expanded="false">
@@ -327,14 +283,17 @@
       <div class="container py-5">
         <section>
           <div class="section-body">
-            <div class="card border-0 shadow-sm text-center">
+            <div class="card border-0 text-center bg-transparent">
               <div class="card-body p-5">
-                <div class="col-4 mx-auto mb-4">
-                  <img src="img/task.io-bg.svg" alt="" class="img-fluid">
+                <div class="col-5 mx-auto mb-4">
+                  <img src="img/maintenance-img.svg" alt="" class="img-fluid">
                 </div>
-                <h3 class="card-title">Hello, nice to see you!</h3>
-                <p class="card-text">You are now minutes away from creativity than ever before. Enjoy!</p>
-                <a href="activity.html" class="btn btn-primary">create your first task<i class="fas fa-angle-right ms-2"></i></a>
+                <h2 class="card-title">Coming soon!</h2>
+                <p class="card-text">We are working hard on getting you a fantastic product.</p>
+                <div class="d-flex w-50 mx-auto justify-content-center gap-3">
+                  <input type="email" class="form-control w-50" placeholder="enter your email address...">
+                  <button class="btn btn-primary">notify me</button>
+                </div>
               </div>
             </div>
           </div>
