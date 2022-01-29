@@ -104,6 +104,22 @@ nav.navbar
     margin-left: -14rem
 
 .accordion
+  .accordion-button
+    background-color: transparent
+    font-weight: 500
+    color: $color-dark-gray
+
+    &:not(.collapsed)
+      background-color: $color-dark-gray
+      color: white
+
+      &::after
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+
+    &:focus
+      border-color: $color-dark-gray
+      box-shadow: 0 0 0 0.25rem rgb(67 65 66 / 25%)
+
   // switch accordion icon order
   .accordion-button:after
     //swap order
@@ -112,7 +128,87 @@ nav.navbar
     margin-left: 0
     // just extra space between text and icon
     margin-right: 0.5em
+    border: none
+    color: $color-dark-gray
 
+// CALENDAR-20 PARTIALS
+.fc-widget-header
+  background-color: $color-med-gray !important
+  padding: .25rem !important
 
-.task-progress
-  height: .35rem
+.fc-list-heading-main
+  padding-right: .25rem
+
+.fc-list-heading-main, .fc-list-heading-alt
+  color: $color-dark-gray
+  font-weight: 500
+
+.fc-list-item-time
+  padding: .25rem
+
+// PROGRESS BAR
+.progress-bar
+  background-color: $color-med-yellow
+
+// BUTTONS
+.btn
+  text-transform: capitalize
+
+  &:focus
+    box-shadow: 0 0 0 0.25rem rgb(232 164 7 / 25%)
+
+.btn-primary
+  background-color: $color-med-yellow
+  border-color: $color-med-yellow
+  color: $color-dark-gray
+
+  &:hover,
+  &:active
+    opacity: .8
+    background-color: $color-med-yellow
+    color: $color-dark-gray
+    border-color: $color-med-yellow
+
+  &:focus
+    background-color: $color-med-yellow
+    border-color: $color-med-yellow
+    box-shadow: 0 0 0 0.25rem rgb(255 203 5 / 50%)
+    color: $color-dark-gray
+
+.btn-outline-secondary
+  background-color: transparent
+  border-color: $color-dark-gray
+  color: $color-dark-gray
+
+  &:hover,
+  &:active
+    background-color: $color-dark-gray
+    color: white
+    border-color: $color-dark-gray
+
+  &:focus
+    background-color: $color-dark-gray
+    border-color: $color-dark-gray
+    box-shadow: 0 0 0 0.25rem rgb(67 65 66 / 50%)
+    color: white
+
+// BACKGROUNDS
+.bg-primary
+  background-color: $color-med-yellow !important
+  color: $color-dark-gray
+
+// TEXT
+.text-primary
+  color: $color-dark-yellow !important
+
+// INPUT
+.form-check-input:checked
+  background-color: $color-dark-yellow
+  color: $color-dark-yellow
+
+input:focus,
+.form-control:focus,
+.form-check-input:focus,
+.form-select:focus
+  box-shadow: 0 0 0 0.25rem rgb(255 203 5 / 25%)
+  border-color: $color-dark-yellow

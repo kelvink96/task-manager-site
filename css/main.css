@@ -137,14 +137,114 @@ nav.navbar .dropdown-menu[aria-labelledby=notifications-dropdown] {
   margin-left: -14rem;
 }
 
+.accordion .accordion-button {
+  background-color: transparent;
+  font-weight: 500;
+  color: #434142;
+}
+.accordion .accordion-button:not(.collapsed) {
+  background-color: #434142;
+  color: white;
+}
+.accordion .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion .accordion-button:focus {
+  border-color: #434142;
+  box-shadow: 0 0 0 0.25rem rgba(67, 65, 66, 0.25);
+}
 .accordion .accordion-button:after {
   order: -1;
   margin-left: 0;
   margin-right: 0.5em;
+  border: none;
+  color: #434142;
 }
 
-.task-progress {
-  height: 0.35rem;
+.fc-widget-header {
+  background-color: #C1C1C1 !important;
+  padding: 0.25rem !important;
+}
+
+.fc-list-heading-main {
+  padding-right: 0.25rem;
+}
+
+.fc-list-heading-main, .fc-list-heading-alt {
+  color: #434142;
+  font-weight: 500;
+}
+
+.fc-list-item-time {
+  padding: 0.25rem;
+}
+
+.progress-bar {
+  background-color: #FFCB05;
+}
+
+.btn {
+  text-transform: capitalize;
+}
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(232, 164, 7, 0.25);
+}
+
+.btn-primary {
+  background-color: #FFCB05;
+  border-color: #FFCB05;
+  color: #434142;
+}
+.btn-primary:hover, .btn-primary:active {
+  opacity: 0.8;
+  background-color: #FFCB05;
+  color: #434142;
+  border-color: #FFCB05;
+}
+.btn-primary:focus {
+  background-color: #FFCB05;
+  border-color: #FFCB05;
+  box-shadow: 0 0 0 0.25rem rgba(255, 203, 5, 0.5);
+  color: #434142;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  border-color: #434142;
+  color: #434142;
+}
+.btn-outline-secondary:hover, .btn-outline-secondary:active {
+  background-color: #434142;
+  color: white;
+  border-color: #434142;
+}
+.btn-outline-secondary:focus {
+  background-color: #434142;
+  border-color: #434142;
+  box-shadow: 0 0 0 0.25rem rgba(67, 65, 66, 0.5);
+  color: white;
+}
+
+.bg-primary {
+  background-color: #FFCB05 !important;
+  color: #434142;
+}
+
+.text-primary {
+  color: #E8A407 !important;
+}
+
+.form-check-input:checked {
+  background-color: #E8A407;
+  color: #E8A407;
+}
+
+input:focus,
+.form-control:focus,
+.form-check-input:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 203, 5, 0.25);
+  border-color: #E8A407;
 }
 
 /* Color Theme Swatches in Hex */
@@ -190,22 +290,8 @@ nav.navbar .dropdown-menu[aria-labelledby=notifications-dropdown] {
   object-fit: contain;
 }
 
-.fc-widget-header {
-  background-color: #C1C1C1 !important;
-  padding: 0.25rem !important;
-}
-
-.fc-list-heading-main {
-  padding-right: 0.25rem;
-}
-
-.fc-list-heading-main, .fc-list-heading-alt {
-  color: #434142;
-  font-weight: 500;
-}
-
-.fc-list-item-time {
-  padding: 0.25rem;
+.task-progress {
+  height: 0.5rem;
 }
 
 /*Avatar */

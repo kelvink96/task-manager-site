@@ -15,7 +15,7 @@ function chartsInit() {
         backgroundColor: [
           "rgba(25, 135, 84, 1)",
           "rgba(220, 53, 69, 1)",
-          "rgba(13, 110, 253, 1)",
+          "rgba(13, 202, 240, 1)",
           "rgba(255, 193, 7, 1)",
           "rgba(108, 117, 125, 1)",
         ],
@@ -30,7 +30,7 @@ function chartsInit() {
         hoverBackgroundColor: [
           "rgba(25, 135, 84, .8)",
           "rgba(220, 53, 69, .8)",
-          "rgba(13, 110, 253, .8)",
+          "rgba(13, 202, 240, .8)",
           "rgba(255, 193, 7, .8)",
           "rgba(108, 117, 125, .8)",
         ]
