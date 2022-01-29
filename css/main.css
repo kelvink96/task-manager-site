@@ -118,6 +118,7 @@
   -o-transition: margin-left 300ms ease-out;
   -webkit-transition: margin-left 300ms ease-out;
   width: 100%;
+  min-height: 100vh;
 }
 
 .main--slide {
@@ -187,6 +188,24 @@ nav.navbar .dropdown-menu[aria-labelledby=notifications-dropdown] {
 
 .img-contain {
   object-fit: contain;
+}
+
+.fc-widget-header {
+  background-color: #C1C1C1 !important;
+  padding: 0.25rem !important;
+}
+
+.fc-list-heading-main {
+  padding-right: 0.25rem;
+}
+
+.fc-list-heading-main, .fc-list-heading-alt {
+  color: #434142;
+  font-weight: 500;
+}
+
+.fc-list-item-time {
+  padding: 0.25rem;
 }
 
 /*Avatar */

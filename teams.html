@@ -1,0 +1,640 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tasks.io | Teams</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="vendors/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome-free-5.15.1-web/css/all.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--  Custom Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!-- Add your site or application content here -->
+<main>
+  <div class="d-flex">
+    <div class="sidebar">
+      <div class="position-fixed">
+        <a href="/" class="d-flex align-items-center justify-content-center py-3 brand-wrapper">
+          <img src="img/logo.png" alt="" width="50" height="50" class="brand-logo" loading="lazy">
+          <p class="mb-0 menu-text ms-2 text-capitalize">tasks.IO</p>
+        </a>
+        <div class="list-group list-group-flush">
+          <a href="" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fas fa-bolt fa-fw"></i>
+            <span class="menu-text">activity</span>
+          </a>
+          <a href="" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fas fa-tasks fa-fw"></i>
+            <span class="menu-text">my tasks <span class="badge bg-primary">20</span></span>
+          </a>
+          <hr>
+          <a href="" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fas fa-home fa-fw"></i>
+            <span class="menu-text">overview</span>
+          </a>
+          <a href="" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fas fa-th-list fa-fw"></i>
+            <span class="menu-text">projects</span>
+          </a>
+          <a href="" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fas fa-calendar-alt fa-fw"></i>
+            <span class="menu-text">calendar</span>
+          </a>
+          <a href="" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fas fa-users fa-fw"></i>
+            <span class="menu-text">teams</span>
+          </a>
+          <a href="" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fas fa-chart-pie"></i>
+            <span class="menu-text">analytics</span>
+          </a>
+          <a href="" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fas fa-mail-bulk"></i>
+            <span class="menu-text">inbox</span>
+          </a>
+          <hr>
+          <a href="" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fas fa-question-circle"></i>
+            <span class="menu-text">help</span>
+          </a>
+          <a href="" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fas fa-cog"></i>
+            <span class="menu-text">settings</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main bg-light">
+      <!--      navbar-->
+      <nav class="navbar sticky-top navbar-expand-md px-3 bg-white border-bottom">
+        <div class="container-fluid align-items-center">
+          <div class="collapse-toggle">
+            <span id="toggleIcon" class="fas fa-bars"></span>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbar-offcanvas-content" aria-controls="navbar-offcanvas-content"
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-offcanvas-content">
+            <div class="nav-item dropdown col-4">
+              <a class="nav-link" href="#" id="search-dropdown" role="button" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                <div class="input-group">
+                  <span class="input-group-text bg-transparent" id="basic-addon1"><i class="fas fa-search"></i></span>
+                  <input type="text" class="form-control" placeholder="search in task.io" aria-label="search"
+                         aria-describedby="basic-addon1">
+                </div>
+              </a>
+              <div class="dropdown-menu shadow-sm col-12" aria-labelledby="search-dropdown">
+                <div class="p-3">
+                  <p class="dropdown-header ps-0 mb-2">recent searches</p>
+                  <div class="d-flex gap-1 mb-3">
+                    <button class="btn btn-sm btn-secondary">read 20<i class="fas fa-search ms-2"></i></button>
+                    <button class="btn btn-sm btn-secondary">reports<i class="fas fa-search ms-2"></i></button>
+                    <button class="btn btn-sm btn-secondary">profile settings<i class="fas fa-search ms-2"></i></button>
+                  </div>
+                  <p class="dropdown-header ps-0 mb-2">users</p>
+                  <div class="d-flex flex-column gap-2 mb-3">
+                    <div class="list-group-item-action py-1 px-2 d-flex align-items-center gap-2">
+                      <div class="avatar avatar-xs">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
+                             class="avatar-img rounded-circle">
+                      </div>
+                      <div>
+                        <p class="mb-0 text-capitalize">amanda richard</p>
+                        <p class="text-muted small mb-0">director</p>
+                      </div>
+                    </div>
+                    <div class="list-group-item-action py-1 px-2 d-flex align-items-center gap-2">
+                      <div class="avatar avatar-xs">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
+                             class="avatar-img rounded-circle">
+                      </div>
+                      <div>
+                        <p class="mb-0 text-capitalize">dominic keller</p>
+                        <p class="text-muted small mb-0">seller</p>
+                      </div>
+                    </div>
+                    <div class="list-group-item-action py-1 px-2 d-flex align-items-center gap-2">
+                      <div class="avatar avatar-xs">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="user"
+                             class="avatar-img rounded-circle">
+                      </div>
+                      <div>
+                        <p class="mb-0 text-capitalize">ella dunn</p>
+                        <p class="text-muted small mb-0">designer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="404.html" class="btn text-primary w-100">see all results<i
+                    class="fas fa-angle-right ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="quick-add-dropdown" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                  <i class="fas fa-plus-circle"></i>
+                </a>
+                <ul class="dropdown-menu shadow-sm" aria-labelledby="quick-add-dropdown">
+                  <li><h6 class="dropdown-header text-center">quick add</h6></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-plus fa-fw me-2"></i>add a task</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-folder-plus fa-fw me-2"></i>add a project</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="karma-dropdown" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                  <i class="fab fa-creative-commons-sampling"></i>
+                </a>
+                <div class="dropdown-menu shadow-sm" aria-labelledby="karma-dropdown">
+                  <h6 class="dropdown-header text-center">your productivity</h6>
+                  <a href="" class="dropdown-item"><i class="fas fa-tasks me-2"></i>completed tasks</a>
+                  <a href="" class="dropdown-item"><i class="fas fa-question-circle me-2"></i>about</a>
+                  <a href="" class="dropdown-item"><i class="fas fa-pencil-alt me-2"></i>edit goals</a>
+                  <a href="" class="dropdown-item"><i class="fas fa-bullseye me-2"></i>productivity settings</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="apps-dropdown" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                  <i class="fas fa-qrcode"></i>
+                </a>
+                <ul class="dropdown-menu shadow-sm" aria-labelledby="apps-dropdown" style="min-width: 330px">
+                  <li>
+                    <h6 class="dropdown-header text-center">web apps & services</h6>
+                  </li>
+                  <li class="row row-cols-3 text-center px-3">
+                    <a class="col text-center mx-auto p-2">
+                      <img src="img/icons8_azure_120px.png" alt="image" height="30" width="30">
+                      <p class="mb-0">azure</p>
+                    </a>
+                    <a class="col text-center mx-auto p-2">
+                      <img src="img/icons8_behance_120px.png" alt="image" height="30" width="30">
+                      <p class="mb-0">behance</p>
+                    </a>
+                    <a class="col text-center mx-auto p-2">
+                      <img src="img/icons8_bitbucket_120px.png" alt="" height="30" width="30">
+                      <p class="mb-0">bitbucket</p>
+                    </a>
+                    <a class="col text-center mx-auto p-2">
+                      <img src="img/icons8_dribbble_120px.png" alt="" height="30" width="30">
+                      <p class="mb-0">dribbble</p>
+                    </a>
+                    <a class="col text-center mx-auto p-2">
+                      <img src="img/icons8_Facebook_120px.png" alt="" height="30" width="30">
+                      <p class="mb-0">facebook</p>
+                    </a>
+                    <a class="col text-center mx-auto p-2">
+                      <img src="img/icons8_google_120px.png" alt="" height="30" width="30">
+                      <p class="mb-0">g suite</p>
+                    </a>
+                    <a class="col text-center mx-auto p-2">
+                      <img src="img/icons8_github_120px.png" alt="" height="30" width="30">
+                      <p class="mb-0">github</p>
+                    </a>
+                    <a class="col text-center mx-auto p-2">
+                      <img src="img/icons8_office_365_120px.png" alt="" height="30" width="30">
+                      <p class="mb-0">github</p>
+                    </a>
+                    <a class="col text-center mx-auto p-2">
+                      <img src="img/icons8_slack_new_120px.png" alt="" height="30" width="30">
+                      <p class="mb-0">slack</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="notifications-dropdown" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                  <i class="fas fa-bell"></i>
+                </a>
+                <ul class="dropdown-menu shadow-sm" aria-labelledby="notifications-dropdown" style="min-width: 320px">
+                  <li>
+                    <h6 class="dropdown-header text-center">4 new notifications</h6>
+                  </li>
+                  <li class="list-group list-group-flush">
+                    <a href="404.html" class="list-group-item list-group-item-action d-flex align-items-center"
+                       aria-current="true">
+                      <i class="fas fa-check-circle text-success fs-5"></i>
+                      <div class="ms-3">
+                        <h6 class="mb-1 text-capitalize">Task complete</h6>
+                        <p class="mb-0">Server restart task complete</p>
+                        <small class="text-muted">5 mins ago</small>
+                      </div>
+                    </a>
+                    <a href="404.html" class="list-group-item list-group-item-action d-flex align-items-center"
+                       aria-current="true">
+                      <i class="fas fa-exclamation-circle text-danger fs-5"></i>
+                      <div class="ms-3">
+                        <h6 class="mb-1 text-capitalize">Storage</h6>
+                        <p class="mb-0">Storage 90% full</p>
+                        <small class="text-muted">1 hr ago</small>
+                      </div>
+                    </a>
+                    <a href="404.html" class="list-group-item list-group-item-action d-flex align-items-center"
+                       aria-current="true">
+                      <i class="fas fa-info-circle text-info fs-5"></i>
+                      <div class="ms-3">
+                        <h6 class="mb-1 text-capitalize">Login activity</h6>
+                        <p class="mb-0">Recent login from IP: 192.168.0.0</p>
+                        <small class="text-muted">3 hrs ago</small>
+                      </div>
+                    </a>
+                    <a href="404.html" class="list-group-item list-group-item-action d-flex align-items-center"
+                       aria-current="true">
+                      <i class="far fa-newspaper text-dark fs-5"></i>
+                      <div class="ms-3">
+                        <h6 class="mb-1 text-capitalize">What's new</h6>
+                        <p class="mb-0">Read patch notes for v1.01.22</p>
+                        <small class="text-muted">3 hrs ago</small>
+                      </div>
+                    </a>
+                  </li>
+                  <li><a href="404.html" class="dropdown-item nav-link text-center border-top">view all
+                    notifications<i class="fas fa-angle-right ms-2"></i></a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="user-dropdown" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                  <img src="img/user.png" alt="" height="32" width="32" loading="lazy" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu shadow-sm" aria-labelledby="user-dropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="d-flex py-2 mb-2">
+                        <img src="img/user.png" alt="" height="48" width="48" loading="lazy"
+                             class="rounded-circle border">
+                        <span class="ms-3 fw-bold text-capitalize">john doe <br> <span
+                          class="text-muted fw-normal text-lowercase">john.doe@gmail.com</span></span>
+                      </span>
+                      <span><i class="fas fa-cog fa-fw me-2"></i>settings</span>
+                    </a></li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-palette fa-fw me-2"></i>theme</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-stream fa-fw me-2"></i>activity log</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-puzzle-piece fa-fw me-2"></i>integrations</a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-arrow-alt-circle-up fa-fw me-2"></i>upgrade</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-download fa-fw me-2"></i>download apps</a></li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-sign-out-alt fa-fw me-2"></i>log
+                    out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container py-5">
+        <div class="section-title">
+          <h2 class="">teams</h2>
+          <p>6 teams</p>
+        </div>
+        <section>
+          <div class="section-body">
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a href="404.html" class="h5 text-decoration-none card-title">digital marketing</a>
+                      <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">rename team</a></li>
+                          <li><a class="dropdown-item" href="#">archive team</a></li>
+                          <li class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="card-text">Our group promotes and sells products and services by leveraging online
+                      marketing tactics</p>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between">
+                        <p class="mb-0">industry:</p>
+                        <span class="badge bg-dark">marketing team</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between">
+                        <p class="mb-0">members</p>
+                        <div class="avatar-group avatar-group-sm">
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                          <div class="avatar">
+                      <span class="avatar-text avatar-text-dark rounded-circle"><span
+                        class="initial-wrap"><span>+ 3</span></span>
+                      </span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a href="404.html" class="h5 text-decoration-none card-title">conference</a>
+                      <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">rename team</a></li>
+                          <li><a class="dropdown-item" href="#">archive team</a></li>
+                          <li class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="card-text">Online meeting services group</p>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between">
+                        <p class="mb-0">industry:</p>
+                        <span class="badge bg-info">marketing team</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between">
+                        <p class="mb-0">members</p>
+                        <div class="avatar-group avatar-group-sm">
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a href="404.html" class="h5 text-decoration-none card-title">support team</a>
+                      <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">rename team</a></li>
+                          <li><a class="dropdown-item" href="#">archive team</a></li>
+                          <li class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="card-text">Keep in touch and stay productive with us</p>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between">
+                        <p class="mb-0">industry:</p>
+                        <span class="badge bg-danger">customer service</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between">
+                        <p class="mb-0">members</p>
+                        <div class="avatar-group avatar-group-sm">
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                          <div class="avatar">
+                            <span class="avatar-text avatar-text-danger rounded-circle"><span
+                              class="initial-wrap"><span>ba</span></span>
+                            </span>
+                          </div>
+                          <div class="avatar">
+                            <span class="avatar-text avatar-text-success rounded-circle"><span
+                              class="initial-wrap"><span>hu</span></span>
+                            </span>
+                          </div>
+                          <div class="avatar">
+                      <span class="avatar-text avatar-text-dark rounded-circle"><span
+                        class="initial-wrap"><span>+ 3</span></span>
+                      </span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a href="404.html" class="h5 text-decoration-none card-title">payments</a>
+                      <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">rename team</a></li>
+                          <li><a class="dropdown-item" href="#">archive team</a></li>
+                          <li class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="card-text">Our responsibility to manage the money in this organization</p>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between">
+                        <p class="mb-0">industry:</p>
+                        <span class="badge bg-success">finance</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between">
+                        <p class="mb-0">members</p>
+                        <div class="avatar-group avatar-group-sm">
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                          <div class="avatar">
+                            <span class="avatar-text avatar-text-indigo rounded-circle"><span
+                              class="initial-wrap"><span>gg</span></span>
+                            </span>
+                          </div>
+                          <div class="avatar">
+                            <span class="avatar-text avatar-text-primary rounded-circle"><span
+                              class="initial-wrap"><span>kk</span></span>
+                            </span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a href="404.html" class="h5 text-decoration-none card-title">events</a>
+                      <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">rename team</a></li>
+                          <li><a class="dropdown-item" href="#">archive team</a></li>
+                          <li class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="card-text">Because we love to know what's going on & share great ideas</p>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between">
+                        <p class="mb-0">industry:</p>
+                        <span class="badge bg-secondary">organizers</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between">
+                        <p class="mb-0">members</p>
+                        <div class="avatar-group avatar-group-sm">
+                          <div class="avatar">
+                            <span class="avatar-text avatar-text-danger rounded-circle"><span
+                              class="initial-wrap"><span>gf</span></span>
+                            </span>
+                          </div>
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                          <div class="avatar">
+                            <span class="avatar-text avatar-text-indigo rounded-circle"><span
+                              class="initial-wrap"><span>am</span></span>
+                            </span>
+                          </div>
+                          <div class="avatar">
+                            <span class="avatar-text avatar-text-primary rounded-circle"><span
+                              class="initial-wrap"><span>kk</span></span>
+                            </span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a href="404.html" class="h5 text-decoration-none card-title">invoices</a>
+                      <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">rename team</a></li>
+                          <li><a class="dropdown-item" href="#">archive team</a></li>
+                          <li class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="card-text">Because we love to know what's going on & share great ideas</p>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between">
+                        <p class="mb-0">industry:</p>
+                        <span class="badge bg-warning">online payment</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between">
+                        <p class="mb-0">members</p>
+                        <div class="avatar-group avatar-group-sm">
+                          <div class="avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="user"
+                                 class="avatar-img rounded-circle">
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="vendors/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="vendors/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
