@@ -45,49 +45,45 @@
           <p class="mb-0 menu-text ms-2 text-capitalize">tasks.IO</p>
         </a>
         <div class="list-group list-group-flush">
-          <a href="activity.html" class="list-group-item list-group-item-action">
-            <i class="fas fa-bolt fa-fw"></i>
-            <span class="menu-text">activity</span>
-          </a>
-          <a href="under-maintenance.html" class="list-group-item list-group-item-action">
+          <a href="activity.html" class="list-group-item list-group-item-action active rounded-3 text-capitalize">
             <i class="fas fa-tasks fa-fw"></i>
-            <span class="menu-text">my tasks <span class="badge bg-primary">20</span></span>
+            <span class="menu-text">my tasks <span class="badge bg-secondary">20</span></span>
           </a>
           <hr>
-          <a href="overview.html" class="list-group-item list-group-item-action">
+          <a href="overview.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
             <i class="fas fa-home fa-fw"></i>
             <span class="menu-text">overview</span>
           </a>
-          <a href="projects-overview.html" class="list-group-item list-group-item-action">
+          <a href="projects-overview.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
             <i class="fas fa-th-list fa-fw"></i>
             <span class="menu-text">projects</span>
           </a>
-          <a href="calendar.html" class="list-group-item list-group-item-action">
+          <a href="calendar.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
             <i class="fas fa-calendar-alt fa-fw"></i>
             <span class="menu-text">calendar</span>
           </a>
-          <a href="teams.html" class="list-group-item list-group-item-action">
+          <a href="teams.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
             <i class="fas fa-user-friends fa-fw"></i>
             <span class="menu-text">teams</span>
           </a>
-          <a href="users.html" class="list-group-item list-group-item-action">
+          <a href="users.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
             <i class="fas fa-users fa-fw"></i>
             <span class="menu-text">users</span>
           </a>
-          <a href="under-maintenance.html" class="list-group-item list-group-item-action">
+          <a href="under-maintenance.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
             <i class="fas fa-chart-pie"></i>
             <span class="menu-text">analytics</span>
           </a>
-          <a href="404.html" class="list-group-item list-group-item-action">
+          <a href="404.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
             <i class="fas fa-mail-bulk"></i>
             <span class="menu-text">inbox</span>
           </a>
           <hr>
-          <a href="under-maintenance.html" class="list-group-item list-group-item-action">
+          <a href="under-maintenance.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
             <i class="fas fa-question-circle"></i>
             <span class="menu-text">help</span>
           </a>
-          <a href="404.html" class="list-group-item list-group-item-action">
+          <a href="404.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
             <i class="fas fa-cog"></i>
             <span class="menu-text">settings</span>
           </a>
@@ -328,24 +324,24 @@
         </div>
       </nav>
       <div class="container py-5">
-        <div class="section-title d-flex justify-content-between">
+        <div class="section-title d-flex justify-content-between pb-4">
           <h2 class="">projects overview</h2>
           <button class="btn btn-primary"><i class="fas fa-plus-circle me-2"></i>new project</button>
         </div>
         <div class="section-body">
           <div class="card border-0 shadow-sm mb-3">
             <div class="card-body d-flex gap-3 align-items-center">
-              <div class="d-flex gap-3">
-                <h1 class="my-0 display-4 fw-normal">10</h1>
+              <div class="d-flex gap-3 align-items-center">
+                <h1 class="my-0 display-3 fw-normal">10</h1>
                 <div>
-                  <p class="mb-0">total projects</p>
-                  <a href="#" class="btn btn-sm btn-danger small text-decoration-none rounded-pill"><i
+                  <p class="text-capitalize mb-1">total projects</p>
+                  <a href="#" class="btn btn-sm btn-primary small text-decoration-none rounded-3"><i
                     class="fas fa-clock me-1"></i>2 late/overdue</a>
                 </div>
               </div>
               <div class="vr"></div>
               <div class="flex-grow-1">
-                <div class="d-flex gap-3 mb-2">
+                <div class="d-flex gap-3 mb-3">
                   <div class="d-flex gap-2 align-items-center">
                     <i class="fas fa-circle text-info"></i>
                     <p class="mb-0 text-capitalize">in progress (4)</p>
@@ -359,7 +355,7 @@
                     <p class="mb-0 text-capitalize">archived (3)</p>
                   </div>
                 </div>
-                <div class="progress" style="height: 8px">
+                <div class="progress rounded-3" style="height: 10px">
                   <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="40"
                        aria-valuemin="0"
                        aria-valuemax="100"></div>
@@ -377,7 +373,7 @@
               <div class="d-flex justify-content-between mb-3">
                 <div class="col-5">
                   <div class="input-group">
-                    <span class="input-group-text" id="search-addon"><i class="fas fa-search"></i></span>
+                    <span class="input-group-text bg-transparent" id="search-addon"><i class="fas fa-search"></i></span>
                     <input type="text" class="form-control" placeholder="search projects" aria-label="search projects"
                            aria-describedby="search-addon">
                   </div>
@@ -466,7 +462,7 @@
                                 </span>
                         </div>
                         <div>
-                          <a href="" class="text-decoration-none text-black">job finder</a>
+                          <a href="projects-single.html" class="text-decoration-none text-black">job finder</a>
                           <p class="small mb-0 fw-normal">web app</p>
                         </div>
                       </div>
@@ -518,7 +514,7 @@
                                 </span>
                         </div>
                         <div>
-                          <a href="" class="text-decoration-none text-black">hotel booking</a>
+                          <a href="projects-single.html" class="text-decoration-none text-black">hotel booking</a>
                           <p class="small mb-0 fw-normal">landing page</p>
                         </div>
                       </div>
@@ -566,7 +562,7 @@
                                 </span>
                         </div>
                         <div>
-                          <a href="" class="text-decoration-none text-black">forex application</a>
+                          <a href="projects-single.html" class="text-decoration-none text-black">forex application</a>
                           <p class="small mb-0 fw-normal">mobile app</p>
                         </div>
                       </div>
@@ -598,7 +594,7 @@
                                 </span>
                         </div>
                         <div>
-                          <a href="" class="text-decoration-none text-black">chat application</a>
+                          <a href="projects-single.html" class="text-decoration-none text-black">chat application</a>
                           <p class="small mb-0 fw-normal">cross platform</p>
                         </div>
                       </div>
@@ -644,7 +640,7 @@
                                 </span>
                         </div>
                         <div>
-                          <a href="" class="text-decoration-none text-black">designer portfolio</a>
+                          <a href="projects-single.html" class="text-decoration-none text-black">designer portfolio</a>
                           <p class="small mb-0 fw-normal">landing page</p>
                         </div>
                       </div>
@@ -685,7 +681,7 @@
                                 </span>
                         </div>
                         <div>
-                          <a href="" class="text-decoration-none text-black">e-commerce</a>
+                          <a href="projects-single.html" class="text-decoration-none text-black">e-commerce</a>
                           <p class="small mb-0 fw-normal">cross platform</p>
                         </div>
                       </div>
@@ -715,7 +711,7 @@
                                 </span>
                         </div>
                         <div>
-                          <a href="" class="text-decoration-none text-black">adminator</a>
+                          <a href="projects-single.html" class="text-decoration-none text-black">adminator</a>
                           <p class="small mb-0 fw-normal">web app</p>
                         </div>
                       </div>
@@ -753,7 +749,7 @@
                                 </span>
                         </div>
                         <div>
-                          <a href="" class="text-decoration-none text-black">documentation app</a>
+                          <a href="projects-single.html" class="text-decoration-none text-black">documentation app</a>
                           <p class="small mb-0 fw-normal">web app</p>
                         </div>
                       </div>
@@ -799,7 +795,7 @@
                                 </span>
                         </div>
                         <div>
-                          <a href="" class="text-decoration-none text-black">hospital intranet</a>
+                          <a href="projects-single.html" class="text-decoration-none text-black">hospital intranet</a>
                           <p class="small mb-0 fw-normal">cross platform</p>
                         </div>
                       </div>
@@ -845,7 +841,7 @@
                                 </span>
                         </div>
                         <div>
-                          <a href="" class="text-decoration-none text-black">my wallet</a>
+                          <a href="projects-single.html" class="text-decoration-none text-black">my wallet</a>
                           <p class="small mb-0 fw-normal">mobile app</p>
                         </div>
                       </div>
