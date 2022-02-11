@@ -306,6 +306,16 @@ table.table tbody a:hover, table.table tbody a:focus {
   font-weight: 500;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* Color Theme Swatches in HSLA */
@@ -768,5 +778,50 @@ html, body {
 .section-title *, .project-header *, .task-title *, .card-title * {
   text-transform: capitalize;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+
+  .section-title button.btn span, .task button.btn span, .project-header button.btn span {
+    display: none;
+  }
+  .section-title button.btn .me-2, .section-title button.btn .ms-2, .task button.btn .me-2, .task button.btn .ms-2, .project-header button.btn .me-2, .project-header button.btn .ms-2 {
+    margin: 0 !important;
+  }
+
+  .task .form-label {
+    display: none;
+  }
+
+  .row.align-items-center {
+    flex-direction: column;
+  }
+  .row.align-items-center .col-6 {
+    width: 100%;
+  }
+  .row.align-items-center .task-progress {
+    width: 85%;
+  }
+
+  .project-header .w-auto {
+    width: 100% !important;
+  }
+
+  .accordion-body {
+    padding: 0;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=main.css.map */

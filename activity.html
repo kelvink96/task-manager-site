@@ -315,29 +315,28 @@
           </div>
         </div>
       </nav>
-      <div class="container py-5">
+      <div class="container py-4 py-md-5">
         <section>
           <div class="section-title d-flex justify-content-between pb-4">
             <h2 class="">my work</h2>
             <div>
-              <div class="btn-group">
-                <button type="button" class="btn btn-primary"><i class="fas fa-plus-circle me-2"></i>add task</button>
-                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
-                        data-bs-toggle="dropdown" aria-expanded="false"></button>
-                <div class="dropdown-menu shadow-sm" style="min-width: 300px">
-                  <form class="px-4 py-3">
-                    <div class="mb-3">
-                      <label class="form-label">Task name</label>
-                      <input type="text" class="form-control" placeholder="enter task name...">
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Task description</label>
-                      <textarea type="text" class="form-control" placeholder="enter task description..."
-                                rows="2"></textarea>
-                    </div>
-                    <button type="button" class="btn btn-primary w-100">add task</button>
-                  </form>
-                </div>
+              <button class="btn btn-primary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-plus-circle me-2"></i>
+                <span>add task</span>
+              </button>
+              <div class="dropdown-menu shadow-sm" style="min-width: 300px">
+                <form class="px-4 py-3">
+                  <div class="mb-3">
+                    <label class="form-label">Task name</label>
+                    <input type="text" class="form-control" placeholder="enter task name...">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Task description</label>
+                    <textarea type="text" class="form-control" placeholder="enter task description..."
+                              rows="2"></textarea>
+                  </div>
+                  <button type="button" class="btn btn-primary w-100">add task</button>
+                </form>
               </div>
               <button class="btn btn-primary ms-2"><i class="fas fa-cog"></i></button>
             </div>
@@ -361,12 +360,14 @@
                       <div class="d-flex gap-3">
                         <button class="btn btn-primary" type="button"
                                 id="comments-dropdown" data-bs-toggle="modal" data-bs-target="#comments-modal">
-                          <i class="fas fa-comments me-2"></i>comments
+                          <i class="fas fa-comments me-2"></i>
+                          <span>comments</span>
                         </button>
                         <div class="dropdown">
-                          <button class="btn btn-primary dropdown-toggle" type="button"
+                          <button class="btn btn-primary" type="button"
                                   data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-list me-2"></i>list
+                            <i class="fas fa-list me-2"></i>
+                            <span>list</span>
                           </button>
                           <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                             <li><h6 class="dropdown-header">change tasks view</h6></li>
@@ -405,7 +406,7 @@
                       <!--                          task-->
                       <div class="task mb-3 card shadow-sm border-0">
                         <div class="card-body">
-                          <label class="d-flex align-items-start justify-content-start gap-3">
+                          <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3">
                             <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
                                    value="">
                             <span class="pt-1 form-checked-content flex-grow-1">
@@ -413,9 +414,10 @@
                                     <span class="fs-6 task-title">read 20 books this year</span>
                                     <span class="d-flex gap-2">
                                     <span class="dropdown">
-                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
                                               data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-calendar-day me-2"></i>due date
+                                        <i class="fas fa-calendar-day me-2"></i>
+                                        <span>due date</span>
                                       </button>
                                       <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                         <form class="p-3">
@@ -432,7 +434,8 @@
                                     <span class="dropdown">
                                       <button class="btn btn-warning btn-sm" type="button"
                                               data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-flag me-2"></i>important
+                                        <i class="fas fa-flag me-2"></i>
+                                        <span>important</span>
                                       </button>
                                       <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                         <li><a href="" class="dropdown-item">
@@ -479,8 +482,9 @@
                                               aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></span>
                                       </span>
                                       <label class="form-label small mb-0 text-muted">10% complete</label>
-                                      <button class="btn btn-outline-secondary btn-sm">6<i
-                                        class="fas fa-comment ms-2"></i>
+                                      <button class="btn btn-outline-secondary btn-sm">
+                                        <span>6</span>
+                                        <i class="fas fa-comment ms-2"></i>
                                       </button>
                                     </span>
                                   </span>
@@ -491,7 +495,7 @@
                       <!--                          task-->
                       <div class="task mb-3 card shadow-sm border-0">
                         <div class="card-body">
-                          <label class="d-flex align-items-start justify-content-start gap-3">
+                          <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3">
                             <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
                                    value="">
                             <span class="pt-1 form-checked-content flex-grow-1">
@@ -499,9 +503,10 @@
                                     <span class="fs-6 task-title">do a weekly review of my tasks</span>
                                     <span class="d-flex gap-2">
                                     <span class="dropdown">
-                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
                                               data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-calendar-day me-2"></i>due date
+                                        <i class="fas fa-calendar-day me-2"></i>
+                                        <span>due date</span>
                                       </button>
                                       <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                         <form class="p-3">
@@ -516,9 +521,10 @@
                                       </span>
                                     </span>
                                     <span class="dropdown">
-                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
                                               data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-sort-amount-up-alt me-2"></i>priority
+                                        <i class="fas fa-sort-amount-up-alt me-2"></i>
+                                        <span>priority</span>
                                       </button>
                                       <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                         <li><a href="" class="dropdown-item">
@@ -565,8 +571,9 @@
                                               aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></span>
                                       </span>
                                       <label class="form-label small mb-0 text-muted">10% complete</label>
-                                      <button class="btn btn-outline-secondary btn-sm">2<i
-                                        class="fas fa-comment ms-2"></i>
+                                      <button class="btn btn-outline-secondary btn-sm">
+                                        <span>2</span>
+                                        <i class="fas fa-comment ms-2"></i>
                                       </button>
                                     </span>
                                   </span>
@@ -577,7 +584,7 @@
                       <!--                          task-->
                       <div class="task mb-3 card shadow-sm border-0">
                         <div class="card-body">
-                          <label class="d-flex align-items-start justify-content-start gap-3">
+                          <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3">
                             <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
                                    value="">
                             <span class="pt-1 form-checked-content flex-grow-1">
@@ -585,9 +592,10 @@
                                     <span class="fs-6 task-title">start a side business</span>
                                     <span class="d-flex gap-2">
                                     <span class="dropdown">
-                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
                                               data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-calendar-day me-2"></i>due date
+                                        <i class="fas fa-calendar-day me-2"></i>
+                                        <span>due date</span>
                                       </button>
                                       <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                         <form class="p-3">
@@ -604,7 +612,8 @@
                                     <span class="dropdown">
                                       <button class="btn btn-danger btn-sm" type="button"
                                               data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-flag me-2"></i>priority
+                                        <i class="fas fa-flag me-2"></i>
+                                        <span>urgent</span>
                                       </button>
                                       <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                         <li><a href="" class="dropdown-item">
@@ -651,8 +660,9 @@
                                               aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></span>
                                       </span>
                                       <label class="form-label small mb-0 text-muted">33% complete</label>
-                                      <button class="btn btn-outline-secondary btn-sm">4<i
-                                        class="fas fa-comment ms-2"></i>
+                                      <button class="btn btn-outline-secondary btn-sm">
+                                        <span>4</span>
+                                        <i class="fas fa-comment ms-2"></i>
                                       </button>
                                     </span>
                                   </span>
@@ -674,9 +684,11 @@
                 <div id="tasks-collapse" class="accordion-collapse collapse show"
                      aria-labelledby="tasks-heading">
                   <div class="accordion-body px-0">
-                    <div class="project-header d-flex align-items-center justify-content-between my-3">
+                    <div
+                      class="project-header d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between my-3">
                       <h4>feature building</h4>
-                      <div class="d-flex gap-3">
+                      <div
+                        class="d-flex gap-2 gap-md-3 align-items-center justify-content-between justify-content-md-start w-auto">
                         <div class="avatar-group avatar-group-sm">
                           <div class="avatar avatar-xs">
                             <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
@@ -705,41 +717,44 @@
                                 </span>
                           </div>
                         </div>
-                        <div class="dropdown">
-                          <button class="btn btn-primary dropdown-toggle" type="button"
-                                  id="view-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-list me-2"></i>list
-                          </button>
-                          <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
-                            <li><h6 class="dropdown-header">change tasks view</h6></li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-list me-2"></i>list</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-th-large me-2"></i>boards</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="dropdown">
-                          <button class="btn btn-primary" type="button"
-                                  data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-ellipsis-h"></i>
-                          </button>
-                          <ul class="dropdown-menu shadow-sm">
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-pencil-alt fa-fw me-2"></i>edit
-                              project</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-clone fa-fw me-2"></i>duplicate
-                              project</a></li>
-                            <li>
-                              <div class="dropdown-divider"></div>
-                            </li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-check-circle fa-fw me-2"></i>completed
-                              tasks</a></li>
-                            <li>
-                              <div class="dropdown-divider"></div>
-                            </li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-archive fa-fw me-2"></i>archive
-                              project</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-trash-alt fa-fw me-2"></i>delete
-                              project</a></li>
-                          </ul>
+                        <div class="d-flex gap-3">
+                          <div class="dropdown">
+                            <button class="btn btn-primary" type="button"
+                                    id="view-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-list me-2"></i>
+                              <span>list</span>
+                            </button>
+                            <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
+                              <li><h6 class="dropdown-header">change tasks view</h6></li>
+                              <li><a class="dropdown-item" href="#"><i class="fas fa-list me-2"></i>list</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="fas fa-th-large me-2"></i>boards</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn btn-primary" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                            <ul class="dropdown-menu shadow-sm">
+                              <li><a class="dropdown-item" href="#"><i class="fas fa-pencil-alt fa-fw me-2"></i>edit
+                                project</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="fas fa-clone fa-fw me-2"></i>duplicate
+                                project</a></li>
+                              <li>
+                                <div class="dropdown-divider"></div>
+                              </li>
+                              <li><a class="dropdown-item" href="#"><i class="fas fa-check-circle fa-fw me-2"></i>completed
+                                tasks</a></li>
+                              <li>
+                                <div class="dropdown-divider"></div>
+                              </li>
+                              <li><a class="dropdown-item" href="#"><i class="fas fa-archive fa-fw me-2"></i>archive
+                                project</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="fas fa-trash-alt fa-fw me-2"></i>delete
+                                project</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -747,7 +762,7 @@
                       <!--                          task-->
                       <div class="task mb-3 card shadow-sm border-0">
                         <div class="card-body">
-                          <label class="d-flex align-items-start justify-content-start gap-3">
+                          <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3">
                             <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
                                    value="">
                             <span class="pt-1 form-checked-content flex-grow-1">
@@ -755,9 +770,10 @@
                                     <span class="fs-6 task-title">requirements specifications</span>
                                     <span class="d-flex gap-2">
                                       <span class="dropdown">
-                                        <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                        <button class="btn btn-outline-secondary btn-sm" type="button"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                          <i class="fas fa-calendar-day me-2"></i>due date
+                                          <i class="fas fa-calendar-day me-2"></i>
+                                          <span>due date</span>
                                         </button>
                                         <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                           <form class="p-3">
@@ -774,7 +790,8 @@
                                       <span class="dropdown">
                                         <button class="btn btn-danger btn-sm" type="button"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                          <i class="fas fa-flag me-2"></i>urgent
+                                          <i class="fas fa-flag me-2"></i>
+                                          <span>urgent</span>
                                         </button>
                                         <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                           <li><a href="" class="dropdown-item">
@@ -826,8 +843,9 @@
                                               aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></span>
                                       </span>
                                       <label class="form-label small mb-0 text-muted">33% complete</label>
-                                      <button class="btn btn-outline-secondary btn-sm">4<i
-                                        class="fas fa-comment ms-2"></i>
+                                      <button class="btn btn-outline-secondary btn-sm">
+                                        <span>7</span>
+                                        <i class="fas fa-comment ms-2"></i>
                                       </button>
                                     </span>
                                   </span>
@@ -838,7 +856,7 @@
                       <!--                          task-->
                       <div class="task mb-3 card shadow-sm border-0">
                         <div class="card-body">
-                          <label class="d-flex align-items-start justify-content-start gap-3">
+                          <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3">
                             <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
                                    value="">
                             <span class="pt-1 form-checked-content flex-grow-1">
@@ -846,9 +864,10 @@
                                     <span class="fs-6 task-title">design</span>
                                     <span class="d-flex gap-2">
                                     <span class="dropdown">
-                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
                                               data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-calendar-day me-2"></i>due date
+                                        <i class="fas fa-calendar-day me-2"></i>
+                                        <span>due date</span>
                                       </button>
                                       <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                         <form class="p-3">
@@ -865,7 +884,8 @@
                                     <span class="dropdown">
                                       <button class="btn btn-warning btn-sm" type="button"
                                               data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-flag me-2"></i>important
+                                        <i class="fas fa-flag me-2"></i>
+                                        <span>important</span>
                                       </button>
                                       <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                         <li><a href="" class="dropdown-item">
@@ -904,7 +924,7 @@
                                   <ul>
                                     <li class="card-text small text-muted mb-0">design low-fidelity mockups</li>
                                   </ul>
-                                  <span class="ps-3 py-2">
+                                  <span class="ps-1 ps-md-3 py-2">
                                     <div class="d-flex align-items-center gap-3 pb-3">
                                       <h6 class="text-capitalize mb-0">sub tasks</h6>
                                       <button class="btn btn-sm text-primary btn-sub-task-collapse"
@@ -915,7 +935,7 @@
                                     <div class="collapse show" id="sub-task-collapse-1">
                                       <!--                                sub-task-->
                                       <div class="sub-task mb-3 border-bottom">
-                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                        <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3 pb-3">
                                           <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
                                                  type="checkbox"
                                                  value="">
@@ -924,10 +944,11 @@
                                               <span class="fs-6 task-title">do a feedback round</span>
                                               <span class="d-flex gap-2">
                                                 <span class="dropdown">
-                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                  <button class="btn btn-outline-secondary btn-sm"
                                                           type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                    <i class="fas fa-calendar-day me-2"></i>
+                                                    <span>due date</span>
                                                   </button>
                                                   <span class="dropdown-menu shadow-sm"
                                                         aria-labelledby="view-dropdown">
@@ -943,10 +964,11 @@
                                                   </span>
                                                 </span>
                                                 <span class="dropdown">
-                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                  <button class="btn btn-outline-secondary btn-sm"
                                                           type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-sort-amount-up-alt me-2"></i>priority
+                                                    <i class="fas fa-sort-amount-up-alt me-2"></i>
+                                                    <span>priority</span>
                                                   </button>
                                                   <ul class="dropdown-menu shadow-sm"
                                                       aria-labelledby="view-dropdown">
@@ -1008,8 +1030,9 @@
                                                         aria-valuemax="100"></span>
                                                 </span>
                                                 <label class="form-label small mb-0 text-muted">67% complete</label>
-                                                <button class="btn btn-outline-secondary btn-sm">2<i
-                                                  class="fas fa-comment ms-2"></i>
+                                                <button class="btn btn-outline-secondary btn-sm">
+                                                  <span>2</span>
+                                                  <i class="fas fa-comment ms-2"></i>
                                                 </button>
                                               </span>
                                             </span>
@@ -1018,7 +1041,7 @@
                                     </div>
                                       <!--                                sub-task-->
                                       <div class="sub-task mb-3 border-bottom">
-                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                        <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3 pb-3">
                                           <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
                                                  type="checkbox"
                                                  value="">
@@ -1027,10 +1050,11 @@
                                               <span class="fs-6 task-title">design final components</span>
                                               <span class="d-flex gap-2">
                                                 <span class="dropdown">
-                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                  <button class="btn btn-outline-secondary btn-sm"
                                                           type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                    <i class="fas fa-calendar-day me-2"></i>
+                                                    <span>due date</span>
                                                   </button>
                                                   <span class="dropdown-menu shadow-sm"
                                                         aria-labelledby="view-dropdown">
@@ -1048,7 +1072,8 @@
                                                 <span class="dropdown">
                                                   <button class="btn btn-dark btn-sm" type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-flag me-2"></i>low
+                                                    <i class="fas fa-flag me-2"></i>
+                                                    <span>low</span>
                                                   </button>
                                                   <ul class="dropdown-menu shadow-sm"
                                                       aria-labelledby="view-dropdown">
@@ -1108,8 +1133,9 @@
                                                         aria-valuemax="100"></span>
                                                 </span>
                                                 <label class="form-label small mb-0 text-muted">90% complete</label>
-                                                <button class="btn btn-outline-secondary btn-sm">4<i
-                                                  class="fas fa-comment ms-2"></i>
+                                                <button class="btn btn-outline-secondary btn-sm">
+                                                  <span>9</span>
+                                                  <i class="fas fa-comment ms-2"></i>
                                                 </button>
                                               </span>
                                             </span>
@@ -1118,7 +1144,7 @@
                                     </div>
                                       <!--                                sub-task-->
                                       <div class="sub-task mb-3 border-bottom">
-                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                        <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3 pb-3">
                                           <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
                                                  type="checkbox"
                                                  value="">
@@ -1128,10 +1154,11 @@
                                                 class="fs-6 task-title">add components to design library if needed</span>
                                               <span class="d-flex gap-2">
                                                 <span class="dropdown">
-                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                  <button class="btn btn-outline-secondary btn-sm"
                                                           type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                    <i class="fas fa-calendar-day me-2"></i>
+                                                    <span>due date</span>
                                                   </button>
                                                   <span class="dropdown-menu shadow-sm"
                                                         aria-labelledby="view-dropdown">
@@ -1147,10 +1174,11 @@
                                                   </span>
                                                 </span>
                                                 <span class="dropdown">
-                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                  <button class="btn btn-outline-secondary btn-sm"
                                                           type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-sort-amount-up-alt me-2"></i>priority
+                                                    <i class="fas fa-sort-amount-up-alt me-2"></i>
+                                                    <span>priority</span>
                                                   </button>
                                                   <ul class="dropdown-menu shadow-sm"
                                                       aria-labelledby="view-dropdown">
@@ -1210,8 +1238,9 @@
                                                         aria-valuemax="100"></span>
                                                 </span>
                                                 <label class="form-label small mb-0 text-muted">0% complete</label>
-                                                <button class="btn btn-outline-secondary btn-sm">4<i
-                                                  class="fas fa-comment ms-2"></i>
+                                                <button class="btn btn-outline-secondary btn-sm">
+                                                  <span>4</span>
+                                                  <i class="fas fa-comment ms-2"></i>
                                                 </button>
                                               </span>
                                             </span>
@@ -1227,7 +1256,7 @@
                       <!--                          task-->
                       <div class="task mb-3 card shadow-sm border-0">
                         <div class="card-body">
-                          <label class="d-flex align-items-start justify-content-start gap-3">
+                          <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3">
                             <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
                                    value="">
                             <span class="pt-1 form-checked-content flex-grow-1">
@@ -1235,9 +1264,10 @@
                                     <span class="fs-6 task-title">UX copy</span>
                                     <span class="d-flex gap-2">
                                     <span class="dropdown">
-                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
                                               data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-calendar-day me-2"></i>due date
+                                        <i class="fas fa-calendar-day me-2"></i>
+                                        <span>due date</span>
                                       </button>
                                       <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                         <form class="p-3">
@@ -1254,7 +1284,8 @@
                                     <span class="dropdown">
                                       <button class="btn btn-warning btn-sm" type="button"
                                               data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-flag me-2"></i>important
+                                        <i class="fas fa-flag me-2"></i>
+                                        <span>important</span>
                                       </button>
                                       <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                         <li><a href="" class="dropdown-item">
@@ -1290,7 +1321,7 @@
                                     </span>
                                   </span>
                                   </span>
-                                  <span class="ps-3 py-2">
+                                  <span class="ps-1 ps-md-3 py-2">
                                     <div class="d-flex align-items-center gap-3 pb-3">
                                       <h6 class="text-capitalize mb-0">sub tasks</h6>
                                       <button class="btn btn-sm text-primary btn-sub-task-collapse"
@@ -1301,7 +1332,7 @@
                                     <div class="collapse show" id="sub-task-collapse-2">
                                       <!--                                sub-task-->
                                       <div class="sub-task mb-3 border-bottom">
-                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                        <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3 pb-3">
                                           <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
                                                  type="checkbox"
                                                  value="">
@@ -1310,10 +1341,11 @@
                                               <span class="fs-6 task-title">make first round of edits</span>
                                               <span class="d-flex gap-2">
                                                 <span class="dropdown">
-                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                  <button class="btn btn-outline-secondary btn-sm"
                                                           type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                    <i class="fas fa-calendar-day me-2"></i>
+                                                    <span>due date</span>
                                                   </button>
                                                   <span class="dropdown-menu shadow-sm"
                                                         aria-labelledby="view-dropdown">
@@ -1332,7 +1364,8 @@
                                                   <button class="btn btn-dark btn-sm"
                                                           type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-flag me-2"></i>low
+                                                    <i class="fas fa-flag me-2"></i>
+                                                    <span>low</span>
                                                   </button>
                                                   <ul class="dropdown-menu shadow-sm"
                                                       aria-labelledby="view-dropdown">
@@ -1399,8 +1432,9 @@
                                                         aria-valuemax="100"></span>
                                                 </span>
                                                 <label class="form-label small mb-0 text-muted">33% complete</label>
-                                                <button class="btn btn-outline-secondary btn-sm">4<i
-                                                  class="fas fa-comment ms-2"></i>
+                                                <button class="btn btn-outline-secondary btn-sm">
+                                                  <span>3</span>
+                                                  <i class="fas fa-comment ms-2"></i>
                                                 </button>
                                               </span>
                                             </span>
@@ -1409,7 +1443,7 @@
                                     </div>
                                       <!--                                sub-task-->
                                       <div class="sub-task mb-3 border-bottom">
-                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                        <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3 pb-3">
                                           <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
                                                  type="checkbox"
                                                  value="">
@@ -1418,10 +1452,11 @@
                                               <span class="fs-6 task-title">finalize UX copy</span>
                                               <span class="d-flex gap-2">
                                                 <span class="dropdown">
-                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                  <button class="btn btn-outline-secondary btn-sm"
                                                           type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                    <i class="fas fa-calendar-day me-2"></i>
+                                                    <span>due date</span>
                                                   </button>
                                                   <span class="dropdown-menu shadow-sm"
                                                         aria-labelledby="view-dropdown">
@@ -1439,7 +1474,8 @@
                                                 <span class="dropdown">
                                                   <button class="btn btn-danger btn-sm" type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-flag me-2"></i>urgent
+                                                    <i class="fas fa-flag me-2"></i>
+                                                    <span>urgent</span>
                                                   </button>
                                                   <ul class="dropdown-menu shadow-sm"
                                                       aria-labelledby="view-dropdown">
@@ -1501,8 +1537,9 @@
                                                         aria-valuemax="100"></span>
                                                 </span>
                                                 <label class="form-label small mb-0 text-muted">33% complete</label>
-                                                <button class="btn btn-outline-secondary btn-sm">4<i
-                                                  class="fas fa-comment ms-2"></i>
+                                                <button class="btn btn-outline-secondary btn-sm">
+                                                  <span>9</span>
+                                                  <i class="fas fa-comment ms-2"></i>
                                                 </button>
                                               </span>
                                             </span>
@@ -1518,7 +1555,7 @@
                       <!--                          task-->
                       <div class="task mb-3 card shadow-sm border-0">
                         <div class="card-body">
-                          <label class="d-flex align-items-start justify-content-start gap-3">
+                          <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3">
                             <input class="form-check-input flex-shrink-0 rounded-circle fs-5" type="checkbox"
                                    value="">
                             <span class="pt-1 form-checked-content flex-grow-1">
@@ -1526,9 +1563,10 @@
                                     <span class="fs-6 task-title">implementation</span>
                                     <span class="d-flex gap-2">
                                     <span class="dropdown">
-                                      <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                      <button class="btn btn-outline-secondary btn-sm" type="button"
                                               data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-calendar-day me-2"></i>due date
+                                        <i class="fas fa-calendar-day me-2"></i>
+                                        <span>due date</span>
                                       </button>
                                       <span class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                         <form class="p-3">
@@ -1543,9 +1581,10 @@
                                       </span>
                                     </span>
                                     <span class="dropdown">
-                                      <button class="btn btn-warning btn-sm" type="button"
+                                      <button class="btn btn-danger btn-sm" type="button"
                                               data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-flag me-2"></i>important
+                                        <i class="fas fa-flag me-2"></i>
+                                        <span>urgent</span>
                                       </button>
                                       <ul class="dropdown-menu shadow-sm" aria-labelledby="view-dropdown">
                                         <li><a href="" class="dropdown-item">
@@ -1581,7 +1620,7 @@
                                     </span>
                                   </span>
                                   </span>
-                                  <span class="ps-3 py-2">
+                                  <span class="ps-1 ps-md-3 py-2">
                                     <div class="d-flex align-items-center gap-3 pb-3">
                                       <h6 class="text-capitalize mb-0">sub tasks</h6>
                                       <button class="btn btn-sm text-primary btn-sub-task-collapse"
@@ -1592,7 +1631,7 @@
                                     <div class="collapse show" id="sub-task-collapse-3">
                                       <!--                                sub-task-->
                                       <div class="sub-task mb-3 border-bottom">
-                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                        <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3 pb-3">
                                           <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
                                                  type="checkbox"
                                                  value="">
@@ -1601,10 +1640,11 @@
                                               <span class="fs-6 task-title">set up environment</span>
                                               <span class="d-flex gap-2">
                                                 <span class="dropdown">
-                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                  <button class="btn btn-outline-secondary btn-sm"
                                                           type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                    <i class="fas fa-calendar-day me-2"></i>
+                                                    <span>due date</span>
                                                   </button>
                                                   <span class="dropdown-menu shadow-sm"
                                                         aria-labelledby="view-dropdown">
@@ -1622,7 +1662,8 @@
                                                 <span class="dropdown">
                                                   <button class="btn btn-warning btn-sm" type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-flag me-2"></i>important
+                                                    <i class="fas fa-flag me-2"></i>
+                                                    <span>important</span>
                                                   </button>
                                                   <ul class="dropdown-menu shadow-sm"
                                                       aria-labelledby="view-dropdown">
@@ -1685,8 +1726,9 @@
                                                         aria-valuemax="100"></span>
                                                 </span>
                                                 <label class="form-label small mb-0 text-muted">0% complete</label>
-                                                <button class="btn btn-outline-secondary btn-sm">5<i
-                                                  class="fas fa-comment ms-2"></i>
+                                                <button class="btn btn-outline-secondary btn-sm">
+                                                  <span>7</span>
+                                                  <i class="fas fa-comment ms-2"></i>
                                                 </button>
                                               </span>
                                             </span>
@@ -1695,7 +1737,7 @@
                                     </div>
                                       <!--                                sub-task-->
                                       <div class="sub-task mb-3 border-bottom">
-                                        <label class="d-flex align-items-start justify-content-start gap-3 pb-3">
+                                        <label class="d-flex align-items-start justify-content-start gap-2 gap-md-3 pb-3">
                                           <input class="form-check-input flex-shrink-0 rounded-circle fs-5"
                                                  type="checkbox"
                                                  value="">
@@ -1704,10 +1746,11 @@
                                               <span class="fs-6 task-title">implement new feature</span>
                                               <span class="d-flex gap-2">
                                                 <span class="dropdown">
-                                                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                                  <button class="btn btn-outline-secondary btn-sm"
                                                           type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-calendar-day me-2"></i>due date
+                                                    <i class="fas fa-calendar-day me-2"></i>
+                                                    <span>due date</span>
                                                   </button>
                                                   <span class="dropdown-menu shadow-sm"
                                                         aria-labelledby="view-dropdown">
@@ -1725,7 +1768,8 @@
                                                 <span class="dropdown">
                                                   <button class="btn btn-danger btn-sm" type="button"
                                                           data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fas fa-flag me-2"></i>urgent
+                                                    <i class="fas fa-flag me-2"></i>
+                                                    <span>urgent</span>
                                                   </button>
                                                   <ul class="dropdown-menu shadow-sm"
                                                       aria-labelledby="view-dropdown">
@@ -1792,8 +1836,9 @@
                                                         aria-valuemax="100"></span>
                                                 </span>
                                                 <label class="form-label small mb-0 text-muted">0% complete</label>
-                                                <button class="btn btn-outline-secondary btn-sm">7<i
-                                                  class="fas fa-comment ms-2"></i>
+                                                <button class="btn btn-outline-secondary btn-sm">
+                                                  <span>1</span>
+                                                  <i class="fas fa-comment ms-2"></i>
                                                 </button>
                                               </span>
                                             </span>
