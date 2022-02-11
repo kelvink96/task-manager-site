@@ -283,6 +283,9 @@ table.table thead th {
 table.table tbody td, table.table tbody p, table.table tbody a, table.table tbody span {
   text-transform: capitalize;
 }
+table.table tbody .avatar-text * {
+  text-transform: uppercase;
+}
 table.table tbody a:hover, table.table tbody a:focus {
   color: #E8A407 !important;
   transition: all 150ms ease-out;
