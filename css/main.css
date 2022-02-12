@@ -55,7 +55,7 @@
   position: relative;
 }
 
-.collapse-toggle {
+.collapse-toggle, .navbar-toggler {
   padding-left: 4px;
   display: block;
   cursor: pointer;
@@ -306,6 +306,27 @@ table.table tbody a:hover, table.table tbody a:focus {
   font-weight: 500;
 }
 
+.navbar .nav-link, .navbar .dropdown-item, .navbar a {
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+}
+.navbar a.col {
+  border-radius: 5px;
+}
+.navbar a.col:hover, .navbar a.col:focus {
+  background-color: #E9ECEF;
+  cursor: pointer;
+}
+.navbar .dropdown-header {
+  text-transform: capitalize;
+}
+.navbar .active {
+  background-color: #FFCB05;
+  border-color: #FFCB05;
+  color: #434142;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .sidebar {
@@ -346,6 +367,11 @@ table.table tbody a:hover, table.table tbody a:focus {
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .sidebar .position-fixed {
+    width: 210px;
+  }
+}
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* Color Theme Swatches in HSLA */

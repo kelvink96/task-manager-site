@@ -21,5 +21,5 @@ $(document).ready(function(){
 
     _this.find("span").toggleHTML("show more", "show less");
     _this.find("i").toggleClass("fa-expand-arrows-alt");
-  })
+  });
 });

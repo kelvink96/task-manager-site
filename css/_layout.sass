@@ -48,7 +48,7 @@
     left: auto
     position: relative
 
-.collapse-toggle
+.collapse-toggle, .navbar-toggler
   padding-left: 4px
   display: block
   cursor: pointer
@@ -264,7 +264,7 @@ table.table
   .breadcrumb-item > a
     color: $color-dark-gray
 
-// NAV PILLS
+// NAV PILLS/TABS
 .nav-pills
   .nav-item
     .nav-link
@@ -273,6 +273,29 @@ table.table
     .active
       background-color: $color-med-yellow
       font-weight: 500
+
+// NAVBAR
+.navbar
+  .nav-link, .dropdown-item, a
+    text-transform: capitalize
+    color: black
+    text-decoration: none
+
+  a.col
+    border-radius: 5px
+
+    &:hover,
+    &:focus
+      background-color: #E9ECEF
+      cursor: pointer
+
+  .dropdown-header
+    text-transform: capitalize
+
+  .active
+    background-color: $color-med-yellow
+    border-color: $color-med-yellow
+    color: $color-dark-gray
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)
@@ -315,3 +338,6 @@ table.table
       font-size: 1.75em !important
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px)
+  .sidebar
+    .position-fixed
+      width: 210px
