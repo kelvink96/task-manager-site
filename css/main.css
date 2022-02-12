@@ -311,10 +311,40 @@ table.table tbody a:hover, table.table tbody a:focus {
   .sidebar {
     display: none;
   }
+
+  .fc-center h2 {
+    font-size: 1em !important;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .fc-center h2 {
+    font-size: 1em !important;
+  }
+}
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .sidebar .position-fixed {
+    width: 170px;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+  }
+  .sidebar .list-group-item .menu-text {
+    left: 40px;
+  }
+  .sidebar .list-group-item .badge {
+    margin-left: 0.35rem !important;
+  }
+
+  .sidebar--Collapse .position-fixed {
+    width: 70px;
+  }
+
+  .fc-center h2 {
+    font-size: 1.75em !important;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
@@ -822,6 +852,11 @@ html, body {
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .sidebar {
+    display: block;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=main.css.map */

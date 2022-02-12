@@ -45,7 +45,7 @@
           <p class="mb-0 menu-text ms-2 text-capitalize">tasks.IO</p>
         </a>
         <div class="list-group list-group-flush">
-          <a href="activity.html" class="list-group-item list-group-item-action active rounded-3 text-capitalize">
+          <a href="activity.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
             <i class="fas fa-tasks fa-fw"></i>
             <span class="menu-text">my tasks <span class="badge bg-secondary">20</span></span>
           </a>
@@ -54,7 +54,7 @@
             <i class="fas fa-home fa-fw"></i>
             <span class="menu-text">overview</span>
           </a>
-          <a href="projects-overview.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
+          <a href="projects-overview.html" class="list-group-item list-group-item-action active rounded-3 text-capitalize">
             <i class="fas fa-th-list fa-fw"></i>
             <span class="menu-text">projects</span>
           </a>
@@ -315,23 +315,23 @@
           </div>
         </div>
       </nav>
-      <div class="container py-5">
+      <div class="container p-3 p-md-4 p-xl-5">
         <div class="section-title d-flex justify-content-between pb-4">
           <h2 class="">projects overview</h2>
           <button class="btn btn-primary"><i class="fas fa-plus-circle me-2"></i>new project</button>
         </div>
         <div class="section-body">
           <div class="card border-0 shadow-sm mb-3">
-            <div class="card-body d-flex gap-3 align-items-center">
-              <div class="d-flex gap-3 align-items-center">
-                <h1 class="my-0 display-3 fw-normal">10</h1>
+            <div class="card-body d-flex flex-column flex-md-row gap-3 align-items-center">
+              <div class="d-flex w-100 align-items-center justify-content-between justify-content-md-start">
+                <h1 class="my-0 display-2 fw-normal">10</h1>
                 <div>
                   <p class="text-capitalize mb-1">total projects</p>
-                  <a href="#" class="btn btn-sm btn-primary small text-decoration-none rounded-3"><i
-                    class="fas fa-clock me-1"></i>2 late/overdue</a>
+                  <span class="badge bg-danger rounded-3 fs-6"><i
+                    class="fas fa-clock me-1"></i>2 late/overdue</span>
                 </div>
               </div>
-              <div class="vr"></div>
+              <div class="vr d-none d-md-block"></div>
               <div class="flex-grow-1">
                 <div class="d-flex gap-3 mb-3">
                   <div class="d-flex gap-2 align-items-center">
@@ -362,8 +362,8 @@
           </div>
           <div class="card border-0 shadow-sm">
             <div class="card-body">
-              <div class="d-flex justify-content-between mb-3">
-                <div class="col-5">
+              <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                <div class="col-sm-12 col-md-5 mb-3 mb-md-0">
                   <div class="input-group">
                     <span class="input-group-text bg-transparent" id="search-addon"><i class="fas fa-search"></i></span>
                     <input type="text" class="form-control" placeholder="search projects" aria-label="search projects"
@@ -448,7 +448,7 @@
                   <tr>
                     <th scope="row">
                       <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs">
+                        <div class="avatar avatar-xs d-none d-md-block">
                                 <span class="avatar-text avatar-text-info rounded-circle"><span
                                   class="initial-wrap"><span>jb</span></span>
                                 </span>
@@ -488,7 +488,7 @@
                           <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <label class="small">25%</label>
+                        <label class="small d-none d-md-block">25%</label>
                       </div>
                     </td>
                     <td>10<i class="fas fa-paperclip ms-1"></i></td>
@@ -500,7 +500,7 @@
                   <tr>
                     <th scope="row">
                       <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs">
+                        <div class="avatar avatar-xs d-none d-md-block">
                                 <span class="avatar-text avatar-text-success rounded-circle"><span
                                   class="initial-wrap"><span>hb</span></span>
                                 </span>
@@ -536,7 +536,7 @@
                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <label class="small">100%</label>
+                        <label class="small d-none d-md-block">100%</label>
                       </div>
                     </td>
                     <td>-</td>
@@ -548,7 +548,7 @@
                   <tr>
                     <th scope="row">
                       <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs">
+                        <div class="avatar avatar-xs d-none d-md-block">
                                 <span class="avatar-text avatar-text-danger rounded-circle"><span
                                   class="initial-wrap"><span>fa</span></span>
                                 </span>
@@ -568,7 +568,7 @@
                           <div class="progress-bar" role="progressbar" style="width: 67%;" aria-valuenow="67"
                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <label class="small">67%</label>
+                        <label class="small d-none d-md-block">67%</label>
                       </div>
                     </td>
                     <td>12 <i class="fas fa-paperclip"></i></td>
@@ -580,7 +580,7 @@
                   <tr>
                     <th scope="row">
                       <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs">
+                        <div class="avatar avatar-xs d-none d-md-block">
                                 <span class="avatar-text avatar-text-secondary rounded-circle"><span
                                   class="initial-wrap"><span>ca</span></span>
                                 </span>
@@ -616,7 +616,7 @@
                           <div class="progress-bar" role="progressbar" style="width: 16%;" aria-valuenow="16"
                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <label class="small">16%</label>
+                        <label class="small d-none d-md-block">16%</label>
                       </div>
                     </td>
                     <td>6 <i class="fas fa-paperclip ms-2"></i></td>
@@ -626,7 +626,7 @@
                   <tr>
                     <th scope="row">
                       <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs">
+                        <div class="avatar avatar-xs d-none d-md-block">
                                 <span class="avatar-text avatar-text-warning rounded-circle"><span
                                   class="initial-wrap"><span>dp</span></span>
                                 </span>
@@ -657,7 +657,7 @@
                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <label class="small">100%</label>
+                        <label class="small d-none d-md-block">100%</label>
                       </div>
                     </td>
                     <td>87 <i class="fas fa-paperclip ms-2"></i></td>
@@ -667,7 +667,7 @@
                   <tr>
                     <th scope="row">
                       <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs">
+                        <div class="avatar avatar-xs d-none d-md-block">
                                 <span class="avatar-text avatar-text-danger rounded-circle"><span
                                   class="initial-wrap"><span>ec</span></span>
                                 </span>
@@ -687,7 +687,7 @@
                           <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <label class="small">0%</label>
+                        <label class="small d-none d-md-block">0%</label>
                       </div>
                     </td>
                     <td>-</td>
@@ -697,7 +697,7 @@
                   <tr>
                     <th scope="row">
                       <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs">
+                        <div class="avatar avatar-xs d-none d-md-block">
                                 <span class="avatar-text avatar-text-info rounded-circle"><span
                                   class="initial-wrap"><span>ad</span></span>
                                 </span>
@@ -725,7 +725,7 @@
                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <label class="small">100%</label>
+                        <label class="small d-none d-md-block">100%</label>
                       </div>
                     </td>
                     <td>6<i class="fas fa-paperclip ms-2"></i></td>
@@ -735,7 +735,7 @@
                   <tr>
                     <th scope="row">
                       <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs">
+                        <div class="avatar avatar-xs d-none d-md-block">
                                 <span class="avatar-text avatar-text-lime rounded-circle"><span
                                   class="initial-wrap"><span>ad</span></span>
                                 </span>
@@ -771,7 +771,7 @@
                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <label class="small">100%</label>
+                        <label class="small d-none d-md-block">100%</label>
                       </div>
                     </td>
                     <td>-</td>
@@ -781,7 +781,7 @@
                   <tr>
                     <th scope="row">
                       <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs">
+                        <div class="avatar avatar-xs d-none d-md-block">
                                 <span class="avatar-text avatar-text-indigo rounded-circle"><span
                                   class="initial-wrap"><span>hi</span></span>
                                 </span>
@@ -817,7 +817,7 @@
                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <label class="small">100%</label>
+                        <label class="small d-none d-md-block">100%</label>
                       </div>
                     </td>
                     <td>5<i class="fas fa-paperclip ms-2"></i></td>
@@ -827,7 +827,7 @@
                   <tr>
                     <th scope="row">
                       <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs">
+                        <div class="avatar avatar-xs d-none d-md-block">
                                 <span class="avatar-text avatar-text-secondary rounded-circle"><span
                                   class="initial-wrap"><span>mw</span></span>
                                 </span>
@@ -866,7 +866,7 @@
                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <label class="small">100%</label>
+                        <label class="small d-none d-md-block">100%</label>
                       </div>
                     </td>
                     <td>3<i class="fas fa-paperclip ms-2"></i></td>
