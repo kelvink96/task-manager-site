@@ -44,7 +44,7 @@
           <p class="mb-0 menu-text ms-2 text-capitalize">tasks.IO</p>
         </a>
         <div class="list-group list-group-flush">
-          <a href="activity.html" class="list-group-item list-group-item-action active rounded-3 text-capitalize">
+          <a href="activity.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
             <i class="fas fa-tasks fa-fw"></i>
             <span class="menu-text">my tasks <span class="badge bg-secondary">20</span></span>
           </a>
@@ -57,7 +57,7 @@
             <i class="fas fa-th-list fa-fw"></i>
             <span class="menu-text">projects</span>
           </a>
-          <a href="calendar.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
+          <a href="calendar.html" class="list-group-item list-group-item-action active rounded-3 text-capitalize">
             <i class="fas fa-calendar-alt fa-fw"></i>
             <span class="menu-text">calendar</span>
           </a>
@@ -85,53 +85,15 @@
       <!--      navbar-->
       <nav class="navbar sticky-top navbar-expand-md px-3 bg-white border-bottom">
         <div class="container-fluid align-items-center">
-          <div class="collapse-toggle d-none d-md-block">
+          <div class="collapse-toggle d-none d-md-inline-block">
             <span id="toggleIcon" class="fas fa-bars"></span>
           </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvas-menu" aria-controls=offcanvas-menu"
                   aria-expanded="false" aria-label="Toggle navigation">
             <span class="small"><i class="fas fa-bars"></i></span>
           </button>
-          <div class="dropdown">
-            <a class="nav-link d-flex align-items-center" href="#" id="user-dropdown" role="button"
-               data-bs-toggle="dropdown"
-               aria-expanded="false">
-              <img src="img/user.png" alt="" height="32" width="32" loading="lazy" class="rounded-circle">
-            </a>
-            <ul class="dropdown-menu shadow-sm" aria-labelledby="user-dropdown">
-              <li>
-                <a class="dropdown-item" href="#">
-                      <span class="d-flex py-2 mb-2">
-                        <img src="img/user.png" alt="" height="48" width="48" loading="lazy"
-                             class="rounded-circle border">
-                        <span class="ms-3 fw-bold text-capitalize">john doe <br> <span
-                          class="text-muted fw-normal text-lowercase">john.doe@gmail.com</span></span>
-                      </span>
-                  <span><i class="fas fa-cog fa-fw me-2"></i>settings</span>
-                </a></li>
-              <li>
-                <div class="dropdown-divider"></div>
-              </li>
-              <li><a class="dropdown-item" href="#"><i class="fas fa-palette fa-fw me-2"></i>theme</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fas fa-stream fa-fw me-2"></i>activity log</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fas fa-puzzle-piece fa-fw me-2"></i>integrations</a>
-              </li>
-              <li>
-                <div class="dropdown-divider"></div>
-              </li>
-              <li><a class="dropdown-item" href="#"><i
-                class="fas fa-arrow-alt-circle-up fa-fw me-2"></i>upgrade</a>
-              </li>
-              <li><a class="dropdown-item" href="#"><i class="fas fa-download fa-fw me-2"></i>download apps</a>
-              </li>
-              <li>
-                <div class="dropdown-divider"></div>
-              </li>
-              <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-sign-out-alt fa-fw me-2"></i>log
-                out</a></li>
-            </ul>
-          </div>
+          <!--          display nav items-->
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-menu"
                aria-labelledby="offcanvas-menu-label">
             <div class="offcanvas-header">
@@ -144,7 +106,7 @@
             </div>
             <div class="offcanvas-body">
               <div class="nav-item dropdown col-12 col-md-7">
-                <a class="nav-link px-0" href="#" id="search-dropdown" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link px-0 ms-0 ms-md-3" href="#" id="search-dropdown" role="button" data-bs-toggle="dropdown"
                    aria-expanded="false">
                   <div class="input-group">
                     <span class="input-group-text bg-transparent" id="basic-addon1"><i class="fas fa-search"></i></span>
@@ -334,9 +296,48 @@
                       notifications<i class="fas fa-angle-right ms-2"></i></a></li>
                   </ul>
                 </li>
+                <li class="nav-item dropdown d-none d-md-block">
+                  <a class="nav-link d-flex align-items-center user-dropdown" href="#" role="button"
+                     data-bs-toggle="dropdown"
+                     aria-expanded="false">
+                    <img src="img/user.png" alt="" height="32" width="32" loading="lazy" class="rounded-circle">
+                  </a>
+                  <ul class="dropdown-menu shadow-sm" aria-labelledby="user-dropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                      <span class="d-flex py-2 mb-2">
+                        <img src="img/user.png" alt="" height="48" width="48" loading="lazy"
+                             class="rounded-circle border">
+                        <span class="ms-3 fw-bold text-capitalize">john doe <br> <span
+                          class="text-muted fw-normal text-lowercase">john.doe@gmail.com</span></span>
+                      </span>
+                        <span><i class="fas fa-cog fa-fw me-2"></i>settings</span>
+                      </a></li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-palette fa-fw me-2"></i>theme</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-stream fa-fw me-2"></i>activity log</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-puzzle-piece fa-fw me-2"></i>integrations</a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i
+                      class="fas fa-arrow-alt-circle-up fa-fw me-2"></i>upgrade</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-download fa-fw me-2"></i>download apps</a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-sign-out-alt fa-fw me-2"></i>log
+                      out</a></li>
+                  </ul>
+                </li>
               </ul>
               <hr>
-              <div class="list-group list-group-flush">
+              <div class="list-group list-group-flush d-block d-md-none">
                 <a href="activity.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
                   <i class="fas fa-tasks fa-fw"></i>
                   <span class="menu-text">my tasks <span class="badge bg-secondary">20</span></span>
@@ -376,7 +377,7 @@
           </div>
         </div>
       </nav>
-      <div class="container py-5">
+      <div class="container p-3 p-md-4 p-lg-5">
         <div class="section-title">
         </div>
         <section>

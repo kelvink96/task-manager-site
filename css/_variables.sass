@@ -33,3 +33,30 @@
 
 .task-progress
   height: .5rem
+
+.table-scrollable
+  overflow-x: auto
+
+.mw-500-600
+  max-width: 600px !important
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .table-scrollable
+    max-width: 100%
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+  .table-scrollable
+    max-width: 500px
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+  .table-scrollable
+    max-width: 100%
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)

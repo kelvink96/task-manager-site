@@ -54,7 +54,8 @@
             <i class="fas fa-home fa-fw"></i>
             <span class="menu-text">overview</span>
           </a>
-          <a href="projects-overview.html" class="list-group-item list-group-item-action active rounded-3 text-capitalize">
+          <a href="projects-overview.html"
+             class="list-group-item list-group-item-action active rounded-3 text-capitalize">
             <i class="fas fa-th-list fa-fw"></i>
             <span class="menu-text">projects</span>
           </a>
@@ -86,53 +87,15 @@
       <!--      navbar-->
       <nav class="navbar sticky-top navbar-expand-md px-3 bg-white border-bottom">
         <div class="container-fluid align-items-center">
-          <div class="collapse-toggle d-none d-md-block">
+          <div class="collapse-toggle d-none d-md-inline-block">
             <span id="toggleIcon" class="fas fa-bars"></span>
           </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvas-menu" aria-controls=offcanvas-menu"
                   aria-expanded="false" aria-label="Toggle navigation">
             <span class="small"><i class="fas fa-bars"></i></span>
           </button>
-          <div class="dropdown">
-            <a class="nav-link d-flex align-items-center" href="#" id="user-dropdown" role="button"
-               data-bs-toggle="dropdown"
-               aria-expanded="false">
-              <img src="img/user.png" alt="" height="32" width="32" loading="lazy" class="rounded-circle">
-            </a>
-            <ul class="dropdown-menu shadow-sm" aria-labelledby="user-dropdown">
-              <li>
-                <a class="dropdown-item" href="#">
-                      <span class="d-flex py-2 mb-2">
-                        <img src="img/user.png" alt="" height="48" width="48" loading="lazy"
-                             class="rounded-circle border">
-                        <span class="ms-3 fw-bold text-capitalize">john doe <br> <span
-                          class="text-muted fw-normal text-lowercase">john.doe@gmail.com</span></span>
-                      </span>
-                  <span><i class="fas fa-cog fa-fw me-2"></i>settings</span>
-                </a></li>
-              <li>
-                <div class="dropdown-divider"></div>
-              </li>
-              <li><a class="dropdown-item" href="#"><i class="fas fa-palette fa-fw me-2"></i>theme</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fas fa-stream fa-fw me-2"></i>activity log</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fas fa-puzzle-piece fa-fw me-2"></i>integrations</a>
-              </li>
-              <li>
-                <div class="dropdown-divider"></div>
-              </li>
-              <li><a class="dropdown-item" href="#"><i
-                class="fas fa-arrow-alt-circle-up fa-fw me-2"></i>upgrade</a>
-              </li>
-              <li><a class="dropdown-item" href="#"><i class="fas fa-download fa-fw me-2"></i>download apps</a>
-              </li>
-              <li>
-                <div class="dropdown-divider"></div>
-              </li>
-              <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-sign-out-alt fa-fw me-2"></i>log
-                out</a></li>
-            </ul>
-          </div>
+          <!--          display nav items-->
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-menu"
                aria-labelledby="offcanvas-menu-label">
             <div class="offcanvas-header">
@@ -145,7 +108,8 @@
             </div>
             <div class="offcanvas-body">
               <div class="nav-item dropdown col-12 col-md-7">
-                <a class="nav-link px-0" href="#" id="search-dropdown" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link px-0 ms-0 ms-md-3" href="#" id="search-dropdown" role="button"
+                   data-bs-toggle="dropdown"
                    aria-expanded="false">
                   <div class="input-group">
                     <span class="input-group-text bg-transparent" id="basic-addon1"><i class="fas fa-search"></i></span>
@@ -335,9 +299,48 @@
                       notifications<i class="fas fa-angle-right ms-2"></i></a></li>
                   </ul>
                 </li>
+                <li class="nav-item dropdown d-none d-md-block">
+                  <a class="nav-link d-flex align-items-center user-dropdown" href="#" role="button"
+                     data-bs-toggle="dropdown"
+                     aria-expanded="false">
+                    <img src="img/user.png" alt="" height="32" width="32" loading="lazy" class="rounded-circle">
+                  </a>
+                  <ul class="dropdown-menu shadow-sm" aria-labelledby="user-dropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                      <span class="d-flex py-2 mb-2">
+                        <img src="img/user.png" alt="" height="48" width="48" loading="lazy"
+                             class="rounded-circle border">
+                        <span class="ms-3 fw-bold text-capitalize">john doe <br> <span
+                          class="text-muted fw-normal text-lowercase">john.doe@gmail.com</span></span>
+                      </span>
+                        <span><i class="fas fa-cog fa-fw me-2"></i>settings</span>
+                      </a></li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-palette fa-fw me-2"></i>theme</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-stream fa-fw me-2"></i>activity log</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-puzzle-piece fa-fw me-2"></i>integrations</a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i
+                      class="fas fa-arrow-alt-circle-up fa-fw me-2"></i>upgrade</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-download fa-fw me-2"></i>download apps</a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-sign-out-alt fa-fw me-2"></i>log
+                      out</a></li>
+                  </ul>
+                </li>
               </ul>
               <hr>
-              <div class="list-group list-group-flush">
+              <div class="list-group list-group-flush d-block d-md-none">
                 <a href="activity.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
                   <i class="fas fa-tasks fa-fw"></i>
                   <span class="menu-text">my tasks <span class="badge bg-secondary">20</span></span>
@@ -347,7 +350,7 @@
                   <span class="menu-text">overview</span>
                 </a>
                 <a href="projects-overview.html"
-                   class="list-group-item list-group-item-action rounded-3 active text-capitalize">
+                   class="list-group-item list-group-item-action active rounded-3 text-capitalize">
                   <i class="fas fa-th-list fa-fw"></i>
                   <span class="menu-text">projects</span>
                 </a>
@@ -386,7 +389,7 @@
         </div>
         <div class="section-body">
           <div class="card border-0 shadow-sm mb-3">
-            <div class="card-body d-flex flex-column flex-md-row gap-3 align-items-center">
+            <div class="card-body d-flex flex-column flex-lg-row gap-3 align-items-lg-center">
               <div class="d-flex w-100 align-items-center justify-content-between justify-content-md-start">
                 <h1 class="my-0 display-2 fw-normal">10</h1>
                 <div>
@@ -397,7 +400,7 @@
               </div>
               <div class="vr d-none d-md-block"></div>
               <div class="flex-grow-1">
-                <div class="d-flex gap-3 mb-3">
+                <div class="d-flex justify-content-evenly justify-content-lg-start gap-2 gap-lg-3 mb-3">
                   <div class="d-flex gap-2 align-items-center">
                     <i class="fas fa-circle text-info"></i>
                     <p class="mb-0 text-capitalize">in progress (4)</p>
@@ -426,15 +429,15 @@
           </div>
           <div class="card border-0 shadow-sm">
             <div class="card-body">
-              <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                <div class="col-sm-12 col-md-5 mb-3 mb-md-0">
+              <div class="d-flex flex-column flex-lg-row justify-content-between mb-3 gap-3 gap-lg-0">
+                <div class="col-sm-12 col-md-7 col-lg-5 mb-3 mb-md-0">
                   <div class="input-group">
                     <span class="input-group-text bg-transparent" id="search-addon"><i class="fas fa-search"></i></span>
                     <input type="text" class="form-control" placeholder="search projects" aria-label="search projects"
                            aria-describedby="search-addon">
                   </div>
                 </div>
-                <div class="d-flex gap-3">
+                <div class="d-flex gap-1 gap-lg-3">
                   <div class="dropdown">
                     <button class="btn btn-outline-secondary" data-bs-toggle="dropdown"><i
                       class="fas fa-file-download me-2"></i>export
@@ -494,7 +497,7 @@
                   </div>
                 </div>
               </div>
-              <div class="table-responsive">
+              <div class="table-scrollable">
                 <table class="table align-middle">
                   <thead>
                   <tr>
@@ -511,8 +514,9 @@
                   <tbody>
                   <tr>
                     <th scope="row">
-                      <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs d-none d-md-block">
+                      <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-0 gap-lg-3">
+                        <div class="avatar avatar-xs d-none d-lg-block">
                                 <span class="avatar-text avatar-text-info rounded-circle"><span
                                   class="initial-wrap"><span>jb</span></span>
                                 </span>
@@ -525,7 +529,14 @@
                     </th>
                     <td>99</td>
                     <td>
-                      <div class="avatar-group avatar-group-sm">
+                      <div class="avatar-group avatar-group-sm d-block d-lg-none">
+                        <div class="avatar">
+                          <span class="avatar-text avatar-text-dark rounded-circle"><span
+                            class="initial-wrap"><span>4+</span></span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="avatar-group avatar-group-sm d-none d-lg-flex">
                         <div class="avatar">
                           <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
                                class="avatar-img rounded-circle">
@@ -547,7 +558,7 @@
                     </td>
                     <td><i class="fas fa-circle text-info small me-2"></i>in progress</td>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class="d-flex align-items-center">
                         <div class="progress task-progress flex-grow-1">
                           <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
                                aria-valuemin="0" aria-valuemax="100"></div>
@@ -556,18 +567,18 @@
                       </div>
                     </td>
                     <td>10<i class="fas fa-paperclip ms-1"></i></td>
-                    <td>
-                      1<i class="fas fa-comments ms-2"></i>
+                    <td>1<i class="fas fa-comments ms-2"></i>
                     </td>
                     <td>aug 1, 2022</td>
                   </tr>
                   <tr>
                     <th scope="row">
-                      <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs d-none d-md-block">
-                                <span class="avatar-text avatar-text-success rounded-circle"><span
-                                  class="initial-wrap"><span>hb</span></span>
-                                </span>
+                      <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-0 gap-lg-3">
+                        <div class="avatar avatar-xs d-none d-lg-block">
+                          <span class="avatar-text avatar-text-success rounded-circle"><span
+                            class="initial-wrap"><span>hb</span></span>
+                          </span>
                         </div>
                         <div>
                           <a href="projects-single.html" class="text-decoration-none text-black">hotel booking</a>
@@ -577,7 +588,14 @@
                     </th>
                     <td>34</td>
                     <td>
-                      <div class="avatar-group avatar-group-sm">
+                      <div class="avatar-group avatar-group-sm d-block d-lg-none">
+                        <div class="avatar">
+                          <span class="avatar-text avatar-text-dark rounded-circle"><span
+                            class="initial-wrap"><span>3+</span></span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="avatar-group avatar-group-sm d-none d-lg-flex">
                         <div class="avatar">
                           <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user"
                                class="avatar-img rounded-circle">
@@ -587,15 +605,15 @@
                                class="avatar-img rounded-circle">
                         </div>
                         <div class="avatar">
-                          <span class="avatar-text avatar-text-success rounded-circle"><span
-                            class="initial-wrap"><span>JD</span></span>
-                          </span>
+                                            <span class="avatar-text avatar-text-success rounded-circle"><span
+                                              class="initial-wrap"><span>JD</span></span>
+                                            </span>
                         </div>
                       </div>
                     </td>
                     <td><i class="fas fa-circle text-success small me-2"></i>completed</td>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class="d-flex align-items-center gap-0 gap-lg-3">
                         <div class="progress task-progress flex-grow-1">
                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                                aria-valuemin="0" aria-valuemax="100"></div>
@@ -611,11 +629,12 @@
                   </tr>
                   <tr>
                     <th scope="row">
-                      <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs d-none d-md-block">
-                                <span class="avatar-text avatar-text-danger rounded-circle"><span
-                                  class="initial-wrap"><span>fa</span></span>
-                                </span>
+                      <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-0 gap-lg-3">
+                        <div class="avatar avatar-xs d-none d-lg-block">
+                          <span class="avatar-text avatar-text-danger rounded-circle"><span
+                            class="initial-wrap"><span>fa</span></span>
+                          </span>
                         </div>
                         <div>
                           <a href="projects-single.html" class="text-decoration-none text-black">forex application</a>
@@ -627,7 +646,7 @@
                     <td>no assignee</td>
                     <td><i class="fas fa-circle text-info small me-2"></i>in progress</td>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class="d-flex align-items-center gap-0 gap-lg-3">
                         <div class="progress task-progress flex-grow-1">
                           <div class="progress-bar" role="progressbar" style="width: 67%;" aria-valuenow="67"
                                aria-valuemin="0" aria-valuemax="100"></div>
@@ -643,11 +662,12 @@
                   </tr>
                   <tr>
                     <th scope="row">
-                      <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs d-none d-md-block">
-                                <span class="avatar-text avatar-text-secondary rounded-circle"><span
-                                  class="initial-wrap"><span>ca</span></span>
-                                </span>
+                      <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-0 gap-lg-3">
+                        <div class="avatar avatar-xs d-none d-lg-block">
+                          <span class="avatar-text avatar-text-secondary rounded-circle"><span
+                            class="initial-wrap"><span>ca</span></span>
+                          </span>
                         </div>
                         <div>
                           <a href="projects-single.html" class="text-decoration-none text-black">chat application</a>
@@ -657,7 +677,14 @@
                     </th>
                     <td>56</td>
                     <td>
-                      <div class="avatar-group avatar-group-sm">
+                      <div class="avatar-group avatar-group-sm d-block d-lg-none">
+                        <div class="avatar">
+                          <span class="avatar-text avatar-text-dark rounded-circle"><span
+                            class="initial-wrap"><span>3+</span></span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="avatar-group avatar-group-sm d-none d-lg-flex">
                         <div class="avatar">
                           <span class="avatar-text avatar-text-success rounded-circle"><span
                             class="initial-wrap"><span>gh</span></span>
@@ -675,7 +702,7 @@
                     </td>
                     <td><i class="fas fa-circle text-info small me-2"></i>in progress</td>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class="d-flex align-items-center gap-0 gap-lg-3">
                         <div class="progress task-progress flex-grow-1">
                           <div class="progress-bar" role="progressbar" style="width: 16%;" aria-valuenow="16"
                                aria-valuemin="0" aria-valuemax="100"></div>
@@ -689,11 +716,12 @@
                   </tr>
                   <tr>
                     <th scope="row">
-                      <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs d-none d-md-block">
-                                <span class="avatar-text avatar-text-warning rounded-circle"><span
-                                  class="initial-wrap"><span>dp</span></span>
-                                </span>
+                      <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-0 gap-lg-3">
+                        <div class="avatar avatar-xs d-none d-lg-block">
+                          <span class="avatar-text avatar-text-warning rounded-circle"><span
+                            class="initial-wrap"><span>dp</span></span>
+                          </span>
                         </div>
                         <div>
                           <a href="projects-single.html" class="text-decoration-none text-black">designer portfolio</a>
@@ -703,7 +731,14 @@
                     </th>
                     <td>22</td>
                     <td>
-                      <div class="avatar-group avatar-group-sm">
+                      <div class="avatar-group avatar-group-sm d-block d-lg-none">
+                        <div class="avatar">
+                          <span class="avatar-text avatar-text-dark rounded-circle"><span
+                            class="initial-wrap"><span>2+</span></span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="avatar-group avatar-group-sm d-none d-lg-flex">
                         <div class="avatar">
                           <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user"
                                class="avatar-img rounded-circle">
@@ -716,7 +751,7 @@
                     </td>
                     <td><i class="fas fa-circle text-dark opacity-25 small me-2"></i>archived</td>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class="d-flex align-items-center gap-0 gap-lg-3">
                         <div class="progress task-progress flex-grow-1">
                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                                aria-valuemin="0" aria-valuemax="100"></div>
@@ -730,11 +765,12 @@
                   </tr>
                   <tr>
                     <th scope="row">
-                      <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs d-none d-md-block">
-                                <span class="avatar-text avatar-text-danger rounded-circle"><span
-                                  class="initial-wrap"><span>ec</span></span>
-                                </span>
+                      <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-0 gap-lg-3">
+                        <div class="avatar avatar-xs d-none d-lg-block">
+                            <span class="avatar-text avatar-text-danger rounded-circle"><span
+                              class="initial-wrap"><span>ec</span></span>
+                            </span>
                         </div>
                         <div>
                           <a href="projects-single.html" class="text-decoration-none text-black">e-commerce</a>
@@ -746,7 +782,7 @@
                     <td>no assignee</td>
                     <td><i class="fas fa-circle text-info small me-2"></i>in progress</td>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class="d-flex align-items-center gap-0 gap-lg-3">
                         <div class="progress task-progress flex-grow-1">
                           <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
                                aria-valuemin="0" aria-valuemax="100"></div>
@@ -760,11 +796,12 @@
                   </tr>
                   <tr>
                     <th scope="row">
-                      <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs d-none d-md-block">
-                                <span class="avatar-text avatar-text-info rounded-circle"><span
-                                  class="initial-wrap"><span>ad</span></span>
-                                </span>
+                      <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-0 gap-lg-3">
+                        <div class="avatar avatar-xs d-none d-lg-block">
+                          <span class="avatar-text avatar-text-info rounded-circle"><span
+                            class="initial-wrap"><span>ad</span></span>
+                          </span>
                         </div>
                         <div>
                           <a href="projects-single.html" class="text-decoration-none text-black">adminator</a>
@@ -776,15 +813,15 @@
                     <td>
                       <div class="avatar-group avatar-group-sm">
                         <div class="avatar">
-                          <span class="avatar-text avatar-text-success rounded-circle"><span
-                            class="initial-wrap"><span>jp</span></span>
-                          </span>
+                                            <span class="avatar-text avatar-text-success rounded-circle"><span
+                                              class="initial-wrap"><span>jp</span></span>
+                                            </span>
                         </div>
                       </div>
                     </td>
                     <td><i class="fas fa-circle text-success small me-2"></i>completed</td>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class="d-flex align-items-center gap-0 gap-lg-3">
                         <div class="progress task-progress flex-grow-1">
                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                                aria-valuemin="0" aria-valuemax="100"></div>
@@ -798,11 +835,12 @@
                   </tr>
                   <tr>
                     <th scope="row">
-                      <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs d-none d-md-block">
-                                <span class="avatar-text avatar-text-lime rounded-circle"><span
-                                  class="initial-wrap"><span>ad</span></span>
-                                </span>
+                      <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-0 gap-lg-3">
+                        <div class="avatar avatar-xs d-none d-lg-block">
+                          <span class="avatar-text avatar-text-lime rounded-circle"><span
+                            class="initial-wrap"><span>da</span></span>
+                          </span>
                         </div>
                         <div>
                           <a href="projects-single.html" class="text-decoration-none text-black">documentation app</a>
@@ -812,7 +850,14 @@
                     </th>
                     <td>8</td>
                     <td>
-                      <div class="avatar-group avatar-group-sm">
+                      <div class="avatar-group avatar-group-sm d-block d-lg-none">
+                        <div class="avatar">
+                          <span class="avatar-text avatar-text-dark rounded-circle"><span
+                            class="initial-wrap"><span>3+</span></span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="avatar-group avatar-group-sm d-none d-lg-flex">
                         <div class="avatar">
                           <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
                                class="avatar-img rounded-circle">
@@ -830,7 +875,7 @@
                     </td>
                     <td><i class="fas fa-circle text-dark opacity-25 small me-2"></i>archived</td>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class="d-flex align-items-center gap-0 gap-lg-3">
                         <div class="progress task-progress flex-grow-1">
                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                                aria-valuemin="0" aria-valuemax="100"></div>
@@ -844,11 +889,12 @@
                   </tr>
                   <tr>
                     <th scope="row">
-                      <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs d-none d-md-block">
-                                <span class="avatar-text avatar-text-indigo rounded-circle"><span
-                                  class="initial-wrap"><span>hi</span></span>
-                                </span>
+                      <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-0 gap-lg-3">
+                        <div class="avatar avatar-xs d-none d-lg-block">
+                            <span class="avatar-text avatar-text-indigo rounded-circle"><span
+                              class="initial-wrap"><span>hi</span></span>
+                            </span>
                         </div>
                         <div>
                           <a href="projects-single.html" class="text-decoration-none text-black">hospital intranet</a>
@@ -858,7 +904,14 @@
                     </th>
                     <td>65</td>
                     <td>
-                      <div class="avatar-group avatar-group-sm">
+                      <div class="avatar-group avatar-group-sm d-block d-lg-none">
+                        <div class="avatar">
+                          <span class="avatar-text avatar-text-dark rounded-circle"><span
+                            class="initial-wrap"><span>3+</span></span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="avatar-group avatar-group-sm d-none d-lg-flex">
                         <div class="avatar">
                           <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user"
                                class="avatar-img rounded-circle">
@@ -876,7 +929,7 @@
                     </td>
                     <td><i class="fas fa-circle text-success small me-2"></i>completed</td>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class="d-flex align-items-center gap-0 gap-lg-3">
                         <div class="progress task-progress flex-grow-1">
                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                                aria-valuemin="0" aria-valuemax="100"></div>
@@ -890,11 +943,12 @@
                   </tr>
                   <tr>
                     <th scope="row">
-                      <div class="d-flex align-items-center gap-3">
-                        <div class="avatar avatar-xs d-none d-md-block">
-                                <span class="avatar-text avatar-text-secondary rounded-circle"><span
-                                  class="initial-wrap"><span>mw</span></span>
-                                </span>
+                      <div
+                        class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-0 gap-lg-3">
+                        <div class="avatar avatar-xs d-none d-lg-block">
+                          <span class="avatar-text avatar-text-secondary rounded-circle"><span
+                            class="initial-wrap"><span>mw</span></span>
+                          </span>
                         </div>
                         <div>
                           <a href="projects-single.html" class="text-decoration-none text-black">my wallet</a>
@@ -904,7 +958,14 @@
                     </th>
                     <td>45</td>
                     <td>
-                      <div class="avatar-group avatar-group-sm">
+                      <div class="avatar-group avatar-group-sm d-block d-lg-none">
+                        <div class="avatar">
+                          <span class="avatar-text avatar-text-dark rounded-circle"><span
+                            class="initial-wrap"><span>4+</span></span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="avatar-group avatar-group-sm d-none d-lg-flex">
                         <div class="avatar">
                           <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="user"
                                class="avatar-img rounded-circle">
@@ -925,7 +986,7 @@
                     </td>
                     <td><i class="fas fa-circle text-dark opacity-25 small me-2"></i>archived</td>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class="d-flex align-items-center gap-0 gap-lg-3">
                         <div class="progress task-progress flex-grow-1">
                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
                                aria-valuemin="0" aria-valuemax="100"></div>

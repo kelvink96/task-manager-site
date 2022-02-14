@@ -344,6 +344,25 @@ table.table tbody a:hover, table.table tbody a:focus {
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sidebar .position-fixed {
+    width: 180px;
+  }
+  .sidebar .list-group-item {
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+  }
+  .sidebar .list-group-item .menu-text {
+    left: 31px;
+  }
+
+  .sidebar--Collapse .position-fixed {
+    width: 4.75rem;
+  }
+  .sidebar--Collapse .position-fixed i {
+    margin: auto;
+  }
+}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .sidebar .position-fixed {
@@ -419,6 +438,34 @@ table.table tbody a:hover, table.table tbody a:focus {
   height: 0.5rem;
 }
 
+.table-scrollable {
+  overflow-x: auto;
+}
+
+.mw-500-600 {
+  max-width: 600px !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .table-scrollable {
+    max-width: 100%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .table-scrollable {
+    max-width: 500px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .table-scrollable {
+    max-width: 100%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 /*Avatar */
 .hk-sec-wrapper {
   background: #fff;
@@ -837,10 +884,6 @@ html, body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .sidebar {
-    display: none;
-  }
-
   .section-title button.btn span, .task button.btn span, .project-header button.btn span {
     display: none;
   }
@@ -872,11 +915,6 @@ html, body {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .sidebar {
-    display: none;
-  }
-}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .sidebar {
