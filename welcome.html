@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Tasks.io | Users</title>
+  <title>Tasks.io | Getting Started</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -63,7 +63,7 @@
             <i class="fas fa-user-friends fa-fw"></i>
             <span class="menu-text">teams</span>
           </a>
-          <a href="users.html" class="list-group-item list-group-item-action active rounded-3 text-capitalize">
+          <a href="users.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
             <i class="fas fa-users fa-fw"></i>
             <span class="menu-text">users</span>
           </a>
@@ -335,7 +335,7 @@
                       notifications<i class="fas fa-angle-right ms-2"></i></a></li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown d-md-inline-block">
+                <li class="nav-item dropdown d-none d-md-block">
                   <a class="nav-link d-flex align-items-center user-dropdown" href="#" role="button"
                      data-bs-toggle="dropdown"
                      aria-expanded="false">
@@ -398,7 +398,7 @@
                   <i class="fas fa-user-friends fa-fw"></i>
                   <span class="menu-text">teams</span>
                 </a>
-                <a href="users.html" class="list-group-item list-group-item-action active rounded-3 text-capitalize">
+                <a href="users.html" class="list-group-item list-group-item-action rounded-3 text-capitalize">
                   <i class="fas fa-users fa-fw"></i>
                   <span class="menu-text">users</span>
                 </a>
@@ -416,380 +416,18 @@
           </div>
         </div>
       </nav>
-      <div class="container p-3 p-md-4 p-xl-5">
-        <div class="section-title d-flex justify-content-between pb-2 pb-md-3 pb-lg-4">
-          <h2 class="">users</h2>
-        </div>
+      <div class="container py-5">
         <section>
           <div class="section-body">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body">
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                  <div class="col-sm-12 col-md-5 mb-3 mb-md-0">
-                    <div class="input-group">
-                      <span class="input-group-text" id="search-addon"><i class="fas fa-search"></i></span>
-                      <input type="text" class="form-control" placeholder="search users" aria-label="search users"
-                             aria-describedby="search-addon">
-                    </div>
-                  </div>
-                  <div class="d-flex gap-3">
-                    <div class="dropdown">
-                      <button class="btn btn-outline-secondary" data-bs-toggle="dropdown"><i
-                        class="fas fa-file-download me-2"></i>export
-                      </button>
-                      <ul class="dropdown-menu shadow-sm">
-                        <li>
-                          <h6 class="dropdown-header">export options</h6>
-                        </li>
-                        <li>
-                          <button class="dropdown-item"><i class="fas fa-copy me-2"></i>copy</button>
-                        </li>
-                        <li>
-                          <button class="dropdown-item"><i class="fas fa-print me-2"></i>print</button>
-                        </li>
-                        <li>
-                          <div class="dropdown-divider"></div>
-                        </li>
-                        <li>
-                          <button class="dropdown-item"><i class="fas fa-file-excel me-2"></i>excel</button>
-                        </li>
-                        <li>
-                          <button class="dropdown-item"><i class="fas fa-file-csv me-2"></i>CSV</button>
-                        </li>
-                        <li>
-                          <button class="dropdown-item"><i class="fas fa-file-pdf me-2"></i>PDF</button>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="dropdown">
-                      <button class="btn btn-outline-secondary" data-bs-toggle="dropdown"><i
-                        class="fas fa-filter me-2"></i>filter
-                      </button>
-                      <div class="dropdown-menu shadow-sm" style="width: 200px;">
-                        <h6 class="dropdown-header">filter options</h6>
-                        <form class="p-3">
-                          <div class="mb-3">
-                            <label for="due-date-select" class="form-label">due date</label>
-                            <select class="form-select" aria-label="due date" id="due-date-select">
-                              <option selected>any</option>
-                              <option value="1">this week</option>
-                              <option value="2">next week</option>
-                              <option value="3">next monthe</option>
-                            </select>
-                          </div>
-                          <div class="mb-3">
-                            <label for="status-select" class="form-label">status</label>
-                            <select class="form-select" aria-label="due date" id="status-select">
-                              <option selected>any status</option>
-                              <option value="1">in progress</option>
-                              <option value="2">complete</option>
-                              <option value="3">archived</option>
-                            </select>
-                          </div>
-                          <button class="btn btn-primary w-100">apply filters</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
+            <div class="card border-0 shadow-sm text-center">
+              <div class="card-body p-5">
+                <div class="col-4 mx-auto mb-4">
+                  <img src="img/task.io-bg.svg" alt="" class="img-fluid">
                 </div>
-                <div class="table-scrollable">
-                  <table class="table table-hover align-middle">
-                    <thead>
-                    <tr>
-                      <th scope="col">name</th>
-                      <th scope="col">position</th>
-                      <th scope="col">country</th>
-                      <th scope="col">site role</th>
-                      <th scope="col"></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <th scope="row">
-                        <div class="d-flex gap-3">
-                          <div class="avatar avatar-xs">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
-                                 class="avatar-img rounded-circle">
-                            <span
-                              class="position-absolute top-50 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
-                                </span>
-                          </div>
-                          <div>
-                            <p class="mb-0 text-capitalize">amanda richard</p>
-                            <p class="mb-0 small text-muted fw-normal">amanda.example.com</p>
-                          </div>
-                        </div>
-                      </th>
-                      <td>
-                        <p class="mb-0 text-capitalize">director</p>
-                        <p class="small mb-0 text-capitalize text-muted">human resource</p>
-                      </td>
-                      <td class="text-capitalize">united kingdom</td>
-                      <td class="text-capitalize"><span class="badge bg-info p-2">manager</span></td>
-                      <td>
-                        <button class="btn btn-outline-secondary btn-sm" type="button"><i class="fas fa-pencil-alt me-2"></i>edit
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <div class="d-flex gap-3">
-                          <div class="avatar avatar-xs">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
-                                 class="avatar-img rounded-circle">
-                            <span
-                              class="position-absolute top-50 start-100 translate-middle p-1 bg-warning border border-light rounded-circle">
-                                </span>
-                          </div>
-                          <div>
-                            <p class="mb-0 text-capitalize">dominic keller</p>
-                            <p class="mb-0 small text-muted fw-normal">dominic.example.com</p>
-                          </div>
-                        </div>
-                      </th>
-                      <td>
-                        <p class="mb-0 text-capitalize">seller</p>
-                        <p class="small mb-0 text-capitalize text-muted">sales</p>
-                      </td>
-                      <td class="text-capitalize">united states</td>
-                      <td class="text-capitalize"><span class="badge bg-warning p-2">auditor</span></td>
-                      <td>
-                        <button class="btn btn-outline-secondary btn-sm" type="button"><i class="fas fa-pencil-alt me-2"></i>edit
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <div class="d-flex gap-3">
-                          <div class="avatar avatar-xs">
-                                <span class="avatar-text avatar-text-primary rounded-circle"><span
-                                  class="initial-wrap"><span>zb</span></span>
-                                </span>
-                            <span
-                              class="position-absolute top-50 start-100 translate-middle p-1 bg-dark border border-light rounded-circle">
-                                </span>
-                          </div>
-                          <div>
-                            <p class="mb-0 text-capitalize">zana barkley</p>
-                            <p class="mb-0 small text-muted fw-normal">zana.example.com</p>
-                          </div>
-                        </div>
-                      </th>
-                      <td>
-                        <p class="mb-0 text-capitalize">accountant</p>
-                        <p class="small mb-0 text-capitalize text-muted">finance</p>
-                      </td>
-                      <td class="text-capitalize">australia</td>
-                      <td class="text-capitalize"><span class="badge p-2 bg-success">employee</span></td>
-                      <td>
-                        <button class="btn btn-outline-secondary btn-sm"><i class="fas fa-pencil-alt me-2"></i>edit
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <div class="d-flex gap-3">
-                          <div class="avatar avatar-xs">
-                                <span class="avatar-text avatar-text-primary rounded-circle"><span
-                                  class="initial-wrap"><span>wm</span></span>
-                                </span>
-                            <span
-                              class="position-absolute top-50 start-100 translate-middle p-1 bg-success bg-opacity-50 border border-light rounded-circle">
-                                </span>
-                          </div>
-                          <div>
-                            <p class="mb-0 text-capitalize">wesley morgan</p>
-                            <p class="mb-0 small text-muted fw-normal">wesley.example.com</p>
-                          </div>
-                        </div>
-                      </th>
-                      <td>
-                        <p class="mb-0 text-capitalize">developer</p>
-                        <p class="small mb-0 text-capitalize text-muted">mobile app</p>
-                      </td>
-                      <td class="text-capitalize">france</td>
-                      <td class="text-capitalize"><span class="badge p-2 bg-success">employee</span></td>
-                      <td>
-                        <button class="btn btn-outline-secondary btn-sm"><i class="fas fa-pencil-alt me-2"></i>edit
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <div class="d-flex gap-3">
-                          <div class="avatar avatar-xs">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="user"
-                                 class="avatar-img rounded-circle">
-                            <span
-                              class="position-absolute top-50 start-100 translate-middle p-1 bg-warning border border-light rounded-circle">
-                                </span>
-                          </div>
-                          <div>
-                            <p class="mb-0 text-capitalize">ella dunn</p>
-                            <p class="mb-0 small text-muted fw-normal">ella.example.com</p>
-                          </div>
-                        </div>
-                      </th>
-                      <td>
-                        <p class="mb-0 text-capitalize">designer</p>
-                        <p class="small mb-0 text-capitalize text-muted">IT department</p>
-                      </td>
-                      <td class="text-capitalize">canada</td>
-                      <td class="text-capitalize"><span class="badge p-2 bg-dark me-2">admin</span><span class="badge p-2 bg-warning">auditor</span></td>
-                      <td>
-                        <button class="btn btn-outline-secondary btn-sm"><i class="fas fa-pencil-alt me-2"></i>edit
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <div class="d-flex gap-3">
-                          <div class="avatar avatar-xs">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
-                                 class="avatar-img rounded-circle">
-                            <span
-                              class="position-absolute top-50 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
-                                </span>
-                          </div>
-                          <div>
-                            <p class="mb-0 text-capitalize">amanda richard</p>
-                            <p class="mb-0 small text-muted fw-normal">amanda.example.com</p>
-                          </div>
-                        </div>
-                      </th>
-                      <td>
-                        <p class="mb-0 text-capitalize">director</p>
-                        <p class="small mb-0 text-capitalize text-muted">human resource</p>
-                      </td>
-                      <td class="text-capitalize">united kingdom</td>
-                      <td class="text-capitalize"><span class="badge bg-info p-2">manager</span></td>
-                      <td>
-                        <button class="btn btn-outline-secondary btn-sm" type="button"><i class="fas fa-pencil-alt me-2"></i>edit
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <div class="d-flex gap-3">
-                          <div class="avatar avatar-xs">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
-                                 class="avatar-img rounded-circle">
-                            <span
-                              class="position-absolute top-50 start-100 translate-middle p-1 bg-warning border border-light rounded-circle">
-                                </span>
-                          </div>
-                          <div>
-                            <p class="mb-0 text-capitalize">dominic keller</p>
-                            <p class="mb-0 small text-muted fw-normal">dominic.example.com</p>
-                          </div>
-                        </div>
-                      </th>
-                      <td>
-                        <p class="mb-0 text-capitalize">seller</p>
-                        <p class="small mb-0 text-capitalize text-muted">sales</p>
-                      </td>
-                      <td class="text-capitalize">united states</td>
-                      <td class="text-capitalize"><span class="badge bg-warning p-2">auditor</span></td>
-                      <td>
-                        <button class="btn btn-outline-secondary btn-sm" type="button"><i class="fas fa-pencil-alt me-2"></i>edit
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <div class="d-flex gap-3">
-                          <div class="avatar avatar-xs">
-                                <span class="avatar-text avatar-text-primary rounded-circle"><span
-                                  class="initial-wrap"><span>zb</span></span>
-                                </span>
-                            <span
-                              class="position-absolute top-50 start-100 translate-middle p-1 bg-dark border border-light rounded-circle">
-                                </span>
-                          </div>
-                          <div>
-                            <p class="mb-0 text-capitalize">zana barkley</p>
-                            <p class="mb-0 small text-muted fw-normal">zana.example.com</p>
-                          </div>
-                        </div>
-                      </th>
-                      <td>
-                        <p class="mb-0 text-capitalize">accountant</p>
-                        <p class="small mb-0 text-capitalize text-muted">finance</p>
-                      </td>
-                      <td class="text-capitalize">australia</td>
-                      <td class="text-capitalize"><span class="badge p-2 bg-success">employee</span></td>
-                      <td>
-                        <button class="btn btn-outline-secondary btn-sm"><i class="fas fa-pencil-alt me-2"></i>edit
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <div class="d-flex gap-3">
-                          <div class="avatar avatar-xs">
-                                <span class="avatar-text avatar-text-primary rounded-circle"><span
-                                  class="initial-wrap"><span>wm</span></span>
-                                </span>
-                            <span
-                              class="position-absolute top-50 start-100 translate-middle p-1 bg-success bg-opacity-50 border border-light rounded-circle">
-                                </span>
-                          </div>
-                          <div>
-                            <p class="mb-0 text-capitalize">wesley morgan</p>
-                            <p class="mb-0 small text-muted fw-normal">wesley.example.com</p>
-                          </div>
-                        </div>
-                      </th>
-                      <td>
-                        <p class="mb-0 text-capitalize">developer</p>
-                        <p class="small mb-0 text-capitalize text-muted">mobile app</p>
-                      </td>
-                      <td class="text-capitalize">france</td>
-                      <td class="text-capitalize"><span class="badge p-2 bg-success">employee</span></td>
-                      <td>
-                        <button class="btn btn-outline-secondary btn-sm"><i class="fas fa-pencil-alt me-2"></i>edit
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                        <div class="d-flex gap-3">
-                          <div class="avatar avatar-xs">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="user"
-                                 class="avatar-img rounded-circle">
-                            <span
-                              class="position-absolute top-50 start-100 translate-middle p-1 bg-warning border border-light rounded-circle">
-                                </span>
-                          </div>
-                          <div>
-                            <p class="mb-0 text-capitalize">ella dunn</p>
-                            <p class="mb-0 small text-muted fw-normal">ella.example.com</p>
-                          </div>
-                        </div>
-                      </th>
-                      <td>
-                        <p class="mb-0 text-capitalize">designer</p>
-                        <p class="small mb-0 text-capitalize text-muted">IT department</p>
-                      </td>
-                      <td class="text-capitalize">canada</td>
-                      <td class="text-capitalize"><span class="badge p-2 bg-dark me-2">admin</span><span class="badge p-2 bg-warning">auditor</span></td>
-                      <td>
-                        <button class="btn btn-outline-secondary btn-sm"><i class="fas fa-pencil-alt me-2"></i>edit
-                        </button>
-                      </td>
-                    </tr>
-                    </tbody>
-                  </table>
-                  <nav class="float-end">
-                    <ul class="pagination">
-                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                  </nav>
-                </div>
+                <h3 class="card-title">Hello, nice to see you!</h3>
+                <p class="card-text">You are now minutes away from creativity than ever before. Enjoy!</p>
+                <a href="activity.html" class="btn btn-primary">create your first task<i
+                  class="fas fa-angle-right ms-2"></i></a>
               </div>
             </div>
           </div>
