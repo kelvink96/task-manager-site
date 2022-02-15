@@ -74,7 +74,7 @@
 
   .menu-text
     display: none
-    @include transition(opacity, 200ms)
+    @include transition(opacity, 300ms)
     position: absolute
 
   .list-group
@@ -96,7 +96,7 @@
   min-height: 100vh
 
 .main--slide
-  @include transition(margin-left, 200ms)
+  @include transition(margin-left, 300ms)
 
 nav.navbar
   .dropdown-menu:not([aria-labelledby="search-dropdown"])
@@ -311,6 +311,10 @@ table.table
     h2
       font-size: 1em !important
 
+  nav.navbar
+    .dropdown-menu
+      margin-left: 0 !important
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px)
   .fc-center
@@ -341,7 +345,7 @@ table.table
 @media only screen and (min-width: 992px)
   .sidebar
     .position-fixed
-      width: 200px
+      width: 195px
       padding-left: .35rem
       padding-right: .35rem
 
@@ -354,7 +358,7 @@ table.table
 
   .sidebar--Collapse
     .position-fixed
-      width: 70px
+      width: 4rem
 
   .fc-center
     h2

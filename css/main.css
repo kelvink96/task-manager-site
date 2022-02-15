@@ -43,10 +43,10 @@
 .menu-text {
   left: 50px;
   opacity: 1;
-  transition: opacity 300ms 150ms ease-out;
-  -moz-transition: opacity 300ms 150ms ease-out;
-  -o-transition: opacity 300ms 150ms ease-out;
-  -webkit-transition: opacity 300ms 150ms ease-out;
+  transition: opacity 300ms 200ms ease-out;
+  -moz-transition: opacity 300ms 200ms ease-out;
+  -o-transition: opacity 300ms 200ms ease-out;
+  -webkit-transition: opacity 300ms 200ms ease-out;
   position: absolute;
 }
 
@@ -97,10 +97,10 @@
 }
 .sidebar--Collapse .menu-text {
   display: none;
-  transition: opacity 200ms ease-out;
-  -moz-transition: opacity 200ms ease-out;
-  -o-transition: opacity 200ms ease-out;
-  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  -o-transition: opacity 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out;
   position: absolute;
 }
 .sidebar--Collapse .list-group .list-group-item {
@@ -126,10 +126,10 @@
 }
 
 .main--slide {
-  transition: margin-left 200ms ease-out;
-  -moz-transition: margin-left 200ms ease-out;
-  -o-transition: margin-left 200ms ease-out;
-  -webkit-transition: margin-left 200ms ease-out;
+  transition: margin-left 300ms ease-out;
+  -moz-transition: margin-left 300ms ease-out;
+  -o-transition: margin-left 300ms ease-out;
+  -webkit-transition: margin-left 300ms ease-out;
 }
 
 nav.navbar .dropdown-menu:not([aria-labelledby=search-dropdown]) {
@@ -340,6 +340,10 @@ table.table tbody a:hover, table.table tbody a:focus {
   .fc-center h2 {
     font-size: 1em !important;
   }
+
+  nav.navbar .dropdown-menu {
+    margin-left: 0 !important;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -370,7 +374,7 @@ table.table tbody a:hover, table.table tbody a:focus {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .sidebar .position-fixed {
-    width: 200px;
+    width: 195px;
     padding-left: 0.35rem;
     padding-right: 0.35rem;
   }
@@ -382,7 +386,7 @@ table.table tbody a:hover, table.table tbody a:focus {
   }
 
   .sidebar--Collapse .position-fixed {
-    width: 70px;
+    width: 4rem;
   }
 
   .fc-center h2 {
@@ -472,10 +476,19 @@ table.table tbody a:hover, table.table tbody a:focus {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .table-scrollable {
-    max-width: 100%;
+    max-width: 780px;
+  }
+
+  .mw-500-600 {
+    max-width: 100% !important;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .table-scrollable {
+    max-width: 100%;
+  }
+}
 /*Avatar */
 .hk-sec-wrapper {
   background: #fff;

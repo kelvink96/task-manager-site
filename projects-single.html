@@ -349,6 +349,7 @@
                      data-bs-toggle="dropdown"
                      aria-expanded="false">
                     <img src="img/user.png" alt="" height="32" width="32" loading="lazy" class="rounded-circle">
+                    <span class="d-block d-md-none ms-2">john doe</span>
                   </a>
                   <ul class="dropdown-menu shadow-sm" aria-labelledby="user-dropdown">
                     <li>
@@ -430,7 +431,7 @@
           </div>
         </div>
       </nav>
-      <div class="container p-3 p-md-4 p-xl-5 table-scrollable">
+      <div class="container p-3 p-md-4 p-xl-5">
         <div class="section-title">
           <div class="card bg-transparent border-0">
             <div class="card-body px-0">
@@ -529,18 +530,18 @@
           </div>
         </div>
         <hr class="my-0 my-md-2">
-        <div class="section-body py-3">
-          <div class="d-flex col-sm-12 col-lg-4 mb-3 mb-md-0">
+        <div class="section-body py-3 table-scrollable">
+          <div class="d-flex col-sm-12 col-lg-6 col-xl-4 mb-3 mb-md-0">
             <div class="input-group">
               <span class="input-group-text bg-white" id="search-addon"><i class="fas fa-search"></i></span>
               <input type="text" class="form-control" placeholder="search projects" aria-label="search-addon">
             </div>
           </div>
-          <div class="tab-content" id="pills-tabContent">
+          <div class="tab-content table-scrollable" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-boards" role="tabpanel"
                  aria-labelledby="pills-boards-tab">
-              <div class="row flex-nowrap overflow-auto py-2 py-md-4">
-                <div class="col-10 col-md-5 col-lg-3 board">
+              <div class="row flex-nowrap py-2 py-lg-4">
+                <div class="col-10 col-md-5 col-lg-4 col-xl-3 board">
                   <div class="board-header d-flex justify-content-between">
                     <p class="mb-0 text-capitalize fw-500">backlog<span
                       class="badge bg-secondary ms-2">1</span></p>
@@ -689,7 +690,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="col-10 col-md-5 col-lg-3 board">
+                <div class="col-10 col-md-5 col-lg-4 col-xl-3 board">
                   <div class="board-header d-flex justify-content-between">
                     <p class="mb-0 text-capitalize fw-500">to do<span
                       class="badge bg-secondary ms-2">3</span></p>
@@ -899,7 +900,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="col-10 col-md-5 col-lg-3 board">
+                <div class="col-10 col-md-5 col-lg-4 col-xl-3 board">
                   <div class="board-header d-flex justify-content-between">
                     <p class="mb-0 text-capitalize fw-500">in progress<span
                       class="badge bg-secondary ms-2">3</span></p>
@@ -1104,7 +1105,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="col-10 col-md-5 col-lg-3 board">
+                <div class="col-10 col-md-5 col-lg-4 col-xl-3 board">
                   <div class="board-header d-flex justify-content-between">
                     <p class="mb-0 text-capitalize fw-500">review<span
                       class="badge bg-secondary ms-2">1</span></p>
@@ -1201,7 +1202,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="col-10 col-md-5 col-lg-3 board">
+                <div class="col-10 col-md-5 col-lg-4 col-xl-3 board">
                   <div class="board-header d-flex justify-content-between">
                     <p class="mb-0 text-capitalize fw-500">completed<span
                       class="badge bg-secondary ms-2">1</span></p>
@@ -1293,7 +1294,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="col-10 col-md-5 col-lg-3 board">
+                <div class="col-10 col-md-5 col-lg-4 col-xl-3 board">
                   <div class="board-header d-flex justify-content-between mb-3">
                     <p class="mb-0 text-capitalize fw-500">create new board</p>
                     <div class="d-flex gap-1">
@@ -1307,92 +1308,92 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- share access modal -->
-    <div class="modal fade" id="share-invite-modal" tabindex="-1" aria-labelledby="share-invite-modal-label"
-         aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Share project</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h6 class="mb-3 text-capitalize">send link</h6>
-            <p><i class="fas fa-users me-2"></i>People you specify can view</p>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="to: name or email"
-                     aria-label="Recipient's username" aria-describedby="basic-addon2">
-              <span class="input-group-text bg-transparent" id="basic-addon2"><i class="fas fa-edit"></i></span>
+      <!-- share access modal -->
+      <div class="modal fade" id="share-invite-modal" tabindex="-1" aria-labelledby="share-invite-modal-label"
+           aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Share project</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="mb-3">
-              <label for="textarea-message" class="form-label">custom message</label>
-              <textarea name="" id="textarea-message" rows="2" class="form-control"
-                        placeholder="write message..."></textarea>
-            </div>
-            <div class="d-flex justify-content-between gap-3">
-              <div class="flex-grow-1">
-                <select class="form-select text-capitalize" id="select-messenger">
-                  <option selected>Invite via...</option>
-                  <option value="1">outlook</option>
-                  <option value="2">gmail</option>
-                  <option value="3">messenger</option>
-                  <option value="3">yahoo</option>
-                  <option value="3">skype</option>
-                </select>
+            <div class="modal-body">
+              <h6 class="mb-3 text-capitalize">send link</h6>
+              <p><i class="fas fa-users me-2"></i>People you specify can view</p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="to: name or email"
+                       aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text bg-transparent" id="basic-addon2"><i class="fas fa-edit"></i></span>
               </div>
-              <button class="btn btn-primary">send</button>
-            </div>
-            <hr>
-            <h6 class="mb-3 text-capitalize">copy link</h6>
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="mb-0"><i class="fas fa-users me-2"></i>People you specify can view</p>
-              <button class="btn btn-primary">copy</button>
-            </div>
-            <hr>
-            <div class="d-flex align-items-center gap-3">
-              <p class="text-muted small mb-0 text-capitalize">shared with:</p>
-              <div class="avatar-group avatar-group-sm">
-                <div class="avatar">
-                  <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
-                       class="avatar-img rounded-circle">
+              <div class="mb-3">
+                <label for="textarea-message" class="form-label">custom message</label>
+                <textarea name="" id="textarea-message" rows="2" class="form-control"
+                          placeholder="write message..."></textarea>
+              </div>
+              <div class="d-flex justify-content-between gap-3">
+                <div class="flex-grow-1">
+                  <select class="form-select text-capitalize" id="select-messenger">
+                    <option selected>Invite via...</option>
+                    <option value="1">outlook</option>
+                    <option value="2">gmail</option>
+                    <option value="3">messenger</option>
+                    <option value="3">yahoo</option>
+                    <option value="3">skype</option>
+                  </select>
                 </div>
-                <div class="avatar">
-                  <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user"
-                       class="avatar-img rounded-circle">
-                </div>
-                <div class="avatar">
-                  <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
-                       class="avatar-img rounded-circle">
-                </div>
-                <div class="avatar">
-                  <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="user"
-                       class="avatar-img rounded-circle">
-                </div>
-                <div class="avatar">
-                  <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user"
-                       class="avatar-img rounded-circle">
-                </div>
-                <div class="avatar">
+                <button class="btn btn-primary">send</button>
+              </div>
+              <hr>
+              <h6 class="mb-3 text-capitalize">copy link</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0"><i class="fas fa-users me-2"></i>People you specify can view</p>
+                <button class="btn btn-primary">copy</button>
+              </div>
+              <hr>
+              <div class="d-flex align-items-center gap-3">
+                <p class="text-muted small mb-0 text-capitalize">shared with:</p>
+                <div class="avatar-group avatar-group-sm">
+                  <div class="avatar">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user"
+                         class="avatar-img rounded-circle">
+                  </div>
+                  <div class="avatar">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user"
+                         class="avatar-img rounded-circle">
+                  </div>
+                  <div class="avatar">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user"
+                         class="avatar-img rounded-circle">
+                  </div>
+                  <div class="avatar">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="user"
+                         class="avatar-img rounded-circle">
+                  </div>
+                  <div class="avatar">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user"
+                         class="avatar-img rounded-circle">
+                  </div>
+                  <div class="avatar">
                       <span class="avatar-text avatar-text-dark rounded-circle"><span
                         class="initial-wrap"><span>ja</span></span>
                       </span>
-                </div>
-                <div class="avatar">
+                  </div>
+                  <div class="avatar">
                       <span class="avatar-text avatar-text-dark rounded-circle"><span
                         class="initial-wrap"><span>dn</span></span>
                       </span>
-                </div>
-                <div class="avatar">
+                  </div>
+                  <div class="avatar">
                       <span class="avatar-text avatar-text-dark rounded-circle"><span
                         class="initial-wrap"><span>am</span></span>
                       </span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
