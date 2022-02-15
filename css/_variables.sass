@@ -5,3 +5,66 @@
 
 .badge
   font-weight: 500 !important
+
+.form-check-input:checked + .form-checked-content
+  opacity: .5
+
+  .btn
+    pointer-events: none
+
+.form-check-input-placeholder
+  pointer-events: none
+  border-style: dashed
+
+[contenteditable]:focus
+  outline: 0
+
+.fw-500
+  font-weight: 500
+
+.h-100px
+  height: 100px !important
+
+.img-cover
+  object-fit: cover
+
+.img-contain
+  object-fit: contain
+
+.task-progress
+  height: .5rem
+
+.table-scrollable
+  overflow-x: auto
+
+.mw-500-600
+  max-width: 600px !important
+
+.h-100vh
+  height: 100vh
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .table-scrollable
+    max-width: 100%
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+  .table-scrollable
+    max-width: 500px
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+  .table-scrollable
+    max-width: 780px
+
+  .mw-500-600
+    max-width: 100% !important
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+  .table-scrollable
+    max-width: 100%

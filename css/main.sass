@@ -1,6 +1,57 @@
 @import "layout"
 @import "variables"
 @import "avatar"
+@import "dragula"
 
 html, body
   font-family: 'Rubik', sans-serif
+
+.section-title, .project-header, .task-title, .card-title
+  text-transform: capitalize
+
+  *
+    text-transform: capitalize
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .section-title, .task, .project-header
+    button.btn
+      span
+        display: none
+
+      .me-2, .ms-2
+        margin: 0 !important
+
+  .task
+    .form-label
+      display: none
+
+  .row.align-items-center
+    flex-direction: column
+
+    .col-6
+      width: 100%
+
+    .task-progress
+      width: 85%
+
+  .project-header
+    .w-auto
+      width: 100% !important
+
+  .accordion-body
+    padding: 0
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+  .sidebar
+    display: block
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)

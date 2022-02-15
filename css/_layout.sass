@@ -1,12 +1,18 @@
 @import "mixins"
+@import "colors"
 
 .sidebar
   width: 250px
   @include transition(width, 300ms)
   display: inline-block
   z-index: 10
-  min-height: 100vh
   border-right: 1px solid #dee2e6
+
+  .position-fixed
+    width: 210px
+    height: 100vh
+    padding: 1rem .5rem
+    margin: auto
 
   .list-group
     .list-group-item
@@ -17,6 +23,10 @@
 
       .badge
         margin-left: 2rem
+
+    .active
+      background-color: $color-med-yellow
+      color: $color-dark-gray
 
 .nav-sidebar
   background: none
@@ -38,7 +48,7 @@
     left: auto
     position: relative
 
-.collapse-toggle
+.collapse-toggle, .navbar-toggler
   padding-left: 4px
   display: block
   cursor: pointer
@@ -57,9 +67,14 @@
   text-align: center
   margin: 0 auto
 
+  .position-fixed
+    width: inherit
+    padding-left: .5rem
+    padding-right: .7rem
+
   .menu-text
     display: none
-    @include transition(opacity, 200ms)
+    @include transition(opacity, 300ms)
     position: absolute
 
   .list-group
@@ -68,7 +83,7 @@
       width: 100%
 
       i
-        font-size: 1.5rem
+        font-size: 1.25rem
         margin: auto
 
   .collapse-toggle
@@ -76,11 +91,20 @@
 
 .main
   margin-left: 0
-  @include transition(margin-left, 200ms)
+  @include transition(margin-left, 300ms)
   width: 100%
+  min-height: 100vh
 
 .main--slide
-  @include transition(margin-left, 200ms)
+  @include transition(margin-left, 300ms)
+
+.brand-wrapper
+  text-decoration: none
+
+  .menu-text
+    font-weight: 500
+    text-decoration: none
+    color: $color-dark-gray
 
 nav.navbar
   .dropdown-menu:not([aria-labelledby="search-dropdown"])
@@ -92,6 +116,23 @@ nav.navbar
     margin-left: -14rem
 
 .accordion
+  .accordion-button
+    background-color: transparent
+    font-weight: 500
+    color: $color-dark-gray
+    border-radius: 0
+    text-transform: capitalize
+
+    &:not(.collapsed)
+      background-color: #ffefbe
+
+      &::after
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23434142'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+
+    &:focus
+      border-color: $color-dark-gray
+      box-shadow: 0 0 0 0.25rem rgb(67 65 66 / 25%)
+
   // switch accordion icon order
   .accordion-button:after
     //swap order
@@ -100,7 +141,246 @@ nav.navbar
     margin-left: 0
     // just extra space between text and icon
     margin-right: 0.5em
+    border: none
+    color: $color-dark-gray
 
+// CALENDAR-20 PARTIALS
+.fc-widget-header
+  background-color: $color-med-gray !important
+  padding: .25rem !important
 
-.task-progress
-  height: .5rem
+.fc-list-heading-main
+  padding-right: .25rem
+
+.fc-list-heading-main, .fc-list-heading-alt
+  color: $color-dark-gray
+  font-weight: 500
+
+.fc-list-item-time
+  padding: .25rem
+
+// BOOTSTRAP CALENDAR WIDGET
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td span.active
+  background-color: $color-med-yellow
+  color: $color-dark-gray
+
+// PROGRESS BAR
+.progress-bar
+  background-color: $color-med-yellow
+
+// BUTTONS
+.btn
+  text-transform: capitalize
+
+  &:focus
+    box-shadow: 0 0 0 0.25rem rgb(232 164 7 / 25%)
+
+.btn-primary
+  background-color: $color-med-yellow
+  border-color: $color-med-yellow
+  color: $color-dark-gray
+
+  &:hover,
+  &:active
+    opacity: .8
+    background-color: $color-med-yellow
+    color: $color-dark-gray
+    border-color: $color-med-yellow
+
+  &:focus
+    background-color: $color-med-yellow
+    border-color: $color-med-yellow
+    box-shadow: 0 0 0 0.25rem rgb(255 203 5 / 50%)
+    color: $color-dark-gray
+
+.btn-outline-secondary
+  background-color: transparent
+  border-color: $color-dark-gray
+  color: $color-dark-gray
+
+  &:hover,
+  &:active
+    background-color: $color-dark-gray
+    color: white
+    border-color: $color-dark-gray
+
+  &:focus
+    background-color: $color-dark-gray
+    border-color: $color-dark-gray
+    box-shadow: 0 0 0 0.25rem rgb(67 65 66 / 50%)
+    color: white
+
+.btn-add-project
+  border: 1px dashed $color-dark-gray
+
+  &:focus
+    box-shadow: 0 0 0 0.25rem rgb(67 65 66 / 50%)
+
+// BACKGROUNDS
+.bg-primary
+  background-color: $color-med-yellow !important
+  color: $color-dark-gray !important
+
+.bg-secondary
+  background-color: $color-dark-gray !important
+
+.bg-warning
+  color: $color-dark-gray !important
+
+// TEXT
+.text-primary
+  color: $color-dark-yellow !important
+
+.text-secondary
+  color: $color-dark-gray !important
+
+// INPUT
+.form-check-input:checked
+  background-color: $color-dark-yellow
+  color: $color-dark-yellow
+
+input:focus,
+.form-control:focus,
+.form-check-input:focus,
+.form-select:focus
+  box-shadow: 0 0 0 0.25rem rgb(255 203 5 / 25%)
+  border-color: $color-dark-yellow
+
+// TABLES
+table.table
+  thead
+    th
+      text-transform: capitalize
+
+  tbody
+    td, p, a, span
+      text-transform: capitalize
+
+    .avatar-text
+      *
+        text-transform: uppercase
+
+    a
+      &:hover,
+      &:focus
+        color: $color-dark-yellow !important
+        @include transition(all, 150ms)
+
+// BREADCRUMBS
+.breadcrumb
+  .breadcrumb-item > a
+    color: $color-dark-gray
+
+// NAV PILLS/TABS
+.nav-pills
+  .nav-item
+    .nav-link
+      color: $color-dark-gray
+
+    .active
+      background-color: $color-med-yellow
+      font-weight: 500
+
+// NAVBAR
+.navbar
+  .nav-link, .dropdown-item, a
+    text-transform: capitalize
+    color: black
+    text-decoration: none
+
+  a.col
+    border-radius: 5px
+
+    &:hover,
+    &:focus
+      background-color: #E9ECEF
+      cursor: pointer
+
+  .dropdown-header
+    text-transform: capitalize
+
+  .active
+    background-color: $color-med-yellow
+    border-color: $color-med-yellow
+    color: $color-dark-gray
+
+// DROPDOWNS
+.dropdown
+  .dropdown-item, .dropdown-header
+    text-transform: capitalize
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+  .sidebar
+    display: none
+
+  .fc-center
+    h2
+      font-size: 1em !important
+
+  nav.navbar
+    .dropdown-menu
+      margin-left: 0 !important
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+  .fc-center
+    h2
+      font-size: 1em !important
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+  .sidebar
+    .position-fixed
+      width: 190px
+
+    .list-group-item
+      padding-left: .35rem
+      padding-right: .35rem
+
+      .menu-text
+        left: 31px
+
+  .sidebar--Collapse
+    .position-fixed
+      width: 4.75rem
+
+      i
+        margin: auto
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+  .sidebar
+    .position-fixed
+      width: 195px
+      padding-left: .35rem
+      padding-right: .35rem
+
+    .list-group-item
+      .menu-text
+        left: 40px
+
+      .badge
+        margin-left: .35rem !important
+
+  .sidebar--Collapse
+    .position-fixed
+      width: 4rem
+
+  .fc-center
+    h2
+      font-size: 1.75em !important
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+  .sidebar
+    .position-fixed
+      width: 210px
+      padding-left: .5rem
+      padding-right: .5rem
+
+  .sidebar--Collapse
+    .position-fixed
+      width: 5rem
+

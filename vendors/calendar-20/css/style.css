@@ -1,0 +1,67 @@
+p {
+  color: #b3b3b3;
+  font-weight: 300;
+}
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+a, a:hover {
+  text-decoration: none !important;
+}
+
+.content {
+  padding: 7rem 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.form-control:active, .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#calendar {
+  margin: 0 auto;
+}
+
+#calendar .fc-view-container {
+  background-color: #fff;
+}
+
+#calendar .fc-toolbar.fc-header-toolbar .fc-center {
+  display: block;
+}
+
+#calendar-container {
+
+}
+
+.fc-header-toolbar {
+  /*
+    the calendar will be butting up against the edges,
+    but let's scoot in the header's buttons
+    */
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (max-width: 767.98px) {
+  .fc-toolbar {
+    display: block !important;
+    text-align: center;
+  }
+
+  .fc-toolbar .fc-center {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
