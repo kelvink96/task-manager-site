@@ -327,6 +327,10 @@ table.table tbody a:hover, table.table tbody a:focus {
   color: #434142;
 }
 
+.dropdown .dropdown-item, .dropdown .dropdown-header {
+  text-transform: capitalize;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .sidebar {
@@ -391,6 +395,10 @@ table.table tbody a:hover, table.table tbody a:focus {
     width: 210px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .sidebar--Collapse .position-fixed {
+    width: 5rem;
   }
 }
 /* Color Theme Swatches in Hex */
