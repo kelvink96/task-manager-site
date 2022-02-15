@@ -132,6 +132,15 @@
   -webkit-transition: margin-left 300ms ease-out;
 }
 
+.brand-wrapper {
+  text-decoration: none;
+}
+.brand-wrapper .menu-text {
+  font-weight: 500;
+  text-decoration: none;
+  color: #434142;
+}
+
 nav.navbar .dropdown-menu:not([aria-labelledby=search-dropdown]) {
   margin-left: -8rem;
 }
@@ -458,6 +467,10 @@ table.table tbody a:hover, table.table tbody a:focus {
 
 .mw-500-600 {
   max-width: 600px !important;
+}
+
+.h-100vh {
+  height: 100vh;
 }
 
 /* Extra small devices (phones, 600px and down) */

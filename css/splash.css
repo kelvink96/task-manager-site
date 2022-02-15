@@ -9,7 +9,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #030303;
 }
 
 svg {
@@ -18,17 +17,18 @@ svg {
 
 .blobs {
   filter: url(#goo);
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   border-radius: 70px;
   transform-style: preserve-3d;
+  margin: 0 auto;
 }
 .blobs .blob-center {
   transform-style: preserve-3d;
   position: absolute;
-  background: #FFF200;
+  background: #FFCB05;
   top: 50%;
   left: 50%;
   width: 30px;
@@ -37,12 +37,12 @@ svg {
   transform: scale(0.9) translate(-50%, -50%);
   animation: blob-grow linear 3.4s infinite;
   border-radius: 50%;
-  box-shadow: 0 -10px 40px -5px #FFF200;
+  box-shadow: 0 -10px 40px -5px #FFCB05;
 }
 
 .blob {
   position: absolute;
-  background: #FFF200;
+  background: #FFCB05;
   top: 50%;
   left: 50%;
   width: 30px;
